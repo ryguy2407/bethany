@@ -4,6 +4,7 @@ module.exports = {
     colors: {
       white: '#FFFFFF',
       textPrimary: '#12284B',
+      calloutBg: '#F5DEDA',
       'navy': {
         100: '#E7E8EB',
         200: '#C2C6CD',
