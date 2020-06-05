@@ -1,6 +1,11 @@
 module.exports = {
   purge: [],
   theme: {
+    height: {
+      700: '700px',
+      270: '270px',
+      full: '100%'
+    },
     colors: {
       white: '#FFFFFF',
       textPrimary: '#12284B',
@@ -54,7 +59,11 @@ module.exports = {
       'sans': ['Red Hat Display', 'Arial', 'sans-serif'],
       'serif': ['Operetta', 'Georgia', 'serif'],
     },
-    extend: {},
+    extend: {
+      screens: {
+        'xxl': {'raw': '(min-width: 1500px)'},
+      }
+    },
   },
   variants: {
     scale: ['responsive', 'hover', 'focus', 'active', 'group-hover']
