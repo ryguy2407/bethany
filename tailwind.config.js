@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  purge: [
+    './templates/**/*.twig',
+    './templates/*.twig',
+  ],
   theme: {
     height: {
       700: '700px',
