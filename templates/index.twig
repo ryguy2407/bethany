@@ -12,12 +12,24 @@
 </head>
 <body class="font-sans text-textPrimary relative">
 
-    <section class="bg-navy-500 text-center text-white py-4">
+    <section class="bg-navy-500 py-16 searchForm hidden">
+        <div class="closeSearch">
+            <i class="fas fa-times absolute text-teal-500 text-lg w-8 h-lg hover:text-teal-400 cursor-pointer" style="top:20px;right:20px;"></i>
+        </div>
+        <div class="container mx-auto">
+            <form action="#" class="flex flex-row w-3/4 mx-auto">
+                <input type="text" class="px-8 py-4 bg-navy-500 border border-white rounded-l-full w-10/12 text-white placeholder-white focus:outline-none" value="" placeholder="Type your search">
+                <input type="image" src="/dist/img/search-navy.svg" class="rounded-r-full bg-white" style="padding:10px 30px 10px 25px;">
+            </form>
+        </div>
+    </section>
+
+    <section class="bg-navy-500 text-center text-white py-4 z-20 relative">
         <p class="mb-0"><span class="text-pink-500">Alert:</span> advice regarding recent COVID19 outbreak</p>
     </section>
 
     <img class="hidden xxl:block absolute right-0 z-10" src="/dist/img/search-bg.svg">
-    <img class="hidden xxl:block absolute z-10 triggerSearch cursor-pointer" style="top: 96px;right:43px;" src="/dist/img/search.svg">
+    <img class="hidden xxl:block absolute z-10 triggerSearch cursor-pointer" style="top: 125px;right:45px;" src="/dist/img/search.svg">
 
     <header>
         <div class="hidden container mx-auto lg:flex flex-row justify-between items-center">
@@ -26,31 +38,33 @@
             </div>
             <div class="w-1/12"></div>
             <div class="w-7/12 pt-16">
-                <ul class="flex flex-row justify-end text-lg pb-4">
-                    <li class="ml-8"><a href="#">About</a></li>
-                    <li class="ml-8"><a href="#">Careers</a></li>
-                    <li class="ml-8"><a href="#">News</a></li>
-                    <li class="ml-8"><a href="#">Contact</a></li>
+                <ul class="secondaryNav hasDropdowns flex flex-row justify-end text-base">
+                    <li class="ml-8 relative">
+                        <a href="#" class="pb-4 block border-white border-b-4 hover:border-pink-500">About</a>
+                        <ul class="submenu hidden absolute w-48 shadow-lg bg-white text-navy-500 z-10 text-center rounded-b-md">
+                            <li><a href="#" class="block pt-4 hover:font-bold">The Plains</a></li>
+                            <li><a href="#" class="block pt-4 hover:font-bold">Janoah Gardens</a></li>
+                            <li><a href="#" class="block pt-4 pb-4 hover:font-bold">Beth Eden</a></li>
+                        </ul>
+                    </li>
+                    <li class="ml-8"><a href="#" class="pb-4 block border-white border-b-4 hover:border-pink-500">Careers</a></li>
+                    <li class="ml-8"><a href="#" class="pb-4 block border-white border-b-4 hover:border-pink-500">News</a></li>
+                    <li class="ml-8"><a href="#" class="pb-4 block border-white border-b-4 hover:border-pink-500">Contact</a></li>
                 </ul>
-                <ul class="primaryNav flex flex-row justify-between border-t border-navy-200 text-xl">
+                <ul class="primaryNav hasDropdowns flex flex-row justify-between border-t border-navy-200 text-xl">
                     <li class="relative">
-                        <a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Locations</a>
-                        <ul class="submenu hidden absolute w-56 shadow-lg bg-white text-navy-500 z-10 text-center">
-                            <li><a href="#" class="block pt-4">Sub item one</a></li>
-                            <li><a href="#" class="block pt-4">Sub item two</a></li>
-                            <li><a href="#" class="block pt-4 pb-4">Sub item three</a></li>
+                        <a class="py-8 border-white border-b-4 hover:border-pink-500 inline-block" href="#">Locations</a>
+                        <ul class="submenu hidden absolute w-56 shadow-lg bg-white text-navy-500 z-10 text-center rounded-b-md">
+                            <li><a href="#" class="block pt-4 hover:font-bold">The Plains</a></li>
+                            <li><a href="#" class="block pt-4 hover:font-bold">Janoah Gardens</a></li>
+                            <li><a href="#" class="block pt-4 pb-4 hover:font-bold">Beth Eden</a></li>
                         </ul>
                     </li>
                     <li class="relative ml-8">
-                        <a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Residential aged care</a>
-                        <ul class="submenu hidden absolute w-56 shadow-lg bg-white text-navy-500 z-10 text-center">
-                            <li><a href="#" class="block pt-4">Sub item one</a></li>
-                            <li><a href="#" class="block pt-4">Sub item two</a></li>
-                            <li><a href="#" class="block pt-4 pb-4">Sub item three</a></li>
-                        </ul>
+                        <a class="py-8 border-white border-b-4 hover:border-pink-500 inline-block" href="#">Residential aged care</a>
                     </li>
-                    <li class="relative ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Serviced apartments</a></li>
-                    <li class="relative ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Independent living</a></li>
+                    <li class="relative ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-500 inline-block" href="#">Serviced apartments</a></li>
+                    <li class="relative ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-500 inline-block" href="#">Independent living</a></li>
                 </ul>
             </div>
             <div class="w-1/12"></div>
@@ -65,15 +79,6 @@
             </div>
         </div>
     </header>
-
-    <section class="bg-teal-500 py-8 searchForm hidden">
-        <div class="container mx-auto">
-            <form action="#" class="flex flex-row w-1/2 mx-auto">
-                <input type="text" class="p-4 bg-teal-500 border border-white rounded-l-full w-10/12 text-white placeholder-white focus:outline-none" value="" placeholder="Type your search">
-                <input type="image" src="/dist/img/search-teal.svg" class="rounded-r-full pt-6 pb-4 px-4 bg-white">
-            </form>
-        </div>
-    </section>
 
     <section class="bg-pink-100 relative">
         <div class="container mx-auto">
@@ -255,8 +260,8 @@
                         <div class="p-8">
                             <h3 class="font-serif">The Plains</h3>
                             <p>333 Underwood Road<br>Eight Mile Plains, QLD 4113</p>
-                            <p class="mb-0">07 3737 5000</p>
-                            <p>theplains@bethanycc.org.au</p>
+                            <p class="mb-0"><i class="far fa-phone mr-4"></i>07 3737 5000</p>
+                            <p><i class="far fa-envelope mr-4"></i>theplains@bethanycc.org.au</p>
                         </div>
                     </div>
                     <div class="w-full">
@@ -264,8 +269,8 @@
                         <div class="p-8">
                             <h3 class="font-serif">Janoah Gardens</h3>
                             <p>333 Underwood Road<br>Eight Mile Plains, QLD 4113</p>
-                            <p class="mb-0">07 3737 5000</p>
-                            <p>theplains@bethanycc.org.au</p>
+                            <p class="mb-0"><i class="far fa-phone mr-4"></i>07 3737 5000</p>
+                            <p><i class="far fa-envelope mr-4"></i>theplains@bethanycc.org.au</p>
                         </div>
                     </div>
                     <div class="w-full">
@@ -273,8 +278,8 @@
                         <div class="p-8">
                             <h3 class="font-serif">Beth Eden</h3>
                             <p>333 Underwood Road<br>Eight Mile Plains, QLD 4113</p>
-                            <p class="mb-0">07 3737 5000</p>
-                            <p>theplains@bethanycc.org.au</p>
+                            <p class="mb-0"><i class="far fa-phone mr-4"></i>07 3737 5000</p>
+                            <p><i class="far fa-envelope mr-4"></i>theplains@bethanycc.org.au</p>
                         </div>
                     </div>
                 </div>
@@ -297,7 +302,7 @@
     <section class="bg-navy-500 relative py-16 xxl:py-0 text-center xxl:text-left xxl:h-270">
         <img class="hidden xxl:block absolute left-0 bottom-0" src="/dist/img/footer-left-curves.svg">
 
-        <div class="w-full xxl:w-1/2 px-8 lg:px-0 mx-auto flex flex-col xxl:flex-row h-full items-center relative z-10">
+        <div class="py-16 w-full xxl:w-1/2 px-8 lg:px-0 mx-auto flex flex-col xxl:flex-row h-full flex-grow items-center relative z-10">
             <img src="/dist/img/pink-logo-icon.svg">
             <div class="px-8 xxl:pl-16 w-full xxl:w-1/2">
                 <h3 class="font-serif text-white text-2xl xxl:text-4xl">Live an abundant life</h3>
@@ -307,7 +312,7 @@
                     at Bethany Christian Care.
                 </h5>
             </div>
-            <a href="#" class="inline-block text-center text-white py-4 px-8 rounded-full border border-white transition ease-in duration-200 hover:bg-navy-600 font-bold">
+            <a href="#" class="mt-auto inline-block text-center text-white py-4 px-8 rounded-full border border-white transition ease-in duration-200 hover:bg-navy-600 font-bold">
                 Contact us
             </a>
         </div>
@@ -322,7 +327,11 @@
                $('.searchForm').stop().slideToggle();
            });
 
-           $('ul.primaryNav li').each(function(){
+           $('.closeSearch').on('click', function(){
+               $('.searchForm').slideUp();
+           })
+
+           $('ul.hasDropdowns li').each(function(){
                var offset = ($(this).children('ul.submenu').outerWidth() - $(this).outerWidth()) / 2;
                $(this).children('ul.submenu').css({
                    left: -offset
@@ -330,5 +339,6 @@
            });
         });
     </script>
+    <script src="https://kit.fontawesome.com/939156792f.js" crossorigin="anonymous"></script>
 </body>
 </html>
