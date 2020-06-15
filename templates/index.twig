@@ -32,11 +32,25 @@
                     <li class="ml-8"><a href="#">News</a></li>
                     <li class="ml-8"><a href="#">Contact</a></li>
                 </ul>
-                <ul class="flex flex-row justify-between border-t border-navy-200 text-xl">
-                    <li><a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Locations</a></li>
-                    <li class="ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Residential aged care</a></li>
-                    <li class="ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Serviced apartments</a></li>
-                    <li class="ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Independent living</a></li>
+                <ul class="primaryNav flex flex-row justify-between border-t border-navy-200 text-xl">
+                    <li class="relative">
+                        <a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Locations</a>
+                        <ul class="submenu hidden absolute w-56 shadow-lg bg-white text-navy-500 z-10 text-center">
+                            <li><a href="#" class="block pt-4">Sub item one</a></li>
+                            <li><a href="#" class="block pt-4">Sub item two</a></li>
+                            <li><a href="#" class="block pt-4 pb-4">Sub item three</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative ml-8">
+                        <a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Residential aged care</a>
+                        <ul class="submenu hidden absolute w-56 shadow-lg bg-white text-navy-500 z-10 text-center">
+                            <li><a href="#" class="block pt-4">Sub item one</a></li>
+                            <li><a href="#" class="block pt-4">Sub item two</a></li>
+                            <li><a href="#" class="block pt-4 pb-4">Sub item three</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Serviced apartments</a></li>
+                    <li class="relative ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Independent living</a></li>
                 </ul>
             </div>
             <div class="w-1/12"></div>
@@ -306,6 +320,13 @@
         jQuery(document).ready(function($){
            $('.triggerSearch').on('click', function(){
                $('.searchForm').stop().slideToggle();
+           });
+
+           $('ul.primaryNav li').each(function(){
+               var offset = ($(this).children('ul.submenu').outerWidth() - $(this).outerWidth()) / 2;
+               $(this).children('ul.submenu').css({
+                   left: -offset
+               });
            });
         });
     </script>

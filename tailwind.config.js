@@ -80,6 +80,10 @@ module.exports = {
     extend: {
       screens: {
         'xxl': {'raw': '(min-width: 1500px)'},
+      },
+      translate: {
+        '1/4': '25%',
+        '-1/4': '-25%'
       }
     },
   },
