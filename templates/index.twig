@@ -16,7 +16,8 @@
         <p class="mb-0"><span class="text-pink-500">Alert:</span> advice regarding recent COVID19 outbreak</p>
     </section>
 
-    <img class="hidden xxl:block absolute right-0 z-10" src="/dist/img/corner-curves.svg">
+    <img class="hidden xxl:block absolute right-0 z-10" src="/dist/img/search-bg.svg">
+    <img class="hidden xxl:block absolute z-10 triggerSearch cursor-pointer" style="top: 96px;right:43px;" src="/dist/img/search.svg">
 
     <header>
         <div class="hidden container mx-auto lg:flex flex-row justify-between items-center">
@@ -31,9 +32,10 @@
                     <li class="ml-8"><a href="#">News</a></li>
                     <li class="ml-8"><a href="#">Contact</a></li>
                 </ul>
-                <ul class="flex flex-row justify-between border-t border-navy-200 text-2xl">
+                <ul class="flex flex-row justify-between border-t border-navy-200 text-xl">
                     <li><a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Locations</a></li>
                     <li class="ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Residential aged care</a></li>
+                    <li class="ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Serviced apartments</a></li>
                     <li class="ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-300 inline-block" href="#">Independent living</a></li>
                 </ul>
             </div>
@@ -50,7 +52,16 @@
         </div>
     </header>
 
-    <section class="bg-orange-100 relative">
+    <section class="bg-teal-500 py-8 searchForm hidden">
+        <div class="container mx-auto">
+            <form action="#" class="flex flex-row w-1/2 mx-auto">
+                <input type="text" class="p-4 bg-teal-500 border border-white rounded-l-full w-10/12 text-white placeholder-white focus:outline-none" value="" placeholder="Type your search">
+                <input type="image" src="/dist/img/search-teal.svg" class="rounded-r-full pt-6 pb-4 px-4 bg-white">
+            </form>
+        </div>
+    </section>
+
+    <section class="bg-pink-100 relative">
         <div class="container mx-auto">
             <div class="w-full px-8 py-16 lg:w-1/2 lg:py-32 lg:pr-32">
                 <h1 class="font-serif leading-tight text-4xl lg:text-6xl">
@@ -71,10 +82,10 @@
 
         <img class="hidden md:block absolute w-full" src="/dist/img/top-curve.svg" style="bottom:-2px;">
     </section>
-    <section class="bg-calloutBg w-full relative">
-        <div class="container mx-auto px-8 lg:px-0 py-32 flex flex-col flex-col-reverse lg:flex-row relative z-10">
+    <section class="bg-white w-full relative">
+        <div class="container mx-auto px-8 lg:px-0 py-32 flex flex-col flex-col-reverse items-center lg:flex-row relative z-10">
             <div class="w-full lg:w-1/3 mb-16 lg:mb-0">
-                <img src="https://picsum.photos/600" class="w-full">
+                <img src="https://picsum.photos/600" class="w-full rounded-md">
             </div>
             <div class="hidden lg:block w-1/12"></div>
             <div class="w-full lg:w-1/2 mb-16 lg:mb-0">
@@ -98,19 +109,21 @@
                 </p>
             </div>
         </div>
-        <img class="absolute w-full" src="/dist/img/bottom-curve.jpg" style="bottom:0px;">
     </section>
 
     <section class="pt-16 pb-32">
         <div class="container mx-auto px-8 lg:px-0">
-            <h2 class="font-medium mb-32">Our locations</h2>
-
+            <h2 class="font-medium mb-8 leading-none">Our locations</h2>
+            <p class="mb-8 w-1/2">
+                We create beautiful environments for our residents that cover
+                the full spectrum of seniors' accommodation and care needs.
+            </p>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="bg-orange-100">
-                    <a href="#" class="overflow-hidden block">
+                <div class="bg-grey-100 rounded-b-md">
+                    <a href="#" class="overflow-hidden block rounded-t-md">
                         <img class="w-full transform scale-100 hover:scale-110 transition duration-500 ease-in-out" src="https://picsum.photos/600/400">
                     </a>
-                    <div class="bg-orange-500 h-2 w-full"></div>
+                    <div class="bg-orange-500 h-sm w-full"></div>
                     <div class="p-8">
                         <h4 class="font-serif">The Plains</h4>
                         <p class="text-navy-300 text-sm">
@@ -128,11 +141,11 @@
                     </div>
                 </div>
 
-                <div class="bg-orange-100">
-                    <a href="#" class="overflow-hidden block">
+                <div class="bg-grey-100 rounded-b-md">
+                    <a href="#" class="overflow-hidden block rounded-t-md">
                         <img class="w-full transform scale-100 hover:scale-110 transition duration-500 ease-in-out" src="https://picsum.photos/600/400">
                     </a>
-                    <div class="bg-teal-500 h-2 w-full"></div>
+                    <div class="bg-teal-500 h-sm w-full"></div>
                     <div class="p-8">
                         <h4 class="font-serif">Janoah Gardens</h4>
                         <p class="text-navy-300 text-sm">
@@ -149,11 +162,11 @@
                     </div>
                 </div>
 
-                <div class="bg-orange-100">
-                    <a href="#" class="overflow-hidden block">
+                <div class="bg-grey-100 rounded-b-md">
+                    <a href="#" class="overflow-hidden block rounded-t-md">
                         <img class="w-full transform scale-100 hover:scale-110 transition duration-500 ease-in-out" src="https://picsum.photos/600/400">
                     </a>
-                    <div class="bg-navy-500 h-2 w-full"></div>
+                    <div class="bg-navy-500 h-sm w-full"></div>
                     <div class="p-8">
                         <h4 class="font-serif">Beth Eden</h4>
                         <p class="text-navy-300 text-sm">
@@ -215,6 +228,56 @@
             </div>
         </div>
     </section>
+
+    <section class="py-32">
+        <div class="container mx-auto px-8 lg:px-0">
+            <div class="flex flex-col items-start w-full">
+                <img class="mb-8" src="/dist/img/bethany-logo-dark.svg" alt="Bethany Christian Care">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full">
+                    <div class="w-full">
+                        <div class="w-full bg-orange-500 h-sm"></div>
+                        <div class="p-8">
+                            <h3 class="font-serif">The Plains</h3>
+                            <p>333 Underwood Road<br>Eight Mile Plains, QLD 4113</p>
+                            <p class="mb-0">07 3737 5000</p>
+                            <p>theplains@bethanycc.org.au</p>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="w-full bg-teal-500 h-sm"></div>
+                        <div class="p-8">
+                            <h3 class="font-serif">Janoah Gardens</h3>
+                            <p>333 Underwood Road<br>Eight Mile Plains, QLD 4113</p>
+                            <p class="mb-0">07 3737 5000</p>
+                            <p>theplains@bethanycc.org.au</p>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="w-full bg-navy-500 h-sm"></div>
+                        <div class="p-8">
+                            <h3 class="font-serif">Beth Eden</h3>
+                            <p>333 Underwood Road<br>Eight Mile Plains, QLD 4113</p>
+                            <p class="mb-0">07 3737 5000</p>
+                            <p>theplains@bethanycc.org.au</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container mx-auto border-navy-100 border-t px-8 lg:px-0">
+            <div class="flex flex-row justify-between py-6">
+                <div class="flex flex-col lg:flex-row">
+                    <p class="mb-0 pr-4 mr-4 border-white lg:border-navy-100 lg:border-r">Bethany Christian Care 2020</p>
+                    <p class="mb-0">Privacy policy</p>
+                </div>
+                <p class="items-end mb-0">Website NWO</p>
+            </div>
+        </div>
+    </footer>
+
     <section class="bg-navy-500 relative py-16 xxl:py-0 text-center xxl:text-left xxl:h-270">
         <img class="hidden xxl:block absolute left-0 bottom-0" src="/dist/img/footer-left-curves.svg">
 
@@ -235,5 +298,14 @@
 
         <img class="hidden xxl:block absolute right-0 bottom-0 z-0" style="height: 271px;" src="/dist/img/footer-right-curves.png">
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        jQuery(document).ready(function($){
+           $('.triggerSearch').on('click', function(){
+               $('.searchForm').stop().slideToggle();
+           });
+        });
+    </script>
 </body>
 </html>
