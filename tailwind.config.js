@@ -79,7 +79,7 @@ module.exports = {
     },
     extend: {
       screens: {
-        'xxl': {'raw': '(min-width: 1500px)'},
+        'xxl': {'raw': '(min-width: 1400px)'},
       },
       translate: {
         '1/4': '25%',
