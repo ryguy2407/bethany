@@ -1,0 +1,25 @@
+{% if block is defined %}
+    <section class="relative border-navy-200 border-b border-t">
+        {% if block.image.one() | length %}
+            <div class="relative lg:absolute w-full lg:w-1/2 {% if block.mediaAlignment == 'mediaLeft' %}left-0{% else %}right-0{% endif %} top-0 h-full overflow-hidden">
+                {% set rel = block.image.one() %}
+                <img src="{{ rel.url }}" class="object-cover h-full w-full">
+            </div>
+        {% endif %}
+        <div class="container flex flew-row flex-grow items-start lg:items-end mx-auto {% if block.mediaAlignment == 'mediaRight' %}flex-row-reverse{% endif %}">
+            <div class="hidden lg:block w-1/2"></div>
+            <div class="w-full lg:w-1/2 px-8 lg:px-0 py-16 {% if block.mediaAlignment == 'mediaLeft' %}lg:pl-32{% else %}lg:pr-32{% endif %} flex flex-row items-center lg:pr-0 lg:h-700">
+                <div class="flex flex-col">
+                    <div class="text-navy-500 lg:pt-16">
+                        {{ block.richText }}
+                    </div>
+                    <div>
+                        <a href="#" class="font-bold text-center py-4 px-8 rounded-full border inline-block border-navy-500 transition ease-in duration-200 hover:bg-navy-500 hover:text-white">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}

@@ -1,6 +1,42 @@
 {
-  "buttons": ["formatting", "bold", "italic", "unorderedlist", "orderedlist", "link", "image", "video"],
-  "plugins": ["fullscreen", "video"],
+  "formatting": ["p", "h1", "h2", "h3", "h4", "h5", "h6"],
+  "formattingAdd": {
+      "lead": {
+        "title": "Lead text",
+        "api": "module.block.format",
+        "args": {
+          "tag": "p",
+          "attr": {
+            "class": "text-xl"
+          },
+          "type": "toggle"
+        }
+      },
+      "small-pink": {
+        "title": "Small pink",
+        "api": "module.block.format",
+        "args": {
+          "tag": "p",
+          "attr": {
+            "class": "small-pink"
+          },
+          "type": "toggle"
+        }
+      },
+      "small-grey": {
+        "title": "Small grey",
+        "api": "module.block.format",
+        "args": {
+          "tag": "p",
+          "attr": {
+            "class": "small-grey"
+          },
+          "type": "toggle"
+        }
+      }
+    },
+  "buttons": ["formatting", "html", "bold", "italic", "unorderedlist", "orderedlist", "link", "image", "video"],
+  "plugins": ["fullscreen", "video", "alignment"],
   "linkNewTab": true,
   "toolbarFixed": true
 }

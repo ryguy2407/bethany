@@ -1,0 +1,43 @@
+.input .redactor-styles h1,
+.input .redactor-styles h2,
+.input .redactor-styles h3,
+.input .redactor-styles h4,
+.input .redactor-styles h5,
+.input .redactor-styles h6 {
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+}
+
+.input .redactor-styles h1 {
+    font-size: 4rem !important;
+}
+.input .redactor-styles h2 {
+    font-size: 3rem !important;
+}
+.input .redactor-styles h3 {
+    font-size: 2.25rem !important;
+}
+.input .redactor-styles h4 {
+    font-size: 1.875rem !important;
+}
+.input .redactor-styles h5 {
+    font-size: 1.5rem !important;
+}
+.input .redactor-styles h6 {
+    font-size: 1.25rem !important;
+}
+.input .redactor-styles p.text-xl, .redactor-dropdown-item-lead {
+    font-size: 1.5rem !important;
+}
+
+.input .redactor-styles p.small-pink, .redactor-dropdown-item-small-pink {
+    font-size: .875rem !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: #AA6389 !important;
+}
+
+.input .redactor-styles p.small-grey, .redactor-dropdown-item-small-grey {
+    font-size: .875rem !important;
+    color: #B1B1B1 !important;
+}

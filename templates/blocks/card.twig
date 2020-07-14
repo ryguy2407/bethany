@@ -1,0 +1,26 @@
+
+    <div class="container mx-auto flex flex-col lg:flex-row justify-between space-x-0 lg:space-x-8">
+        {% for card in block.cards.all() %}
+            <div class="w-full mb-8 lg:mb-0">
+                {% if card.image.one().optimisedImage is defined %}
+                {% set optimizedImages = card.image.one().optimisedImage %}
+                    <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
+                        <a href="#">
+                            <img class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lazyload h-full w-full absolute object-cover inset-0"
+                                 src="{{ optimizedImages.placeholderBox() }}"
+                                 data-srcset="{{ optimizedImages.srcset() }}"
+                                 sizes="100vw" />
+                        </a>
+                    </div>
+                {% endif %}
+                <div class="{{ card.highlightColour }} h-sm"></div>
+                <div class="{{ card.textBackground }} richText p-6">
+                    <h4 class="font-serif text-navy-500 pb-4 m-0">{{ card.cardTitle }}</h4>
+                    {{ card.richtext }}
+                    {% if card.buttonText %}
+                        <a class="transition duration-500 ease-in-out hover:bg-navy-500 hover:text-white mt-4 text-navy-500 font-bold px-12 py-4 inline-block border rounded-full" href="#">Read more</a>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>

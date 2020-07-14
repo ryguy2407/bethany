@@ -25,7 +25,9 @@
     "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "jquery": "^3.5.1",
+    "lazysizes": "^5.2.2",
     "tailwindcss": "^1.4.6"
   }
 }

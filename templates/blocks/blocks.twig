@@ -1,0 +1,11 @@
+{% for row in entry.pageBuilder.level(1).all() %}
+    <section class="{{ row.backgroundColour }} {{ row.padding }} px-8 sm:px-0">
+        {% if row.children.all() is not empty %}
+            {% for block in row.children.all() %}
+                <div class="{{ block.padding }}">
+                    {% include 'blocks/' ~ block.type.handle with { "backgroundColour": row.backgroundColour } %}
+                </div>
+            {% endfor %}
+        {% endif %}
+    </section>
+{% endfor %}

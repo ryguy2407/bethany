@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bethany Christian Care</title>
+    <link rel="stylesheet" href="/dist/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hpy3xqq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans text-textPrimary relative">
+
+<section class="bg-navy-500 py-16 searchForm hidden relative z-20">
+    <div class="closeSearch">
+        <i class="fas fa-times absolute text-teal-500 text-lg w-8 h-lg hover:text-teal-400 cursor-pointer" style="top:20px;right:20px;"></i>
+    </div>
+    <div class="container mx-auto">
+        <form action="#" class="flex flex-row w-3/4 mx-auto">
+            <input type="text" class="px-8 py-4 bg-navy-500 border border-white rounded-l-full w-10/12 text-white placeholder-white focus:outline-none" value="" placeholder="Type your search">
+            <input type="image" src="/dist/img/search-navy.svg" class="rounded-r-full bg-white" style="padding:10px 30px 10px 25px;">
+        </form>
+    </div>
+</section>
+
+<section class="bg-navy-500 text-center text-white py-4 z-20 relative">
+    <p class="mb-0"><span class="text-pink-500">Alert:</span> advice regarding recent COVID19 outbreak</p>
+</section>
+
+<img class="hidden xxl:block absolute right-0 z-10" src="/dist/img/search-bg.svg">
+<img class="hidden xxl:block absolute z-10 triggerSearch cursor-pointer" style="top: 125px;right:45px;" src="/dist/img/search.svg">
+
+<header class="relative" style="z-index: 1;">
+    <div class="hidden container mx-auto lg:flex flex-row justify-between items-center">
+        <div class="w-1/4">
+            <a href="/">
+                <img src="/dist/img/bethany-logo-dark.svg" alt="Bethany Christian Care">
+            </a>
+        </div>
+        <div class="w-1/12"></div>
+        <div class="w-7/12 pt-16">
+            <ul class="secondaryNav hasDropdowns flex flex-row justify-end text-base">
+                <li class="ml-8 relative">
+                    <a href="#" class="pb-4 block border-white border-b-4 hover:border-pink-500">About</a>
+                    <ul class="submenu hidden absolute w-48 shadow-lg bg-white text-navy-500 z-10 text-center rounded-b-md">
+                        <li><a href="#" class="block pt-4 hover:font-bold">The Plains</a></li>
+                        <li><a href="#" class="block pt-4 hover:font-bold">Janoah Gardens</a></li>
+                        <li><a href="#" class="block pt-4 pb-4 hover:font-bold">Beth Eden</a></li>
+                    </ul>
+                </li>
+                <li class="ml-8"><a href="#" class="pb-4 block border-white border-b-4 hover:border-pink-500">Careers</a></li>
+                <li class="ml-8"><a href="#" class="pb-4 block border-white border-b-4 hover:border-pink-500">News</a></li>
+                <li class="ml-8"><a href="#" class="pb-4 block border-white border-b-4 hover:border-pink-500">Contact</a></li>
+            </ul>
+            <ul class="primaryNav hasDropdowns flex flex-row justify-between border-t border-navy-200 text-xl">
+                <li class="relative">
+                    <a class="py-8 border-white border-b-4 hover:border-pink-500 inline-block" href="#">Locations</a>
+                    <ul class="submenu hidden absolute w-56 shadow-lg bg-white text-navy-500 z-10 text-center rounded-b-md">
+                        <li><a href="#" class="block pt-4 hover:font-bold">The Plains</a></li>
+                        <li><a href="#" class="block pt-4 hover:font-bold">Janoah Gardens</a></li>
+                        <li><a href="#" class="block pt-4 pb-4 hover:font-bold">Beth Eden</a></li>
+                    </ul>
+                </li>
+                <li class="relative ml-8">
+                    <a class="py-8 border-white border-b-4 hover:border-pink-500 inline-block" href="#">Residential aged care</a>
+                </li>
+                <li class="relative ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-500 inline-block" href="#">Serviced apartments</a></li>
+                <li class="relative ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-500 inline-block" href="#">Independent living</a></li>
+            </ul>
+        </div>
+        <div class="w-1/12"></div>
+    </div>
+    {# MOBILE NAVIGATION #}
+    <div class="container lg:hidden flex justify-between items-center px-8 py-16">
+        <div>
+            <img src="/dist/img/bethany-logo-dark.svg" alt="Bethany Christian Care">
+        </div>
+        <div>
+            hamburger nav
+        </div>
+    </div>
+</header>

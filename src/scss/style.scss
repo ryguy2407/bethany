@@ -4,5 +4,6 @@
 
 @tailwind utilities;
 
+@import "../../node_modules/aos/dist/aos.css";
 @import './header.scss';
 @import './typography.scss';

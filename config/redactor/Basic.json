@@ -1,0 +1,31 @@
+{
+  "formatting": ["p"],
+  "formattingAdd": {
+    "lead": {
+      "title": "Lead text",
+      "api": "module.block.format",
+      "args": {
+        "tag": "p",
+        "attr": {
+          "class": "text-xl"
+        },
+        "type": "toggle"
+      }
+    },
+    "small-pink": {
+      "title": "Small pink",
+      "api": "module.block.format",
+      "args": {
+        "tag": "p",
+        "attr": {
+          "class": "small-pink"
+        },
+        "type": "toggle"
+      }
+    }
+  },
+  "buttons": ["formatting", "html", "bold", "italic"],
+  "plugins": ["alignment"],
+  "linkNewTab": true,
+  "toolbarFixed": true
+}

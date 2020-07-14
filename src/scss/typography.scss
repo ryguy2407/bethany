@@ -19,3 +19,9 @@ h5 {
 p {
   @apply mb-4 text-lg;
 }
+p.small-pink {
+  @apply text-sm text-pink-500 uppercase font-bold;
+}
+p.small-grey {
+  @apply text-sm text-grey-500;
+}
