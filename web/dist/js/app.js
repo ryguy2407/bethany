@@ -11781,8 +11781,8 @@ aos.init();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/ubuntu/sites/bethany/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /home/ubuntu/sites/bethany/src/scss/style.scss */"./src/scss/style.scss");
+__webpack_require__(/*! /home/vagrant/craft/bethany/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /home/vagrant/craft/bethany/src/scss/style.scss */"./src/scss/style.scss");
 
 
 /***/ })

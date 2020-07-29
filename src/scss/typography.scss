@@ -25,3 +25,11 @@ p.small-pink {
 p.small-grey {
   @apply text-sm text-grey-500;
 }
+
+.richText {
+  ul {
+    li {
+      @apply list-disc ml-6 text-lg;
+    }
+  }
+}

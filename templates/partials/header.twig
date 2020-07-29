@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="https://use.typekit.net/hpy3xqq.css">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body class="font-sans text-textPrimary relative">
+<body class="font-sans text-textPrimary relative antialiased">
+
+{% if currentUser %}
+    {% if currentUser.admin and entry is defined %}
+        <a class="bg-black text-white p-4 fixed z-50 right-0 top-0 z-50" style="z-index: 100;" href="{{ entry.cpEditUrl }}">Edit entry</a>
+    {% endif %}
+{% endif %}
 
 <section class="bg-navy-500 py-16 searchForm hidden relative z-20">
     <div class="closeSearch">
@@ -41,32 +47,39 @@
         <div class="w-1/12"></div>
         <div class="w-7/12 pt-16">
             <ul class="secondaryNav hasDropdowns flex flex-row justify-end text-base">
-                <li class="ml-8 relative">
-                    <a href="#" class="pb-4 block border-white border-b-4 hover:border-pink-500">About</a>
-                    <ul class="submenu hidden absolute w-48 shadow-lg bg-white text-navy-500 z-10 text-center rounded-b-md">
-                        <li><a href="#" class="block pt-4 hover:font-bold">The Plains</a></li>
-                        <li><a href="#" class="block pt-4 hover:font-bold">Janoah Gardens</a></li>
-                        <li><a href="#" class="block pt-4 pb-4 hover:font-bold">Beth Eden</a></li>
-                    </ul>
-                </li>
-                <li class="ml-8"><a href="#" class="pb-4 block border-white border-b-4 hover:border-pink-500">Careers</a></li>
-                <li class="ml-8"><a href="#" class="pb-4 block border-white border-b-4 hover:border-pink-500">News</a></li>
-                <li class="ml-8"><a href="#" class="pb-4 block border-white border-b-4 hover:border-pink-500">Contact</a></li>
+                {% set nodes = craft.navigation.nodes().handle('secondaryNav').level(1).all() %}
+
+                {% nav node in nodes %}
+                    <li class="ml-8 relative"><a href="{{ node.url }}" class="pb-4 block border-white border-b-4 hover:border-pink-500">{{ node.title }}</a>
+                    {% if node.hasDescendants %}
+                        <ul class="submenu hidden absolute w-48 shadow-lg bg-white text-navy-500 z-10 text-center rounded-b-md">
+                            {% for subnode in node.children.all() %}
+                                <li><a href="{{ subnode.url }}" class="block pt-4 pb-4 hover:font-bold">{{ subnode.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                    </li>
+                {% endnav %}
             </ul>
             <ul class="primaryNav hasDropdowns flex flex-row justify-between border-t border-navy-200 text-xl">
+                {% set activeNode = craft.navigation.getActiveNode({ handle: 'mainNav' }) %}
+                {% set nodes = craft.navigation.nodes().handle('mainNav').level(1).all() %}
+                {% nav node in nodes %}
                 <li class="relative">
-                    <a class="py-8 border-white border-b-4 hover:border-pink-500 inline-block" href="#">Locations</a>
+                    <a
+                        class="py-8 border-b-4 hover:border-pink-500 inline-block {% if node.active or node.hasActiveChild %}is-active border-pink-500{% else %}border-white{% endif %} {% if node.classes | length %}{{ node.classes }}{% endif %}"
+                        href="{{ node.url }}">
+                            {{ node.title }}
+                    </a>
+                    {% if node.hasDescendants %}
                     <ul class="submenu hidden absolute w-56 shadow-lg bg-white text-navy-500 z-10 text-center rounded-b-md">
-                        <li><a href="#" class="block pt-4 hover:font-bold">The Plains</a></li>
-                        <li><a href="#" class="block pt-4 hover:font-bold">Janoah Gardens</a></li>
-                        <li><a href="#" class="block pt-4 pb-4 hover:font-bold">Beth Eden</a></li>
+                        {% for subnode in node.children.all() %}
+                            <li><a href="{{ subnode.url }}" class="block pt-4 hover:font-bold {% if subnode.classes | length %}{{ subnode.classes }}{% endif %}">{{ subnode.title }}</a></li>
+                        {% endfor %}
                     </ul>
+                    {% endif %}
                 </li>
-                <li class="relative ml-8">
-                    <a class="py-8 border-white border-b-4 hover:border-pink-500 inline-block" href="#">Residential aged care</a>
-                </li>
-                <li class="relative ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-500 inline-block" href="#">Serviced apartments</a></li>
-                <li class="relative ml-8"><a class="py-8 border-white border-b-4 hover:border-pink-500 inline-block" href="#">Independent living</a></li>
+                {% endnav %}
             </ul>
         </div>
         <div class="w-1/12"></div>

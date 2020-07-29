@@ -1,0 +1,35 @@
+<div class="container mx-auto">
+    <div class="w-1/2 mx-auto">
+        {% macro errorList(errors) %}
+            {% if errors %}
+                <ul class="errors">
+                    {% for error in errors %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endmacro %}
+
+        {% from _self import errorList %}
+
+        <form class="flex flex-col" method="post" action="" accept-charset="UTF-8">
+            {{ csrfInput() }}
+            <input type="hidden" name="action" value="contact-form/send">
+            {{ redirectInput('contact/thanks') }}
+
+            <input class="rounded-md border-2 border-grey-200 p-4 mb-2" id="from-name" type="text" name="fromName" placeholder="Name" value="{{ message.fromName ?? '' }}">
+            {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
+
+            <input class="rounded-md border-2 border-grey-200 p-4 mb-2" id="from-email" type="email" name="fromEmail" placeholder="Email" value="{{ message.fromEmail ?? '' }}">
+            {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+
+            <input class="rounded-md border-2 border-grey-200 p-4 mb-2" id="phone" type="text" name="phone" placeholder="Phone" value="{{ message.phone ?? '' }}">
+            {{ message is defined and message ? errorList(message.getErrors('phone')) }}
+
+            <textarea class="rounded-md border-2 border-grey-200 p-4 mb-2" rows="10" cols="40" id="message" name="message" placeholder="Message">{{ message.message ?? '' }}</textarea>
+            {{ message is defined and message ? errorList(message.getErrors('message')) }}
+
+            <input type="submit" value="Send" class="btn-outline cursor-pointer bg-white">
+        </form>
+    </div>
+</div>

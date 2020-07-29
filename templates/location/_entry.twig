@@ -1,0 +1,135 @@
+{% extends 'layouts/base.twig' %}
+    {% block main %}
+
+        {% if entry.hasDescendants() %}
+            {% redirect entry.getChildren().first().url %}
+        {% endif %}
+
+{#        Override the entry if we are in a child element #}
+        {% set parent = craft.entries().ancestorOf(entry).one() %}
+        {% if parent | length %}
+            {% set parent = parent %}
+        {% else %}
+            {% set parent = entry %}
+        {% endif %}
+
+        <section class="relative z-0 bg-orange-100">
+            <div class="container mx-auto text-center flex flex-col justify-center items-center relative z-10 h-80">
+                <h1 class="font-serif mb-0 text-white">{{ parent.title }}</h1>
+                <p class="text-white uppercase text-sm font-bold flex flex-row items-center">
+                    <i class="fa fa-map-marker mr-2 text-xl" aria-hidden="true"></i>
+                    {{ parent.suburb }}
+                </p>
+            </div>
+            {% set rel = parent.heroShot.one() %}
+            <div class="absolute h-80 inset-0">
+                <img class="w-full h-full object-cover lazyload"
+                     src="{{ rel.optimisedImage.placeholderBox() }}"
+                     data-srcset="{{ rel.optimisedImage.srcset() }}"
+                     alt="{{ parent.title }}"
+                >
+                <div class="bg-navy-900 bg-opacity-50 inset-0 absolute w-full h-full"></div>
+            </div>
+        </section>
+
+        {% include 'blocks/blocks.twig' with {'entry' : parent} %}
+
+        {% set children = craft.entries().descendantOf(parent).all() %}
+
+        {% if children | length %}
+            <section id="service" class="bg-navy-500">
+                <div class="container mx-auto flex flex-row justify-center space-x-8">
+                    {% for child in children %}
+                        <a href="{{ child.url }}#service" class="flex flex-row space-x-4 items-center relative text-white text-xl font-bold py-8 px-4 {% if child.title == entry.title %}bg-navy-800{% endif %}">
+                            {% set icon = child.icon.one() %}
+                            {% if icon | length %}
+                                <img class="mr-4" src="{{ icon.url }}" alt="{{ icon.title }}" style="{% if child.title == entry.title %}filter:invert(.5) sepia(1) saturate(2) hue-rotate(275deg);{% endif %}">
+                            {% endif %}
+
+                            {{ child.title }}
+
+                            {% if child.title == entry.title %}
+                                <span class="absolute w-full text-center left-0" style="bottom:-9px;">
+                                    <img src="/dist/img/selector.svg" class="mx-auto" alt="Locations selector">
+                                </span>
+                            {% endif %}
+                        </a>
+                    {% endfor %}
+                </div>
+            </section>
+        {% endif %}
+
+        {% if children | length %}
+            <section class="py-8 lg:pt-32 bg-white">
+                <div class="container mx-auto">
+                    <h3 class="font-serif text-center">{{ entry.heading }}</h3>
+                    <h5 class="text-center">{{ entry.subheading }}</h5>
+                </div>
+            </section>
+
+            {% include 'blocks/blocks.twig' %}
+        {% endif %}
+
+
+        <section class="bg-orange-200 relative overflow-hidden">
+            <div class="container mx-auto flex flex-col lg:flex-row px-8 lg:px-0">
+                <div class="w-full lg:w-1/2 py-8 lg:py-32 pr-0 lg:pr-32">
+                    {{ footerCta.richText }}
+                </div>
+                <div class="w-full lg:w-1/2"></div>
+            </div>
+            <div class="hidden lg:block w-full lg:w-1/2 absolute right-0 top-0 h-full">
+                {% set image = footerCta.image.one() %}
+                <img class="w-full absolute h-full object-cover lazyload"
+                     src="{{ image.optimisedImage.placeholderBox() }}"
+                     data-srcset="{{ image.optimisedImage.srcset() }}"
+                     sizes="100vw"
+                     alt="{{ image.title }}"
+                />
+            </div>
+            <div class="block lg:hidden w-full lg:w-1/2 relative">
+                {% set image = footerCta.image.one() %}
+                <img class="w-full h-full object-cover lazyload"
+                     src="{{ image.optimisedImage.placeholderBox() }}"
+                     data-srcset="{{ image.optimisedImage.srcset() }}"
+                     sizes="100vw"
+                     alt="{{ image.title }}"
+                />
+            </div>
+        </section>
+
+        <section class="bg-navy-500 py-8 lg:py-32">
+            <div class="container mx-auto text-center">
+                {% set icon = bookInspection.icon.one() %}
+                <img class="mx-auto mb-8" src="{{ icon.url }}" alt="{{ icon.title }}">
+                <h3 class="font-serif text-white">{{ bookInspection.heading }}</h3>
+                <h5 class="text-white">{{ bookInspection.subheading }}</h5>
+            </div>
+        </section>
+
+        <script>
+            let mainImages = document.getElementById('galleryMain');
+            let thumbContainer = document.getElementById('galleryThumbs');
+            let thumbImages = document.getElementById('galleryThumbs').children;
+
+            mainImages.firstElementChild.classList.remove('hidden');
+            mainImages.firstElementChild.classList.add('block');
+
+            for (item of thumbImages) {
+                item.addEventListener('click', function(e){
+                    for(image of mainImages.children) {
+                        image.classList.add('hidden');
+                    }
+
+                    for(thumb of thumbImages) {
+                        thumb.classList.remove('active');
+                    }
+                    this.classList.add('active');
+
+                    mainImages.querySelectorAll(`img[data-index="${this.getAttribute('data-index')}"]`)[0].classList.add('block');
+                    mainImages.querySelectorAll(`img[data-index="${this.getAttribute('data-index')}"]`)[0].classList.remove('hidden');
+                });
+            }
+        </script>
+
+    {% endblock %}

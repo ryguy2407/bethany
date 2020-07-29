@@ -1,3 +1,17 @@
 <div class="container mx-auto richText {% if backgroundColour == 'bg-navy-500' %}text-white{% endif %}">
     {{ block.richText }}
+
+    {% if block.buttons|length %}
+        <div class="mt-auto">
+            {% set buttons = block.buttons.all() %}
+            {% for button in buttons %}
+                {% if button.internalLink | length %}
+                    {% set link = button.internalLink.one().url %}
+                {% else %}
+                    {% set link = button.buttonUrl %}
+                {% endif %}
+                <a class="{{ button.buttonStyle }} mr-4" href="{{ link }}">{{ button.buttonText }}</a>
+            {% endfor %}
+        </div>
+    {% endif %}
 </div>

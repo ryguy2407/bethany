@@ -1,5 +1,5 @@
 {% for row in entry.pageBuilder.level(1).all() %}
-    <section class="{{ row.backgroundColour }} {{ row.padding }} px-8 sm:px-0">
+    <section class="pageBuilder {% if row.backgroundColour | length %}{{ row.backgroundColour }}{% else %}bg-white{% endif %} py-8 lg:{{ row.padding }} {% if row.addShadow %}shadow-inner{% endif %} relative px-8 sm:px-0">
         {% if row.children.all() is not empty %}
             {% for block in row.children.all() %}
                 <div class="{{ block.padding }}">
@@ -9,3 +9,10 @@
         {% endif %}
     </section>
 {% endfor %}
+
+<script>
+    let section = document.querySelectorAll('.pageBuilder');
+    section[0].classList.remove('lg:py-32');
+    section[0].classList.add('lg:pt-16');
+    section[0].classList.add('lg:pb-32');
+</script>

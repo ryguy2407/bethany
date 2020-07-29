@@ -1,7 +1,7 @@
 
-    <div class="container mx-auto flex flex-col lg:flex-row justify-between space-x-0 lg:space-x-8">
+    <div class="container mx-auto flex flex-col lg:flex-row space-x-0 lg:space-x-8 justify-center">
         {% for card in block.cards.all() %}
-            <div class="w-full mb-8 lg:mb-0">
+            <div class="w-full {{ card.textBackground }} flex flex-col mb-8 lg:mb-0 lg:{{ block.cardWidth }}">
                 {% if card.image.one().optimisedImage is defined %}
                 {% set optimizedImages = card.image.one().optimisedImage %}
                     <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
@@ -13,12 +13,22 @@
                         </a>
                     </div>
                 {% endif %}
-                <div class="{{ card.highlightColour }} h-sm"></div>
-                <div class="{{ card.textBackground }} richText p-6">
+                <div class="{{ card.highlightColour }} h-md"></div>
+                <div class="richText h-full p-6 flex flex-col">
                     <h4 class="font-serif text-navy-500 pb-4 m-0">{{ card.cardTitle }}</h4>
                     {{ card.richtext }}
-                    {% if card.buttonText %}
-                        <a class="transition duration-500 ease-in-out hover:bg-navy-500 hover:text-white mt-4 text-navy-500 font-bold px-12 py-4 inline-block border rounded-full" href="#">Read more</a>
+                    {% if card.buttons|length %}
+                        <div class="mt-auto">
+                            {% set buttons = card.buttons.all() %}
+                            {% for button in buttons %}
+                                {% if button.internalLink | length %}
+                                    {% set link = button.internalLink.one().url %}
+                                {% else %}
+                                    {% set link = button.buttonUrl %}
+                                {% endif %}
+                                <a class="{{ button.buttonStyle }} mr-4" href="{{ link }}">{{ button.buttonText }}</a>
+                            {% endfor %}
+                        </div>
                     {% endif %}
                 </div>
             </div>

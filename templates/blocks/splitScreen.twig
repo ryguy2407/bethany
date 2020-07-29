@@ -14,9 +14,17 @@
                         {{ block.richText }}
                     </div>
                     <div>
-                        <a href="#" class="font-bold text-center py-4 px-8 rounded-full border inline-block border-navy-500 transition ease-in duration-200 hover:bg-navy-500 hover:text-white">
-                            Learn more
-                        </a>
+                        {% if block.buttons|length %}
+                            {% set buttons = block.buttons.all() %}
+                            {% for button in buttons %}
+                                {% if button.internalLink | length %}
+                                    {% set link = button.internalLink.one().url %}
+                                {% else %}
+                                    {% set link = button.buttonUrl %}
+                                {% endif %}
+                                <a class="{{ button.buttonStyle }} mr-4" href="{{ link }}">Read more</a>
+                            {% endfor %}
+                        {% endif %}
                     </div>
                 </div>
             </div>

@@ -33,6 +33,17 @@
           },
           "type": "toggle"
         }
+      },
+      "font-serif": {
+        "title": "Serif font",
+        "api": "module.block.format",
+        "args": {
+          "tag": "h3",
+          "attr": {
+            "class": "font-serif"
+          },
+          "type": "toggle"
+        }
       }
     },
   "buttons": ["formatting", "html", "bold", "italic", "unorderedlist", "orderedlist", "link", "image", "video"],

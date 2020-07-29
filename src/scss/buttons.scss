@@ -1,0 +1,23 @@
+.btn-outline {
+  @apply transition duration-500 ease-in-out mt-4 text-navy-500 font-bold px-12 py-4 inline-block border rounded-full;
+
+  &:hover {
+    @apply bg-navy-500 text-white;
+  }
+}
+
+.btn-solid {
+  @apply transition duration-500 ease-in-out mt-4 bg-navy-500 text-white font-bold px-12 py-4 inline-block border rounded-full;
+
+  &:hover {
+    @apply bg-white text-navy-500;
+  }
+}
+
+.btn-link {
+  @apply transition duration-500 ease-in-out text-navy-500 border-b-2 border-navy-500 font-bold inline-block;
+
+  &:hover {
+    @apply text-navy-400;
+  }
+}
