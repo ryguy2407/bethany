@@ -1,5 +1,5 @@
 {% for row in entry.pageBuilder.level(1).all() %}
-    <section class="pageBuilder {% if row.backgroundColour | length %}{{ row.backgroundColour }}{% else %}bg-white{% endif %} py-8 lg:{{ row.padding }} {% if row.addShadow %}shadow-inner{% endif %} relative px-8 sm:px-0">
+    <section class="pageBuilder {% if row.backgroundColour | length %}{{ row.backgroundColour }}{% else %}bg-white{% endif %} py-8 lg:{{ row.padding }} {% if row.addShadow %}shadow-inner{% endif %} relative">
         {% if row.children.all() is not empty %}
             {% for block in row.children.all() %}
                 <div class="{{ block.padding }}">
