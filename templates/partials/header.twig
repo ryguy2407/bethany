@@ -14,7 +14,7 @@
 
 {% if currentUser %}
     {% if currentUser.admin and entry is defined %}
-        <a class="bg-black text-white p-4 fixed z-50 right-0 top-0 z-50" style="z-index: 100;" href="{{ entry.cpEditUrl }}">Edit entry</a>
+        <a class="bg-textPrimary text-white p-4 fixed z-50 right-0 top-0 z-50" style="z-index: 100;" href="{{ entry.cpEditUrl }}">Edit entry</a>
     {% endif %}
 {% endif %}
 
@@ -67,7 +67,7 @@
                 {% nav node in nodes %}
                 <li class="relative">
                     <a
-                        class="py-8 border-b-4 hover:border-pink-500 inline-block {% if node.active or node.hasActiveChild %}is-active border-pink-500{% else %}border-white{% endif %} {% if node.classes | length %}{{ node.classes }}{% endif %}"
+                        class="py-8 border-b-4 text-base xl:text-xl hover:border-pink-500 inline-block {% if node.active or node.hasActiveChild %}is-active border-pink-500{% else %}border-white{% endif %} {% if node.classes | length %}{{ node.classes }}{% endif %}"
                         href="{{ node.url }}">
                             {{ node.title }}
                     </a>

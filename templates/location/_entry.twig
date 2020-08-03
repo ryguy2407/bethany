@@ -38,18 +38,20 @@
 
         {% if children | length %}
             <section id="service" class="bg-navy-500">
-                <div class="container mx-auto flex flex-row justify-center space-x-8">
+                <div class="container mx-auto flex flex-col lg:flex-row justify-center space-x-0 lg:space-x-8">
                     {% for child in children %}
-                        <a href="{{ child.url }}#service" class="flex flex-row space-x-4 items-center relative text-white text-xl font-bold py-8 px-4 {% if child.title == entry.title %}bg-navy-800{% endif %}">
+                        <a href="{{ child.url }}#service" class="flex flex-col lg:flex-row space-x-0 lg:space-x-4 items-center relative text-white text-xl font-bold py-8 px-4 {% if child.title == entry.title %}bg-navy-800{% endif %}">
                             {% set icon = child.icon.one() %}
                             {% if icon | length %}
-                                <img class="mr-4" src="{{ icon.url }}" alt="{{ icon.title }}" style="{% if child.title == entry.title %}filter:invert(.5) sepia(1) saturate(2) hue-rotate(275deg);{% endif %}">
+                                <img class="mr-0 mb-4 h-8 lg:h-12 lg:mb-0 lg:mr-4" src="{{ icon.url }}" alt="{{ icon.title }}" style="{% if child.title == entry.title %}filter:invert(.5) sepia(1) saturate(2) hue-rotate(275deg);{% endif %}">
                             {% endif %}
 
-                            {{ child.title }}
+                            <span class="text-base lg:text-xl">
+                                {{ child.title }}
+                            </span>
 
                             {% if child.title == entry.title %}
-                                <span class="absolute w-full text-center left-0" style="bottom:-9px;">
+                                <span class="hidden lg:block absolute w-full text-center left-0" style="bottom:-9px;">
                                     <img src="/dist/img/selector.svg" class="mx-auto" alt="Locations selector">
                                 </span>
                             {% endif %}
@@ -99,7 +101,7 @@
         </section>
 
         <section class="bg-navy-500 py-8 lg:py-32">
-            <div class="container mx-auto text-center">
+            <div class="container mx-auto text-center px-8 lg:px-0">
                 {% set icon = bookInspection.icon.one() %}
                 <img class="mx-auto mb-8" src="{{ icon.url }}" alt="{{ icon.title }}">
                 <h3 class="font-serif text-white">{{ bookInspection.heading }}</h3>
