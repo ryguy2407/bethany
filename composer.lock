@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "81c126c3cb7cfcfb05e992935688ab57",
+    "content-hash": "7cf67e476630f0776b793c1123dbb025",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -2171,6 +2171,61 @@
                 "single sign on"
             ],
             "time": "2020-07-18T17:54:32+00:00"
+        },
+        {
+            "name": "lsolesen/pel",
+            "version": "0.9.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pel/pel.git",
+                "reference": "92da891eaeeabbb00bcd09e0cea53796cf9ca967"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pel/pel/zipball/92da891eaeeabbb00bcd09e0cea53796cf9ca967",
+                "reference": "92da891eaeeabbb00bcd09e0cea53796cf9ca967",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "ext-gd": "*",
+                "phpunit/phpunit": ">=4.8.36 <8",
+                "satooshi/php-coveralls": "1.0.*",
+                "squizlabs/php_codesniffer": "^3.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "lsolesen\\pel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Olesen",
+                    "email": "lars@intraface.dk",
+                    "homepage": "http://intraface.dk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Martin Geisler",
+                    "email": "martin@geisler.net",
+                    "homepage": "http://geisler.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Exif Library. A library for reading and writing Exif headers in JPEG and TIFF images using PHP.",
+            "homepage": "http://pel.github.com/pel/",
+            "keywords": [
+                "exif",
+                "image"
+            ],
+            "time": "2020-02-11T12:05:42+00:00"
         },
         {
             "name": "marcusschwarz/lesserphp",
@@ -5479,6 +5534,59 @@
                 "field manager"
             ],
             "time": "2020-07-26T13:29:27+00:00"
+        },
+        {
+            "name": "verbb/image-resizer",
+            "version": "2.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/verbb/image-resizer.git",
+                "reference": "0470c16c6575673bb2c26351a934f45d1786ce33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/verbb/image-resizer/zipball/0470c16c6575673bb2c26351a934f45d1786ce33",
+                "reference": "0470c16c6575673bb2c26351a934f45d1786ce33",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0",
+                "lsolesen/pel": "^0.9.6",
+                "verbb/base": "^1.0.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Image Resizer",
+                "handle": "image-resizer",
+                "description": "Image Resizer resizes your assets when they are uploaded.",
+                "documentationUrl": "https://github.com/verbb/image-resizer",
+                "changelogUrl": "https://raw.githubusercontent.com/verbb/image-resizer/craft-3/CHANGELOG.md",
+                "class": "verbb\\imageresizer\\ImageResizer"
+            },
+            "autoload": {
+                "psr-4": {
+                    "verbb\\imageresizer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Verbb",
+                    "homepage": "https://verbb.io"
+                }
+            ],
+            "description": "Image Resizer is a Craft plugin that resizes your assets when they are uploaded.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "example"
+            ],
+            "time": "2020-07-14T00:22:08+00:00"
         },
         {
             "name": "verbb/navigation",

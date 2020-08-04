@@ -1,19 +1,22 @@
 <div class="container mx-auto">
-    <div id="map" class="w-full" style="width: 100%; height: 400px;"></div>
+    <div id="map" class="w-full" style="width: 100%; height: 500px;"></div>
 </div>
 
 <script type="text/javascript">
     function initMap() {
         var locations = [
-            ['The Plains', -27.5926255, 153.098318, 4],
-            ['Janoah Gardens', -27.4680596, 153.1686902, 5],
-            ['Beth Eden', -27.5203557, 152.9699022, 3]
+            ['The Plains', -27.5926255, 153.098318, 4, 'navy'],
+            ['Janoah Gardens', -27.4680596, 153.1686902, 5, 'teal'],
+            ['Beth Eden', -27.5203557, 152.9699022, 3, 'orange']
         ];
 
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 11,
             center: new google.maps.LatLng(-27.5213316, 153.0886076),
             mapTypeId: google.maps.MapTypeId.ROADMAP,
+            mapTypeControl: false,
+            streetViewControl: false,
+            fullscreenControl: false,
             styles: [{
                 "featureType": "water",
                 "elementType": "geometry",
@@ -74,6 +77,7 @@
         for (i = 0; i < locations.length; i++) {
             marker = new google.maps.Marker({
                 position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                icon: `/dist/img/${locations[i][4]}-marker.svg`,
                 map: map
             });
 
