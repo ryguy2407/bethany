@@ -1,7 +1,7 @@
 
-    <div class="container mx-auto flex flex-col lg:flex-row space-x-0 lg:space-x-8 justify-center">
+    <div class="container mx-auto flex flex-col lg:flex-row flex-wrap justify-center -mx-4">
         {% for card in block.cards.all() %}
-            <div class="w-full {{ card.textBackground }} flex flex-col mb-8 lg:mb-0 lg:{{ block.cardWidth }} rounded-b-md">
+            <div class="w-full flex flex-col mb-8 lg:mb-0 lg:{{ block.cardWidth }} rounded-b-md px-4">
                 {% if card.image.one().optimisedImage is defined %}
                 {% set optimizedImages = card.image.one().optimisedImage %}
                     <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
@@ -14,7 +14,7 @@
                     </div>
                 {% endif %}
                 <div class="{{ card.highlightColour }} h-md"></div>
-                <div class="richText h-full p-6 flex flex-col">
+                <div class="richText {{ card.textBackground }} rounded-b-md h-full p-6 flex flex-col">
                     <h4 class="font-serif text-navy-500 pb-4 m-0">{{ card.cardTitle }}</h4>
                     {{ card.richtext }}
                     {% if card.buttons|length %}
