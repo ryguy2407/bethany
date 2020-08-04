@@ -1,36 +1,40 @@
 
-    <div class="container mx-auto flex flex-col lg:flex-row flex-wrap justify-center -mx-4">
-        {% for card in block.cards.all() %}
-            <div class="w-full flex flex-col mb-8 lg:mb-0 lg:{{ block.cardWidth }} rounded-b-md px-4">
-                {% if card.image.one().optimisedImage is defined %}
-                {% set optimizedImages = card.image.one().optimisedImage %}
-                    <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
-                        <a href="#">
-                            <img class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lazyload h-full w-full absolute object-cover inset-0"
-                                 src="{{ optimizedImages.placeholderBox() }}"
-                                 data-srcset="{{ optimizedImages.srcset() }}"
-                                 sizes="100vw" />
-                        </a>
-                    </div>
-                {% endif %}
-                <div class="{{ card.highlightColour }} h-md"></div>
-                <div class="richText {{ card.textBackground }} rounded-b-md h-full p-6 flex flex-col">
-                    <h4 class="font-serif text-navy-500 pb-4 m-0">{{ card.cardTitle }}</h4>
-                    {{ card.richtext }}
-                    {% if card.buttons|length %}
-                        <div class="mt-auto">
-                            {% set buttons = card.buttons.all() %}
-                            {% for button in buttons %}
-                                {% if button.internalLink | length %}
-                                    {% set link = button.internalLink.one().url %}
-                                {% else %}
-                                    {% set link = button.buttonUrl %}
-                                {% endif %}
-                                <a class="{{ button.buttonStyle }} mr-4" href="{{ link }}">{{ button.buttonText }}</a>
-                            {% endfor %}
+    <div class="container mx-auto">
+        <div class="-mx-4 w-full flex flex-col lg:flex-row flex-wrap justify-center">
+            {% for card in block.cards.all() %}
+                <div class="w-full flex flex-col mb-8 lg:mb-0 lg:{{ block.cardWidth }} rounded-b-md px-4">
+                    {% if card.image.one().optimisedImage is defined %}
+                    {% set optimizedImages = card.image.one().optimisedImage %}
+                        <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
+                            <a href="#">
+                                <img class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lazyload h-full w-full absolute object-cover inset-0"
+                                     src="{{ optimizedImages.placeholderBox() }}"
+                                     data-srcset="{{ optimizedImages.srcset() }}"
+                                     sizes="100vw" />
+                            </a>
                         </div>
                     {% endif %}
+                    {% if card.highlightColour | length %}
+                        <div class="{{ card.highlightColour }} h-md"></div>
+                    {% endif %}
+                    <div class="richText {{ card.textBackground }} rounded-b-md h-full p-6 flex flex-col">
+                        <h4 class="font-serif text-navy-500 pb-4 m-0">{{ card.cardTitle }}</h4>
+                        {{ card.richtext }}
+                        {% if card.buttons|length %}
+                            <div class="mt-auto">
+                                {% set buttons = card.buttons.all() %}
+                                {% for button in buttons %}
+                                    {% if button.internalLink | length %}
+                                        {% set link = button.internalLink.one().url %}
+                                    {% else %}
+                                        {% set link = button.buttonUrl %}
+                                    {% endif %}
+                                    <a class="{{ button.buttonStyle }} mr-4" href="{{ link }}">{{ button.buttonText }}</a>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                    </div>
                 </div>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
