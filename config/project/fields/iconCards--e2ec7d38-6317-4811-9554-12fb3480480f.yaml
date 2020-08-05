@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 49a83f2f-08f9-4254-aafe-ba496e1a2835
+handle: iconCards
+instructions: ''
+name: 'Icon cards'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_iconcards}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

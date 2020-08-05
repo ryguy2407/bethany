@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 75b1acfe-7a14-4645-a4c4-81daf611bb15
+fieldLayouts:
+  -
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 11e25fa7-685b-461f-8631-0e9920e86090
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Spacing
+        sortOrder: 1
+handle: spacer
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Spacer
+sortOrder: 12
+topLevel: false

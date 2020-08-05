@@ -1,0 +1,54 @@
+field: 39d2fc44-e08e-4fb1-9fc4-27e15d6765c0
+fieldLayouts:
+  7b58062f-11e9-4622-9d13-212ef7c3a0e6:
+    tabs:
+      -
+        fields:
+          ada1fe5d-2d9d-4ae7-aff3-ef87f639f007:
+            required: false
+            sortOrder: 1
+          e5ef7427-66f5-49b3-bee1-3a95c6677df0:
+            required: false
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  ada1fe5d-2d9d-4ae7-aff3-ef87f639f007:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button text'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e5ef7427-66f5-49b3-bee1-3a95c6677df0:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonUrl
+    instructions: ''
+    name: 'Button URL'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: button
+name: Button
+sortOrder: 3

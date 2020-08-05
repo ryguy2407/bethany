@@ -1,0 +1,86 @@
+field: 803f5dd5-286f-47f3-b9d2-49cb3ed8ebcf
+fieldLayouts:
+  cd997e6e-c15e-4fbe-8f63-0ae98f20f600:
+    tabs:
+      -
+        fields:
+          264a777a-8d64-44a9-a888-27d80072871c:
+            required: false
+            sortOrder: 1
+          7108ab05-8ff7-4017-9572-3472f0aeb436:
+            required: false
+            sortOrder: 2
+          a16e9eec-22b9-47e1-a950-0be1cb81559e:
+            required: false
+            sortOrder: 3
+        name: Content
+        sortOrder: 1
+fields:
+  264a777a-8d64-44a9-a888-27d80072871c:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowSelfRelations: ''
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: 'Add an image'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  7108ab05-8ff7-4017-9572-3472f0aeb436:
+    contentColumnType: text
+    fieldGroup: null
+    handle: apartmentType
+    instructions: ''
+    name: 'Apartment type'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a16e9eec-22b9-47e1-a950-0be1cb81559e:
+    contentColumnType: text
+    fieldGroup: null
+    handle: availability
+    instructions: ''
+    name: Availability
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: apartment
+name: Apartment
+sortOrder: 1

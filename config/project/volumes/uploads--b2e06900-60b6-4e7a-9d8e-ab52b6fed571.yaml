@@ -1,0 +1,25 @@
+fieldLayouts:
+  d5c30d29-4771-463c-974c-f79e809a1b30:
+    tabs:
+      -
+        fields:
+          b6185887-95b1-48a1-9f04-5a246d94bf56:
+            required: false
+            sortOrder: 1
+        name: 'Optimised image'
+        sortOrder: 1
+handle: uploads
+hasUrls: true
+name: Uploads
+settings:
+  bucket: $DO_BUCKET
+  contentDisposition: ''
+  endpoint: $DO_ENDPOINT
+  expires: '3 months'
+  keyId: $DO_ACCESS_KEY
+  region: $DO_REGION
+  secret: $DO_SECRET_KEY
+  subfolder: bethany/website-assets
+sortOrder: 1
+type: vaersaagod\dospaces\Volume
+url: $DO_BASE_URL

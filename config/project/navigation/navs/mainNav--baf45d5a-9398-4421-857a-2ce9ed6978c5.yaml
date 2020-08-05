@@ -1,0 +1,9 @@
+handle: mainNav
+instructions: ''
+maxNodes: ''
+name: 'Main nav'
+propagateNodes: false
+sortOrder: 2
+structure:
+  maxLevels: null
+  uid: c516b228-84cf-4f03-91c5-2463a86c11b6

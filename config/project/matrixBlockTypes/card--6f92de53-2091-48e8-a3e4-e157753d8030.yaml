@@ -1,0 +1,313 @@
+field: cb9d0ed4-3091-4e22-a387-086e48397ba9
+fieldLayouts:
+  fd19d8c2-761e-4ed6-9154-2f8192d305dc:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 8b1530ff-90d8-4037-9712-98631672f4b1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 0f5b8ee9-a689-49dc-ba88-194bd361012e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: 30b0a874-04e6-4ebe-a8e7-2a89f51a115e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: 7d4e47f4-c0b2-43de-8ad0-dbaf6798bbb6
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bf46795c-5c59-4087-979e-490b11b33fcd
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ecce9246-04a5-4bc1-962d-41a0248aef32
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0f5b8ee9-a689-49dc-ba88-194bd361012e:
+    contentColumnType: string
+    fieldGroup: null
+    handle: highlightColour
+    instructions: ''
+    name: 'Highlight colour'
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - None
+            -
+              - value
+              - ''
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Orange
+            -
+              - value
+              - bg-orange-500
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Teal
+            -
+              - value
+              - bg-teal-500
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Navy
+            -
+              - value
+              - bg-navy-500
+            -
+              - default
+              - '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  30b0a874-04e6-4ebe-a8e7-2a89f51a115e:
+    contentColumnType: string
+    fieldGroup: null
+    handle: textBackground
+    instructions: ''
+    name: 'Text background'
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - bg-white
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Grey
+            -
+              - value
+              - bg-grey-100
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Teal
+            -
+              - value
+              - bg-teal-100
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Orange
+            -
+              - value
+              - bg-orange-100
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Navy
+            -
+              - value
+              - bg-navy-100
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  7d4e47f4-c0b2-43de-8ad0-dbaf6798bbb6:
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardTitle
+    instructions: ''
+    name: Title
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8b1530ff-90d8-4037-9712-98631672f4b1:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add an image'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  bf46795c-5c59-4087-979e-490b11b33fcd:
+    contentColumnType: text
+    fieldGroup: null
+    handle: richtext
+    instructions: ''
+    name: richText
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  ecce9246-04a5-4bc1-962d-41a0248aef32:
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttons
+    instructions: ''
+    name: Buttons
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - 2cdaf71c-d59e-4f15-b6a3-e06764221905
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 0c9774a7-db82-41d1-b3a7-b831a3171e3c
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - a10b5990-5f4d-44e2-ba91-b8f213c2889a
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - aa0a998c-84e4-4667-afb9-3a3ffad5a972
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_6_buttons}}'
+      fieldLayout: matrix
+      maxRows: ''
+      minRows: ''
+      placeholderKey: null
+      propagationMethod: all
+      selectionLabel: 'Add a button'
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: card
+name: Cards
+sortOrder: 1

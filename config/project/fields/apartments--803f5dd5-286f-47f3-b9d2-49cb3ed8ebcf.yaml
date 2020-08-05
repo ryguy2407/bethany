@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 9e76732b-c3f6-480d-91e5-878f0016b5e4
+handle: apartments
+instructions: ''
+name: Apartments
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_apartments}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

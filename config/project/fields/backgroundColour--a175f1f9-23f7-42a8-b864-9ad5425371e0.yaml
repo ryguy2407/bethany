@@ -1,0 +1,89 @@
+contentColumnType: string
+fieldGroup: 49a83f2f-08f9-4254-aafe-ba496e1a2835
+handle: backgroundColour
+instructions: ''
+name: 'Background colour'
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - White
+        -
+          - value
+          - bg-white
+        -
+          - default
+          - bg-white
+    -
+      __assoc__:
+        -
+          - label
+          - 'Light grey'
+        -
+          - value
+          - bg-grey-100
+        -
+          - default
+          - bg-grey-100
+    -
+      __assoc__:
+        -
+          - label
+          - 'Light orange'
+        -
+          - value
+          - bg-calloutBg
+        -
+          - default
+          - bg-calloutBg
+    -
+      __assoc__:
+        -
+          - label
+          - Pink
+        -
+          - value
+          - bg-pink-500
+        -
+          - default
+          - bg-pink-500
+    -
+      __assoc__:
+        -
+          - label
+          - Navy
+        -
+          - value
+          - bg-navy-500
+        -
+          - default
+          - bg-navy-500
+    -
+      __assoc__:
+        -
+          - label
+          - Teal
+        -
+          - value
+          - bg-teal-500
+        -
+          - default
+          - bg-teal-500
+    -
+      __assoc__:
+        -
+          - label
+          - Orange
+        -
+          - value
+          - bg-orange-500
+        -
+          - default
+          - bg-orange-500
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

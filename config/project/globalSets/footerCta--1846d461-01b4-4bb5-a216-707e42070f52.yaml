@@ -1,0 +1,15 @@
+fieldLayouts:
+  cbd38192-d687-4be9-8e97-33b250319da8:
+    tabs:
+      -
+        fields:
+          b3f4f89d-62f0-4831-8283-da448442002e:
+            required: false
+            sortOrder: 1
+          d4841052-9964-4fca-b825-c721bb970063:
+            required: false
+            sortOrder: 2
+        name: 'Footer CTA'
+        sortOrder: 1
+handle: footerCta
+name: 'Footer CTA'

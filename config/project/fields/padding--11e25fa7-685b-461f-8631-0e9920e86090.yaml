@@ -1,0 +1,56 @@
+contentColumnType: string
+fieldGroup: 49a83f2f-08f9-4254-aafe-ba496e1a2835
+handle: padding
+instructions: ''
+name: Padding
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - None
+        -
+          - value
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Small
+        -
+          - value
+          - py-8
+        -
+          - default
+          - py-8
+    -
+      __assoc__:
+        -
+          - label
+          - Medium
+        -
+          - value
+          - py-16
+        -
+          - default
+          - py-16
+    -
+      __assoc__:
+        -
+          - label
+          - Large
+        -
+          - value
+          - py-32
+        -
+          - default
+          - py-32
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

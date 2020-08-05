@@ -1,0 +1,45 @@
+contentColumnType: string
+fieldGroup: 49a83f2f-08f9-4254-aafe-ba496e1a2835
+handle: mediaWidth
+instructions: ''
+name: 'Media width'
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 1/3
+        -
+          - value
+          - w-1/3
+        -
+          - default
+          - w-1/3
+    -
+      __assoc__:
+        -
+          - label
+          - 1/2
+        -
+          - value
+          - w-1/2
+        -
+          - default
+          - w-1/2
+    -
+      __assoc__:
+        -
+          - label
+          - 2/3
+        -
+          - value
+          - w-2/3
+        -
+          - default
+          - w-2/3
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

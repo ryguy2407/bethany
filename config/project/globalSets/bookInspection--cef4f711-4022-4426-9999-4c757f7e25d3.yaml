@@ -1,0 +1,24 @@
+fieldLayouts:
+  efe9e275-4381-4211-a4b4-5ab782410abd:
+    tabs:
+      -
+        fields:
+          100ef487-a318-4a81-94cd-3d60422efcb4:
+            required: false
+            sortOrder: 2
+          60aa3b12-645e-49f0-99e2-ce4090678629:
+            required: false
+            sortOrder: 1
+          6c67473b-6a70-40fc-9aee-5595e6bac9cd:
+            required: false
+            sortOrder: 4
+          a175f1f9-23f7-42a8-b864-9ad5425371e0:
+            required: false
+            sortOrder: 5
+          c14fef0b-8b15-40c0-8b95-675cf275802e:
+            required: false
+            sortOrder: 3
+        name: 'Book an inspection'
+        sortOrder: 1
+handle: bookInspection
+name: 'Book inspection'

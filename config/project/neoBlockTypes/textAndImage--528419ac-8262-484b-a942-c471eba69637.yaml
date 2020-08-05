@@ -1,0 +1,94 @@
+childBlocks: ''
+field: 75b1acfe-7a14-4645-a4c4-81daf611bb15
+fieldLayouts:
+  -
+    tabs:
+      -
+        elements:
+          -
+            heading: 'Text and image settings'
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 11e25fa7-685b-461f-8631-0e9920e86090
+            instructions: 'This padding is applied to the text and image module itself.'
+            label: 'Module padding'
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: dc6f58c4-1a0d-4d3a-a5b2-7f7b859e36be
+            instructions: 'Applies an aspect ratio to the image uses in this module.'
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: e8d79a8c-5369-4c77-8931-0eb21989ee33
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            heading: 'Text and image content'
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: d4841052-9964-4fca-b825-c721bb970063
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: e06d25bd-f577-42b6-9006-835ff5578494
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: 432cd2ff-d465-41c9-b9ef-873ecc63866c
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: b3f4f89d-62f0-4831-8283-da448442002e
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6c67473b-6a70-40fc-9aee-5595e6bac9cd
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Text and image content'
+        sortOrder: 1
+handle: textAndImage
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Text and image'
+sortOrder: 4
+topLevel: false

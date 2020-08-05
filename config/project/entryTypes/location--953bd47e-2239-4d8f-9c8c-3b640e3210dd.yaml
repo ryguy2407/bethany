@@ -1,0 +1,73 @@
+fieldLayouts:
+  9df18e14-a3f3-4688-bfa3-f02b1c4c7ca8:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 36c7c55b-8627-4dd6-8a23-63a647cb09a2
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: a4be55ad-4f97-4a22-a19e-7b688d78c786
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: facde62a-83c9-4420-8a07-aee9fcea0d39
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 104dcde7-2dc1-4d75-a745-2b653bea389f
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 46b362c8-1f61-49eb-a502-abc8fbadaf8e
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: a6451331-4db9-46a2-8cb8-f21fa0ba6703
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 64449f72-142c-49d5-aba2-27e10168df62
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 75b1acfe-7a14-4645-a4c4-81daf611bb15
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Location Fields'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 0d7945bb-62b1-4911-bd28-455fe72d658d
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: da067cc9-0bb0-4db8-8df5-17cff6d219cb
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 872cf0d1-7516-4d9d-9155-ecab38322424
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: bd4f08a0-ed43-4338-878f-a716aa416641
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 61486ebe-fed0-4246-b6cd-a9c43a7de4cd
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'SEO Fields'
+        sortOrder: 2
+handle: location
+hasTitleField: true
+name: Location
+section: 08146327-4163-41bb-a504-486728b5d87a
+sortOrder: 1
+titleFormat: ''

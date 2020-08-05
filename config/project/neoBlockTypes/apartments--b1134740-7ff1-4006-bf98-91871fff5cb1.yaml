@@ -1,0 +1,47 @@
+childBlocks: ''
+field: 75b1acfe-7a14-4645-a4c4-81daf611bb15
+fieldLayouts:
+  -
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: b3f4f89d-62f0-4831-8283-da448442002e
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 803f5dd5-286f-47f3-b9d2-49cb3ed8ebcf
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: e06d25bd-f577-42b6-9006-835ff5578494
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Settings
+        sortOrder: 2
+handle: apartments
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: Apartments
+sortOrder: 9
+topLevel: false

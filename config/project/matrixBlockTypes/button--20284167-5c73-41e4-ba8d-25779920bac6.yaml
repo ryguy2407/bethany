@@ -1,0 +1,126 @@
+field: 6c67473b-6a70-40fc-9aee-5595e6bac9cd
+fieldLayouts:
+  164c4aec-1a47-49f7-9b96-50b5f53aa822:
+    tabs:
+      -
+        fields:
+          18dfe370-48dc-4b93-bc76-9066d246228b:
+            required: false
+            sortOrder: 1
+          1e6fc132-7c62-43ee-9a98-b6c508d92f84:
+            required: false
+            sortOrder: 4
+          9275887c-3d1a-4477-bbb8-ea89d5879106:
+            required: false
+            sortOrder: 3
+          afe9153c-52c9-4974-b540-0d1e56262ebe:
+            required: false
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  18dfe370-48dc-4b93-bc76-9066d246228b:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button text'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  1e6fc132-7c62-43ee-9a98-b6c508d92f84:
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonStyle
+    instructions: ''
+    name: 'Button style'
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Solid
+            -
+              - value
+              - btn-solid
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Outline
+            -
+              - value
+              - btn-outline
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Link
+            -
+              - value
+              - btn-link
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  9275887c-3d1a-4477-bbb8-ea89d5879106:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonUrl
+    instructions: ''
+    name: 'Button URL'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  afe9153c-52c9-4974-b540-0d1e56262ebe:
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonInternalLink
+    instructions: 'If this is linking to an internal page you can select it here instead of pasting in a URL'
+    name: 'Button internal link'
+    searchable: true
+    settings:
+      allowSelfRelations: ''
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: 'Add a link'
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: ''
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: button
+name: Button
+sortOrder: 1

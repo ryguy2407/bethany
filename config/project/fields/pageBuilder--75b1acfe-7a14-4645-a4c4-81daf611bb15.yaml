@@ -1,0 +1,15 @@
+contentColumnType: string
+fieldGroup: c2b74421-ff7a-470c-a9df-81865dc78dd2
+handle: pageBuilder
+instructions: ''
+name: 'Page builder'
+searchable: true
+settings:
+  maxBlocks: ''
+  maxTopBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+  wasModified: false
+translationKeyFormat: null
+translationMethod: site
+type: benf\neo\Field

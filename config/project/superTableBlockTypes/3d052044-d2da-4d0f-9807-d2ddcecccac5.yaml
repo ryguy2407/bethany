@@ -1,0 +1,150 @@
+field: ecce9246-04a5-4bc1-962d-41a0248aef32
+fieldLayouts:
+  7576d03a-e365-4717-a729-4aaf36baf665:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 2cdaf71c-d59e-4f15-b6a3-e06764221905
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0c9774a7-db82-41d1-b3a7-b831a3171e3c
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a10b5990-5f4d-44e2-ba91-b8f213c2889a
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: aa0a998c-84e4-4667-afb9-3a3ffad5a972
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0c9774a7-db82-41d1-b3a7-b831a3171e3c:
+    contentColumnType: string
+    fieldGroup: null
+    handle: internalLink
+    instructions: 'If you select an entry on the website to link to, it will override the Button URL field.'
+    name: 'Internal link'
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: 'Add a link'
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  2cdaf71c-d59e-4f15-b6a3-e06764221905:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button text'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a10b5990-5f4d-44e2-ba91-b8f213c2889a:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonUrl
+    instructions: ''
+    name: 'Button URL'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  aa0a998c-84e4-4667-afb9-3a3ffad5a972:
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonStyle
+    instructions: ''
+    name: 'Button style'
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Solid
+            -
+              - value
+              - btn-solid
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Outline
+            -
+              - value
+              - btn-outline
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Link
+            -
+              - value
+              - btn-link
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown

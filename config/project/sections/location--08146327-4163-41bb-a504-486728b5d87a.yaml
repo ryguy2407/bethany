@@ -1,0 +1,26 @@
+enableVersioning: true
+handle: location
+name: Location
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  9845e3ca-13c3-4c36-bb94-ee21c4889dbd:
+    enabledByDefault: true
+    hasUrls: true
+    template: location/_entry
+    uriFormat: '{parent.uri ?? ''location''}/{slug}'
+structure:
+  maxLevels: null
+  uid: 9879ad31-fd3c-4743-a2a4-21bc6a368bc0
+type: structure

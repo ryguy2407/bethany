@@ -1,0 +1,108 @@
+field: e2ec7d38-6317-4811-9554-12fb3480480f
+fieldLayouts:
+  08cac0d5-4c8a-4a17-92de-1a410306233f:
+    tabs:
+      -
+        fields:
+          6f03f25e-8e77-4ee6-8d97-e65757f01860:
+            required: false
+            sortOrder: 4
+          97d3b8fe-92ed-4856-b0a2-d18321774968:
+            required: false
+            sortOrder: 1
+          af2f8634-ca20-4030-ae80-7d3e0965aff0:
+            required: false
+            sortOrder: 2
+          e0d4b0df-3327-43a2-abf5-5254a44538f0:
+            required: false
+            sortOrder: 3
+        name: Content
+        sortOrder: 1
+fields:
+  6f03f25e-8e77-4ee6-8d97-e65757f01860:
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardText
+    instructions: 'Keep this short'
+    name: 'Card text'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  97d3b8fe-92ed-4856-b0a2-d18321774968:
+    contentColumnType: string
+    fieldGroup: null
+    handle: icon
+    instructions: 'This is the icon that will show on the card'
+    name: Icon
+    searchable: true
+    settings:
+      allowSelfRelations: ''
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add an icon'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  af2f8634-ca20-4030-ae80-7d3e0965aff0:
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardHeading
+    instructions: ''
+    name: 'Card heading'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e0d4b0df-3327-43a2-abf5-5254a44538f0:
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardSubHeading
+    instructions: ''
+    name: 'Card sub heading'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: iconCard
+name: 'Icon Card'
+sortOrder: 2

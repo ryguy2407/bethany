@@ -1,0 +1,158 @@
+field: 39d2fc44-e08e-4fb1-9fc4-27e15d6765c0
+fieldLayouts:
+  e86d2d28-df4b-4b3b-b769-e78078c297c5:
+    tabs:
+      -
+        fields:
+          12ab3b0f-19f5-48f0-86fb-a136afe09ca0:
+            required: false
+            sortOrder: 1
+          720f9816-337b-4519-b723-ee915d21a70b:
+            required: false
+            sortOrder: 2
+          7e2ea644-8a64-4f49-9526-1548bb7932ab:
+            required: false
+            sortOrder: 3
+          c8a239cc-d080-4588-b63b-c2e909135560:
+            required: false
+            sortOrder: 4
+        name: Content
+        sortOrder: 1
+fields:
+  12ab3b0f-19f5-48f0-86fb-a136afe09ca0:
+    contentColumnType: text
+    fieldGroup: null
+    handle: richText
+    instructions: ''
+    name: 'Rich text'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  720f9816-337b-4519-b723-ee915d21a70b:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowSelfRelations: ''
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add an image'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  7e2ea644-8a64-4f49-9526-1548bb7932ab:
+    contentColumnType: string
+    fieldGroup: null
+    handle: imageAlignment
+    instructions: ''
+    name: 'Image alignment'
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Image left'
+            -
+              - value
+              - imageLeft
+            -
+              - default
+              - imageLeft
+        -
+          __assoc__:
+            -
+              - label
+              - 'Image right'
+            -
+              - value
+              - imageRight
+            -
+              - default
+              - imageRight
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  c8a239cc-d080-4588-b63b-c2e909135560:
+    contentColumnType: string
+    fieldGroup: null
+    handle: imageWidth
+    instructions: ''
+    name: 'Image width'
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 1/3
+            -
+              - value
+              - w-1/3
+            -
+              - default
+              - w-1/3
+        -
+          __assoc__:
+            -
+              - label
+              - 1/2
+            -
+              - value
+              - w-1/2
+            -
+              - default
+              - w-1/2
+        -
+          __assoc__:
+            -
+              - label
+              - 2/3
+            -
+              - value
+              - w-2/3
+            -
+              - default
+              - w-2/3
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: textAndImage
+name: 'Text and image'
+sortOrder: 4

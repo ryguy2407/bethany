@@ -1,0 +1,11 @@
+contentColumnType: boolean
+fieldGroup: 49a83f2f-08f9-4254-aafe-ba496e1a2835
+handle: paddingAroundText
+instructions: 'If you select this option the text will float in the middle of the space horizontally and vertically.'
+name: 'Padding around text'
+searchable: true
+settings:
+  default: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

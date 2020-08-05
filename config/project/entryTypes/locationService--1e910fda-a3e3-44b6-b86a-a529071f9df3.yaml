@@ -1,0 +1,57 @@
+fieldLayouts:
+  17b633d6-9a70-454b-a2cb-b9892da2d6be:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 60aa3b12-645e-49f0-99e2-ce4090678629
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 100ef487-a318-4a81-94cd-3d60422efcb4
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: c14fef0b-8b15-40c0-8b95-675cf275802e
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 75b1acfe-7a14-4645-a4c4-81daf611bb15
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Service Content'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 0d7945bb-62b1-4911-bd28-455fe72d658d
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: da067cc9-0bb0-4db8-8df5-17cff6d219cb
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: bd4f08a0-ed43-4338-878f-a716aa416641
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 61486ebe-fed0-4246-b6cd-a9c43a7de4cd
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 872cf0d1-7516-4d9d-9155-ecab38322424
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'SEO Fields'
+        sortOrder: 2
+handle: locationService
+hasTitleField: true
+name: 'Location Service'
+section: 08146327-4163-41bb-a504-486728b5d87a
+sortOrder: 2
+titleFormat: ''

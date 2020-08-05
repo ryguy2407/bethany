@@ -1,0 +1,38 @@
+childBlocks: ''
+field: 75b1acfe-7a14-4645-a4c4-81daf611bb15
+fieldLayouts:
+  -
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e2ec7d38-6317-4811-9554-12fb3480480f
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Add icon cards'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 589e1009-2f9a-4d2c-aa26-593831c19473
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Icon card settings'
+        sortOrder: 2
+handle: iconCards
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Icon Cards'
+sortOrder: 7
+topLevel: false

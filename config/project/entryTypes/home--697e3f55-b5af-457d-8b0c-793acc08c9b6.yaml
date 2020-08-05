@@ -1,0 +1,57 @@
+fieldLayouts:
+  d38825ec-05ca-4e21-aca5-556721a3cfef:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 3b0ff905-972b-4866-917d-c94a01ad3313
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: fbb6956e-e85d-44d3-89df-9268aa1ee4e4
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 5df9b086-ddc6-43c1-8a70-4c6f78bfe09b
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 75b1acfe-7a14-4645-a4c4-81daf611bb15
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Page builder'
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 0d7945bb-62b1-4911-bd28-455fe72d658d
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: da067cc9-0bb0-4db8-8df5-17cff6d219cb
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 872cf0d1-7516-4d9d-9155-ecab38322424
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: bd4f08a0-ed43-4338-878f-a716aa416641
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 61486ebe-fed0-4246-b6cd-a9c43a7de4cd
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'SEO Fields'
+        sortOrder: 2
+handle: home
+hasTitleField: false
+name: Home
+section: ee91dd92-a96b-4a9e-a788-efc33a846a39
+sortOrder: 1
+titleFormat: '{section.name|raw}'

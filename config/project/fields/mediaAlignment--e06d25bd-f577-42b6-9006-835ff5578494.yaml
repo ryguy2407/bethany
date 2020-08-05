@@ -1,0 +1,34 @@
+contentColumnType: string
+fieldGroup: 49a83f2f-08f9-4254-aafe-ba496e1a2835
+handle: mediaAlignment
+instructions: ''
+name: 'Media alignment'
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Media left'
+        -
+          - value
+          - mediaLeft
+        -
+          - default
+          - mediaLeft
+    -
+      __assoc__:
+        -
+          - label
+          - 'Media right'
+        -
+          - value
+          - mediaRight
+        -
+          - default
+          - mediaRight
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

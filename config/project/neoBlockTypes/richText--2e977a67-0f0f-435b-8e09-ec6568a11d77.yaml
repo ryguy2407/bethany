@@ -1,0 +1,46 @@
+childBlocks: ''
+field: 75b1acfe-7a14-4645-a4c4-81daf611bb15
+fieldLayouts:
+  -
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: b3f4f89d-62f0-4831-8283-da448442002e
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            heading: 'Rich text settings'
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 6c67473b-6a70-40fc-9aee-5595e6bac9cd
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 11e25fa7-685b-461f-8631-0e9920e86090
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+        name: 'Rich text content'
+        sortOrder: 1
+handle: richText
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Rich Text'
+sortOrder: 3
+topLevel: false

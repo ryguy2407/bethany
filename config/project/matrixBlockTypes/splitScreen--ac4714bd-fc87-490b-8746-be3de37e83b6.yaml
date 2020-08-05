@@ -1,0 +1,109 @@
+field: 39d2fc44-e08e-4fb1-9fc4-27e15d6765c0
+fieldLayouts:
+  1db3ad66-f18e-4ead-b4cb-8f8f8d4f9b92:
+    tabs:
+      -
+        fields:
+          3bb0d7b2-1617-4373-8b83-7a9251349fef:
+            required: false
+            sortOrder: 2
+          b1d61207-5739-4e78-b32f-fba4c9e41bdb:
+            required: false
+            sortOrder: 1
+          ef98846d-d6cd-4105-ae97-2858cfcbfbeb:
+            required: false
+            sortOrder: 3
+        name: Content
+        sortOrder: 1
+fields:
+  3bb0d7b2-1617-4373-8b83-7a9251349fef:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowSelfRelations: ''
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add an image'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  b1d61207-5739-4e78-b32f-fba4c9e41bdb:
+    contentColumnType: text
+    fieldGroup: null
+    handle: richText
+    instructions: ''
+    name: 'Rich text'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  ef98846d-d6cd-4105-ae97-2858cfcbfbeb:
+    contentColumnType: string
+    fieldGroup: null
+    handle: imageAlignment
+    instructions: ''
+    name: 'Image alignment'
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Image left'
+            -
+              - value
+              - imageLeft
+            -
+              - default
+              - imageLeft
+        -
+          __assoc__:
+            -
+              - label
+              - 'Image right'
+            -
+              - value
+              - imageRight
+            -
+              - default
+              - imageRight
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: splitScreen
+name: 'Split screen'
+sortOrder: 2

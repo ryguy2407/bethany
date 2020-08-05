@@ -1,0 +1,67 @@
+contentColumnType: string
+fieldGroup: 49a83f2f-08f9-4254-aafe-ba496e1a2835
+handle: cardWidth
+instructions: ''
+name: 'Card width'
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - w-1/4
+        -
+          - value
+          - w-1/4
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - w-1/3
+        -
+          - value
+          - w-1/3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - w-1/2
+        -
+          - value
+          - w-1/2
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - w-2/3
+        -
+          - value
+          - w-2/3
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - w-3/4
+        -
+          - value
+          - w-3/4
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

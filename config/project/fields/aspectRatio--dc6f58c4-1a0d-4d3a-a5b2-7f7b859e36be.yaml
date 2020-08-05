@@ -1,0 +1,45 @@
+contentColumnType: string
+fieldGroup: 49a83f2f-08f9-4254-aafe-ba496e1a2835
+handle: aspectRatio
+instructions: ''
+name: 'Aspect ratio'
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Portrait
+        -
+          - value
+          - portrait
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Landscape
+        -
+          - value
+          - landscape
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Square
+        -
+          - value
+          - square
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

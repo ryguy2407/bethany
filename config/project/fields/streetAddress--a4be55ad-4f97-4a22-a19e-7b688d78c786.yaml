@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: 9e76732b-c3f6-480d-91e5-878f0016b5e4
+handle: streetAddress
+instructions: ''
+name: 'Street address'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

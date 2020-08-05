@@ -1,0 +1,33 @@
+field: e2ec7d38-6317-4811-9554-12fb3480480f
+fieldLayouts:
+  a2a26a7c-7166-4d48-a53d-cca341e7f131:
+    tabs:
+      -
+        fields:
+          571a3163-c30e-4fb7-a7fe-3347926b4a8a:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  571a3163-c30e-4fb7-a7fe-3347926b4a8a:
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Heading
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: heading
+name: Heading
+sortOrder: 1

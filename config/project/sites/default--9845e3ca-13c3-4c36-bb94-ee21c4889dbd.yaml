@@ -1,0 +1,8 @@
+baseUrl: $DEFAULT_SITE_URL
+handle: default
+hasUrls: true
+language: en-AU
+name: 'Bethany Christian Care'
+primary: true
+siteGroup: 43a2e950-8532-40f8-83bb-5f612b7314c7
+sortOrder: 1

@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: a6aefed7-bddd-4c9f-b795-b129df67863f
+handle: homePageTitle
+instructions: ''
+name: 'Home page title'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
