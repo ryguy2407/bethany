@@ -1,8 +1,8 @@
 
     <div class="container mx-auto">
-        <div class="-mx-4 w-full flex flex-col lg:flex-row flex-wrap justify-center">
+        <div class="mx-0 lg:-mx-4 w-full flex flex-col lg:flex-row flex-wrap justify-center">
             {% for card in block.cards.all() %}
-                <div class="w-full flex flex-col mb-8 lg:mb-0 lg:{{ block.cardWidth }} rounded-b-md px-4">
+                <div class="w-full flex flex-col {% if loop.last %}mb-0{% else %}mb-4{% endif %} lg:mb-0 lg:{{ block.cardWidth }} rounded-b-md px-4">
                     {% if card.image.one().optimisedImage is defined %}
                     {% set optimizedImages = card.image.one().optimisedImage %}
                         <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
@@ -29,7 +29,7 @@
                                     {% else %}
                                         {% set link = button.buttonUrl %}
                                     {% endif %}
-                                    <a class="{{ button.buttonStyle }} mr-4" href="{{ link }}">{{ button.buttonText }}</a>
+                                    <a class="{{ button.buttonStyle }} mr-4 px-8 lg:px-12 py-4" href="{{ link }}">{{ button.buttonText }}</a>
                                 {% endfor %}
                             </div>
                         {% endif %}

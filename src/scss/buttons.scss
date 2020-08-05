@@ -1,5 +1,5 @@
 .btn-outline {
-  @apply transition duration-500 ease-in-out mt-4 text-navy-500 font-bold px-12 py-4 inline-block border rounded-full;
+  @apply transition duration-500 ease-in-out mt-4 text-navy-500 font-bold inline-block border rounded-full;
 
   &:hover {
     @apply bg-navy-500 text-white;
@@ -7,7 +7,7 @@
 }
 
 .btn-solid {
-  @apply transition duration-500 ease-in-out mt-4 bg-navy-500 text-white font-bold px-12 py-4 inline-block border rounded-full;
+  @apply transition duration-500 ease-in-out mt-4 bg-navy-500 text-white font-bold inline-block border rounded-full;
 
   &:hover {
     @apply bg-white text-navy-500;

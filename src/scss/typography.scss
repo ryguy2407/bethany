@@ -32,4 +32,7 @@ p.small-grey {
       @apply list-disc ml-6 text-lg;
     }
   }
+  p:last-child {
+    @apply mb-0;
+  }
 }

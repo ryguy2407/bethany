@@ -85,12 +85,40 @@
         <div class="w-1/12"></div>
     </div>
     {# MOBILE NAVIGATION #}
-    <div class="container lg:hidden flex justify-between items-center px-8 py-16">
-        <div>
-            <img src="/dist/img/bethany-logo-dark.svg" alt="Bethany Christian Care">
+    <div class="container lg:hidden flex justify-between items-center px-8 py-8 lg:py-16">
+        <div class="w-1/2">
+            <a href="/">
+                <img src="/dist/img/bethany-logo-dark.svg" alt="Bethany Christian Care">
+            </a>
         </div>
-        <div>
-            hamburger nav
+        <div class="w-1/2 items-end text-right">
+            <button id="burgerButton" class="hamburger hamburger--slider focus:outline-none" type="button"
+                    aria-label="Menu" aria-controls="mobileNavigation">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
         </div>
     </div>
+    <div class="container mx-auto">
+        <ul id="mobileNavigation" class="px-8 hidden">
+            {% set activeNode = craft.navigation.getActiveNode({ handle: 'mobileNavigation' }) %}
+            {% set nodes = craft.navigation.nodes().handle('mobileNavigation').level(1).all() %}
+            {% nav node in nodes %}
+                <li class="relative">
+                    <a
+                            class="py-2 border-b-4 text-base xl:text-xl hover:border-pink-500 inline-block {% if node.active or node.hasActiveChild %}is-active border-pink-500{% else %}border-white{% endif %} {% if node.classes | length %}{{ node.classes }}{% endif %}"
+                            href="{{ node.url }}">
+                        {{ node.title }}
+                    </a>
+                </li>
+            {% endnav %}
+        </ul>
+    </div>
 </header>
+<script>
+    document.getElementById('burgerButton').addEventListener('click', function(e){
+        e.currentTarget.classList.toggle('is-active');
+        document.getElementById('mobileNavigation').classList.toggle('hidden');
+    });
+</script>

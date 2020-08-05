@@ -5,6 +5,11 @@
 @tailwind utilities;
 
 @import "../../node_modules/aos/dist/aos.css";
+
+$hamburger-padding-x: 0px;
+$hamburger-padding-y: 0px;
+
+@import '~hamburgers/_sass/hamburgers/hamburgers';
 @import './header.scss';
 @import './typography.scss';
 @import './buttons.scss';
