@@ -1,5 +1,7 @@
 <div class="container mx-auto richText px-8 lg:px-0 {% if backgroundColour == 'bg-navy-500' %}text-white{% endif %}">
-    {{ block.richText }}
+    <div class="w-full lg:w-3/4 mx-auto">
+        {{ block.richText }}
+    </div>
 
     {% if block.buttons|length %}
         <div class="mt-auto">

@@ -57,7 +57,16 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 100
+            width: 50
+          -
+            fieldUid: 73423f64-5861-492c-85b9-e87a1eb490fb
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
         name: Content
         sortOrder: 1
 fields:
@@ -186,6 +195,27 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
+  73423f64-5861-492c-85b9-e87a1eb490fb:
+    contentColumnType: string
+    fieldGroup: null
+    handle: relatedEntry
+    instructions: ''
+    name: 'Related Entry'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: 'Link this card to an internal entry'
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
   7d4e47f4-c0b2-43de-8ad0-dbaf6798bbb6:
     contentColumnType: text
     fieldGroup: null

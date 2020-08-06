@@ -9,15 +9,6 @@ fieldLayouts:
             heading: 'Text and image settings'
             type: craft\fieldlayoutelements\Heading
           -
-            fieldUid: 11e25fa7-685b-461f-8631-0e9920e86090
-            instructions: 'This padding is applied to the text and image module itself.'
-            label: 'Module padding'
-            required: '1'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 25
-          -
             fieldUid: dc6f58c4-1a0d-4d3a-a5b2-7f7b859e36be
             instructions: 'Applies an aspect ratio to the image uses in this module.'
             label: ''
@@ -76,9 +67,9 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 6c67473b-6a70-40fc-9aee-5595e6bac9cd
-            instructions: null
-            label: null
-            required: '0'
+            instructions: ''
+            label: ''
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null

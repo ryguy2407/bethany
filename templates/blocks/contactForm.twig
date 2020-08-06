@@ -29,7 +29,7 @@
             <textarea class="rounded-md border-2 border-grey-200 p-4 mb-2" rows="10" cols="40" id="message" name="message" placeholder="Message">{{ message.message ?? '' }}</textarea>
             {{ message is defined and message ? errorList(message.getErrors('message')) }}
 
-            <input type="submit" value="Send" class="btn-outline cursor-pointer bg-white">
+            <input type="submit" value="Send" class="px-8 lg:px-12 py-4 mr-4 btn-outline cursor-pointer bg-white">
         </form>
     </div>
 </div>

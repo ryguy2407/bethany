@@ -1,0 +1,11 @@
+contentColumnType: boolean
+fieldGroup: 49a83f2f-08f9-4254-aafe-ba496e1a2835
+handle: centreCards
+instructions: ''
+name: 'Centre cards'
+searchable: false
+settings:
+  default: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

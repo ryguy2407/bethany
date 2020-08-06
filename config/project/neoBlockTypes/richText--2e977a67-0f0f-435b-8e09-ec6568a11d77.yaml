@@ -26,15 +26,6 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 50
-          -
-            fieldUid: 11e25fa7-685b-461f-8631-0e9920e86090
-            instructions: null
-            label: null
-            required: '0'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 50
         name: 'Rich text content'
         sortOrder: 1
 handle: richText

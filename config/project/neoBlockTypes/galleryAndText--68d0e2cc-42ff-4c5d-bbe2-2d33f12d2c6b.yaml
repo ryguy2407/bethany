@@ -25,19 +25,6 @@ fieldLayouts:
             width: 100
         name: 'Gallery and text'
         sortOrder: 1
-      -
-        elements:
-          -
-            fieldUid: 11e25fa7-685b-461f-8631-0e9920e86090
-            instructions: null
-            label: null
-            required: '0'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-        name: 'Gallery and text settings'
-        sortOrder: 2
 handle: galleryAndText
 maxBlocks: 0
 maxChildBlocks: 0

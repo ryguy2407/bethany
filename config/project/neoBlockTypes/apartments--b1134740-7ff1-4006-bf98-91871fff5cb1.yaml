@@ -22,11 +22,7 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 100
-        name: Content
-        sortOrder: 1
-      -
-        elements:
+            width: 50
           -
             fieldUid: e06d25bd-f577-42b6-9006-835ff5578494
             instructions: null
@@ -35,9 +31,9 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 100
-        name: Settings
-        sortOrder: 2
+            width: 50
+        name: Content
+        sortOrder: 1
 handle: apartments
 maxBlocks: 0
 maxChildBlocks: 0

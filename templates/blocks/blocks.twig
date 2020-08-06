@@ -1,18 +1,9 @@
 {% for row in entry.pageBuilder.level(1).all() %}
-    <section class="pageBuilder {% if row.children.all() is empty %}py-0 lg:{{ row.padding }}{% else %}py-4 lg:{{ row.padding }}{% endif %} {% if row.backgroundColour | length %}{{ row.backgroundColour }}{% else %}bg-white{% endif %} {% if row.addShadow %}shadow-inner{% endif %} relative">
+    <section class="pageBuilder {% if row.backgroundColour | length %}{{ row.backgroundColour }}{% else %}bg-white{% endif %} {% if row.addShadow %}shadow-inner{% endif %} relative">
         {% if row.children.all() is not empty %}
             {% for block in row.children.all() %}
-                <div class="py-4 lg:{{ block.padding }}">
-                    {% include 'blocks/' ~ block.type.handle with { "backgroundColour": row.backgroundColour } %}
-                </div>
+                {% include 'blocks/' ~ block.type.handle with { "backgroundColour": row.backgroundColour } %}
             {% endfor %}
         {% endif %}
     </section>
 {% endfor %}
-
-<script>
-    let section = document.querySelectorAll('.pageBuilder');
-    section[0].classList.remove('lg:py-32');
-    section[0].classList.add('lg:pt-16');
-    section[0].classList.add('lg:pb-32');
-</script>

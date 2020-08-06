@@ -54,7 +54,7 @@
                     {% if node.hasDescendants %}
                         <ul class="submenu hidden absolute w-48 shadow-lg bg-white text-navy-500 z-10 text-center rounded-b-md">
                             {% for subnode in node.children.all() %}
-                                <li><a href="{{ subnode.url }}" class="block pt-4 pb-4 hover:font-bold">{{ subnode.title }}</a></li>
+                                <li><a href="{{ subnode.url }}" class="block pt-2 pb-2 hover:font-bold">{{ subnode.title }}</a></li>
                             {% endfor %}
                         </ul>
                     {% endif %}
