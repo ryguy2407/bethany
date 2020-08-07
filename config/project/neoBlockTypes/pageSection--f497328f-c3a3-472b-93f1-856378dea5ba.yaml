@@ -10,6 +10,7 @@ childBlocks:
   - contactForm
   - spacer
   - map
+  - locationLogos
 field: 75b1acfe-7a14-4645-a4c4-81daf611bb15
 fieldLayouts:
   -

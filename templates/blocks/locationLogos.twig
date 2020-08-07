@@ -1,0 +1,10 @@
+<div class="container mx-auto">
+    {% set locationLogos = block.locationLogos.all() %}
+    <div class="flex px-8 flex-col lg:px-0 lg:flex-row">
+        {% for logo in locationLogos %}
+            <div class="px-32 mb-8 {% if loop.first or loop.last %}lg:px-0{% else %}lg:px-32{% endif %}">
+                <img class="w-full" src="{{ logo.url }}" alt="{{ logo.title }}">
+            </div>
+        {% endfor %}
+    </div>
+</div>
