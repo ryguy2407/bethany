@@ -7,12 +7,19 @@
                         {% set optimizedImages = card.image.one().optimisedImage %}
                         <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
                             {% set relatedEntry = card.relatedEntry.one() %}
-                            <a href="{% if relatedEntry | length %}{{ relatedEntry.url }}{% endif %}">
+                            {% if relatedEntry | length %}
+                                <a href="{{ relatedEntry.url }}">
+                                    <img class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lazyload h-full w-full absolute object-cover inset-0"
+                                         src="{{ optimizedImages.placeholderBox() }}"
+                                         data-srcset="{{ optimizedImages.srcset() }}"
+                                         sizes="100vw" />
+                                </a>
+                            {% else %}
                                 <img class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lazyload h-full w-full absolute object-cover inset-0"
-                                     src="{{ optimizedImages.placeholderBox() }}"
-                                     data-srcset="{{ optimizedImages.srcset() }}"
-                                     sizes="100vw" />
-                            </a>
+                                 src="{{ optimizedImages.placeholderBox() }}"
+                                 data-srcset="{{ optimizedImages.srcset() }}"
+                                 sizes="100vw" />
+                            {% endif %}
                         </div>
                     {% endif %}
                     {% if card.highlightColour | length %}
@@ -21,7 +28,11 @@
                     <div class="richText {% if card.image.one().optimisedImage is not defined and card.highlightColour | length < 1 %}rounded-t-md{% endif %} rounded-b-md p-6">
                         {% if card.cardTitle | length %}
                             <h4 class="font-serif text-navy-500 pb-4 m-0">
-                                <a href="{% if relatedEntry | length %}{{ relatedEntry.url }}{% endif %}">{{ card.cardTitle }}</a>
+                                {% if relatedEntry | length %}
+                                    <a href="{{ relatedEntry.url }}">{{ card.cardTitle }}</a>
+                                {% else %}
+                                    {{ card.cardTitle }}
+                                {% endif %}
                             </h4>
                         {% endif %}
                         {{ card.richtext }}
