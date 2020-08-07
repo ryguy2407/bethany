@@ -6,7 +6,8 @@
                     {% if card.image.one().optimisedImage is defined %}
                         {% set optimizedImages = card.image.one().optimisedImage %}
                         <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
-                            <a href="#">
+                            {% set relatedEntry = card.relatedEntry.one() %}
+                            <a href="{% if relatedEntry | length %}{{ relatedEntry.url }}{% endif %}">
                                 <img class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lazyload h-full w-full absolute object-cover inset-0"
                                      src="{{ optimizedImages.placeholderBox() }}"
                                      data-srcset="{{ optimizedImages.srcset() }}"
