@@ -1,5 +1,5 @@
 {% if block is defined %}
-    <section class="relative border-navy-200 border-b border-t">
+    <section class="relative">
         {% if block.image.one() | length %}
             <div class="relative lg:absolute w-full lg:w-1/2 {% if block.mediaAlignment == 'mediaLeft' %}left-0{% else %}right-0{% endif %} top-0 h-full overflow-hidden">
                 {% set rel = block.image.one() %}

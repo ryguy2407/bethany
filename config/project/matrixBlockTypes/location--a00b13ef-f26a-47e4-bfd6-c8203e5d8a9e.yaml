@@ -1,0 +1,235 @@
+field: b739b943-eb97-4eae-aa4f-1ef56400e114
+fieldLayouts:
+  9b869992-b9a3-49da-aca2-322caaf59b13:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e23febb2-a5c6-4bc1-8b54-7b57407f9ff0
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 834ff9b7-c343-41b7-8714-12fbed7e29e4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ba80b779-1276-41f7-aaec-1a27398ef7b1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: dda4afa9-29ff-4e18-9de6-73bf55d71142
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: 5dce075f-c0c7-447c-96d8-9c17edde7fa3
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 75
+          -
+            fieldUid: 727fb9d7-3d07-473d-80e8-ae64e8e23497
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: 8b9bff83-d1a1-438b-bd09-3dcfa45cf6d5
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 75
+        name: Content
+        sortOrder: 1
+fields:
+  5dce075f-c0c7-447c-96d8-9c17edde7fa3:
+    contentColumnType: text
+    fieldGroup: null
+    handle: phone
+    instructions: ''
+    name: Phone
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  727fb9d7-3d07-473d-80e8-ae64e8e23497:
+    contentColumnType: text
+    fieldGroup: null
+    handle: emailIcon
+    instructions: ''
+    name: 'Email icon'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  834ff9b7-c343-41b7-8714-12fbed7e29e4:
+    contentColumnType: text
+    fieldGroup: null
+    handle: locationTitle
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8b9bff83-d1a1-438b-bd09-3dcfa45cf6d5:
+    contentColumnType: text
+    fieldGroup: null
+    handle: email
+    instructions: ''
+    name: Email
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ba80b779-1276-41f7-aaec-1a27398ef7b1:
+    contentColumnType: text
+    fieldGroup: null
+    handle: address
+    instructions: ''
+    name: Address
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  dda4afa9-29ff-4e18-9de6-73bf55d71142:
+    contentColumnType: text
+    fieldGroup: null
+    handle: phoneIcon
+    instructions: ''
+    name: 'Phone icon'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e23febb2-a5c6-4bc1-8b54-7b57407f9ff0:
+    contentColumnType: string
+    fieldGroup: null
+    handle: highlightColour
+    instructions: ''
+    name: 'Highlight colour'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Orange
+            -
+              - value
+              - bg-orange-500
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Teal
+            -
+              - value
+              - bg-teal-500
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Navy
+            -
+              - value
+              - bg-navy-500
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: location
+name: Location
+sortOrder: 1

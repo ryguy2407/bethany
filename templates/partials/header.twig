@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bethany Christian Care</title>
     <link rel="stylesheet" href="/dist/css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/hpy3xqq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="font-sans text-textPrimary relative antialiased">
@@ -46,13 +46,13 @@
         </div>
         <div class="w-1/12"></div>
         <div class="w-7/12 pt-16">
-            <ul class="secondaryNav hasDropdowns flex flex-row justify-end text-base">
+            <ul class="secondaryNav hasDropdowns flex flex-row justify-end text-base group">
                 {% set nodes = craft.navigation.nodes().handle('secondaryNav').level(1).all() %}
 
                 {% nav node in nodes %}
-                    <li class="ml-8 relative"><a href="{{ node.url }}" class="pb-4 block border-white border-b-4 hover:border-pink-500">{{ node.title }}</a>
+                    <li class="ml-8 relative group border-white border-b-4 {% if node.active or node.hasActiveChild %}is-active border-pink-500{% else %}border-white{% endif %} hover:border-pink-500"><a href="{{ node.url }}" class="pb-4 block">{{ node.title }}</a>
                     {% if node.hasDescendants %}
-                        <ul class="submenu hidden absolute w-48 shadow-lg bg-white text-navy-500 z-10 text-center rounded-b-md">
+                        <ul class="submenu hidden absolute w-48 shadow-lg bg-white text-navy-500 z-10 text-center rounded-b-md" style="margin-top: 5px;">
                             {% for subnode in node.children.all() %}
                                 <li><a href="{{ subnode.url }}" class="block pt-2 pb-2 hover:font-bold">{{ subnode.title }}</a></li>
                             {% endfor %}
@@ -65,14 +65,14 @@
                 {% set activeNode = craft.navigation.getActiveNode({ handle: 'mainNav' }) %}
                 {% set nodes = craft.navigation.nodes().handle('mainNav').level(1).all() %}
                 {% nav node in nodes %}
-                <li class="relative">
+                <li class="relative border-white border-b-4 hover:border-pink-500 {% if node.active or node.hasActiveChild %}is-active border-pink-500{% else %}border-white{% endif %}">
                     <a
-                        class="py-8 border-b-4 text-base xl:text-xl hover:border-pink-500 inline-block {% if node.active or node.hasActiveChild %}is-active border-pink-500{% else %}border-white{% endif %} {% if node.classes | length %}{{ node.classes }}{% endif %}"
+                        class="py-8 text-base xl:text-xl inline-block {% if node.classes | length %}{{ node.classes }}{% endif %}"
                         href="{{ node.url }}">
                             {{ node.title }}
                     </a>
                     {% if node.hasDescendants %}
-                    <ul class="submenu hidden absolute w-56 shadow-lg bg-white text-navy-500 z-10 text-center rounded-b-md">
+                    <ul class="submenu hidden absolute w-56 shadow-lg bg-white text-navy-500 z-10 text-center rounded-b-md" style="margin-top: 4px;">
                         {% for subnode in node.children.all() %}
                             <li><a href="{{ subnode.url }}" class="block pt-4 hover:font-bold {% if subnode.classes | length %}{{ subnode.classes }}{% endif %}">{{ subnode.title }}</a></li>
                         {% endfor %}

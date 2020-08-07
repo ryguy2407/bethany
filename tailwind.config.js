@@ -128,7 +128,7 @@ module.exports = {
     },
     fontFamily: {
       'sans': ['Red Hat Display', 'Arial', 'sans-serif'],
-      'serif': ['Operetta', 'Georgia', 'serif'],
+      'serif': ['Inria Serif', 'Georgia', 'serif'],
     },
     extend: {
       screens: {

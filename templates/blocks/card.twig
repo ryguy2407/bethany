@@ -2,7 +2,7 @@
     <div class="container mx-auto">
         <div class="w-full {% if block.centreCards %}flex flex-col lg:flex-row justify-center{% else %}grid grid-cols-1 lg:grid-cols-{{ block.cardWidth }} gap-8{% endif %}">
             {% for card in block.cards.all() %}
-                <div class="w-full {% if block.centreCards %}mx-0 lg:mx-4 lg:w-1/{{ block.cardWidth }}{% endif %} px-8 lg:px-0 flex flex-col {% if loop.last %}mb-0{% else %}mb-4{% endif %} lg:mb-0 rounded-b-md">
+                <div class="w-full flex flex-col {{ card.textBackground }} {% if block.centreCards %}mx-0 lg:mx-4 lg:w-1/{{ block.cardWidth }}{% endif %} px-8 lg:px-0 {% if loop.last %}mb-0{% else %}mb-4{% endif %} lg:mb-0 rounded-b-md">
                     {% if card.image.one().optimisedImage is defined %}
                         {% set optimizedImages = card.image.one().optimisedImage %}
                         <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
@@ -15,27 +15,27 @@
                         </div>
                     {% endif %}
                     {% if card.highlightColour | length %}
-                        <div class="{{ card.highlightColour }}" style="height: 10px;"></div>
+                        <div class="{{ card.highlightColour }} h-sm"></div>
                     {% endif %}
-                    <div class="richText {{ card.textBackground }} {% if card.image.one().optimisedImage is not defined and card.highlightColour | length < 1 %}rounded-t-md{% endif %} rounded-b-md h-full p-6 flex flex-col">
+                    <div class="richText {% if card.image.one().optimisedImage is not defined and card.highlightColour | length < 1 %}rounded-t-md{% endif %} rounded-b-md p-6">
                         {% if card.cardTitle | length %}
                             <h4 class="font-serif text-navy-500 pb-4 m-0">{{ card.cardTitle }}</h4>
                         {% endif %}
                         {{ card.richtext }}
-                        {% if card.buttons|length %}
-                            <div class="mt-auto">
-                                {% set buttons = card.buttons.all() %}
-                                {% for button in buttons %}
-                                    {% if button.internalLink | length %}
-                                        {% set link = button.internalLink.one().url %}
-                                    {% else %}
-                                        {% set link = button.buttonUrl %}
-                                    {% endif %}
-                                    <a class="{{ button.buttonStyle }} mr-4 px-8 lg:px-12 py-4" href="{{ link }}">{{ button.buttonText }}</a>
-                                {% endfor %}
-                            </div>
-                        {% endif %}
                     </div>
+                    {% if card.buttons|length %}
+                        <div class="mt-auto p-6">
+                            {% set buttons = card.buttons.all() %}
+                            {% for button in buttons %}
+                                {% if button.internalLink | length %}
+                                    {% set link = button.internalLink.one().url %}
+                                {% else %}
+                                    {% set link = button.buttonUrl %}
+                                {% endif %}
+                                <a class="{{ button.buttonStyle }} mr-4 px-8 lg:px-12 py-4" href="{{ link }}">{{ button.buttonText }}</a>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                 </div>
             {% endfor %}
         </div>

@@ -1,0 +1,18 @@
+fieldLayouts:
+  98a5fbde-9114-43e6-a4ce-aefc77d6516c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: b739b943-eb97-4eae-aa4f-1ef56400e114
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Locations
+        sortOrder: 1
+handle: footerLocations
+name: 'Footer locations'
