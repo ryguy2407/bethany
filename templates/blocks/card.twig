@@ -2,11 +2,11 @@
     <div class="container mx-auto">
         <div class="w-full {% if block.centreCards %}flex flex-col lg:flex-row justify-center{% else %}grid grid-cols-1 lg:grid-cols-{{ block.cardWidth }} gap-8{% endif %}">
             {% for card in block.cards.all() %}
+                {% set relatedEntry = card.relatedEntry.one() %}
                 <div class="w-full flex flex-col {{ card.textBackground }} {% if block.centreCards %}mx-0 lg:mx-4 lg:w-1/{{ block.cardWidth }}{% endif %} px-8 lg:px-0 {% if loop.last %}mb-0{% else %}mb-4{% endif %} lg:mb-0 rounded-b-md">
                     {% if card.image.one().optimisedImage is defined %}
                         {% set optimizedImages = card.image.one().optimisedImage %}
                         <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
-                            {% set relatedEntry = card.relatedEntry.one() %}
                             {% if relatedEntry | length %}
                                 <a href="{{ relatedEntry.url }}">
                                     <img class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lazyload h-full w-full absolute object-cover inset-0"
