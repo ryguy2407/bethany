@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef92becd0493f770bb236cf67ff36654",
+    "content-hash": "bbca0e2a7144d7733ac47aa283eb2b4b",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.147.13",
+            "version": "3.148.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e3354b0aedea5f2b0e22e6932cc9e65d98657836",
-                "reference": "e3354b0aedea5f2b0e22e6932cc9e65d98657836",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d3a076ac381150d92661890af0d906477f225295",
+                "reference": "d3a076ac381150d92661890af0d906477f225295",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +84,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-08-05T18:16:36+00:00"
+            "time": "2020-08-07T22:16:51+00:00"
         },
         {
             "name": "carlcs/craft-redactorcustomstyles",
@@ -454,11 +454,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.5.1",
+            "version": "3.5.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/19ff89bd870bab917e4d196bc943daac6a3fdb47",
-                "reference": "19ff89bd870bab917e4d196bc943daac6a3fdb47",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/f19638130a2619c579437fcb6f8db9d232c58b42",
+                "reference": "f19638130a2619c579437fcb6f8db9d232c58b42",
                 "shasum": ""
             },
             "require": {
@@ -538,7 +538,7 @@
                 "docs": "https://craftcms.com/docs/3.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2020-08-05T20:47:10+00:00"
+            "time": "2020-08-09T14:12:47+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -673,15 +673,15 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.6.1",
+            "version": "2.7.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/835eaf0d7442acb1bc716985f9672c7cd4e8531c",
-                "reference": "835eaf0d7442acb1bc716985f9672c7cd4e8531c",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/068c75549bbf23d148cf0172ee4fbb3355096e7c",
+                "reference": "068c75549bbf23d148cf0172ee4fbb3355096e7c",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.4.0-RC1"
+                "craftcms/cms": "^3.5.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -712,7 +712,7 @@
                 "html",
                 "yii2"
             ],
-            "time": "2020-03-18T14:47:04+00:00"
+            "time": "2020-08-09T13:55:21+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -980,11 +980,11 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.18",
+            "version": "2.1.19",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/cfa3d44471c7f5bfb684ac2b0da7114283d78441",
-                "reference": "cfa3d44471c7f5bfb684ac2b0da7114283d78441",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/840d5603eb84cc81a6a0382adac3293e57c1c64c",
+                "reference": "840d5603eb84cc81a6a0382adac3293e57c1c64c",
                 "shasum": ""
             },
             "require": {
@@ -1029,7 +1029,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2020-06-16T20:11:17+00:00"
+            "time": "2020-08-08T21:28:19+00:00"
         },
         {
             "name": "elvanto/litemoji",
@@ -4649,21 +4649,21 @@
         },
         {
             "name": "topshelfcraft/wordsmith",
-            "version": "3.3.0",
+            "version": "3.3.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TopShelfCraft/Wordsmith/zipball/e3015a5bbdee7df274642ec7fed5962edb5e5a3c",
-                "reference": "e3015a5bbdee7df274642ec7fed5962edb5e5a3c",
+                "url": "https://api.github.com/repos/TopShelfCraft/Wordsmith/zipball/e7acf27cc33e7fef8d53ab8af2d0ff498c424e67",
+                "reference": "e7acf27cc33e7fef8d53ab8af2d0ff498c424e67",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.5",
+                "craftcms/cms": "^3.3",
                 "davechild/textstatistics": "^1.0",
                 "erusev/parsedown-extra": "^0.8",
                 "icanboogie/inflector": "^1.4",
                 "mofodojodino/profanity-filter": "^1.3",
                 "mundschenk-at/php-typography": "^6.0",
-                "voku/stringy": "^6.0"
+                "voku/stringy": "^5.1||^6.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -4696,7 +4696,7 @@
                 "craftcms",
                 "wordsmith"
             ],
-            "time": "2020-07-08T15:00:59+00:00"
+            "time": "2020-08-07T17:42:22+00:00"
         },
         {
             "name": "true/punycode",
@@ -5020,11 +5020,11 @@
         },
         {
             "name": "verbb/navigation",
-            "version": "1.3.23",
+            "version": "1.3.24",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/navigation/zipball/5fcfc99bdee083e8be837d0d9243efb00f82a8a1",
-                "reference": "5fcfc99bdee083e8be837d0d9243efb00f82a8a1",
+                "url": "https://api.github.com/repos/verbb/navigation/zipball/3cb7c1b0c556e81bbce4a672580640891bd25fce",
+                "reference": "3cb7c1b0c556e81bbce4a672580640891bd25fce",
                 "shasum": ""
             },
             "require": {
@@ -5062,19 +5062,19 @@
                 "menu",
                 "navigation"
             ],
-            "time": "2020-08-05T12:32:48+00:00"
+            "time": "2020-08-09T21:19:52+00:00"
         },
         {
             "name": "verbb/super-table",
-            "version": "2.5.4",
+            "version": "2.6.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/super-table/zipball/cab9813fccb38da3284a0a6cce497ae4e2d78479",
-                "reference": "cab9813fccb38da3284a0a6cce497ae4e2d78479",
+                "url": "https://api.github.com/repos/verbb/super-table/zipball/9b616db52a54973d40aba8b81ad4cac63c625402",
+                "reference": "9b616db52a54973d40aba8b81ad4cac63c625402",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.4.30",
+                "craftcms/cms": "^3.5.0",
                 "verbb/base": "^1.0.2"
             },
             "type": "craft-plugin",
@@ -5109,7 +5109,7 @@
                 "craftcms",
                 "super table"
             ],
-            "time": "2020-07-29T22:00:11+00:00"
+            "time": "2020-08-10T05:32:33+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -5171,11 +5171,11 @@
         },
         {
             "name": "voku/anti-xss",
-            "version": "4.1.25",
+            "version": "4.1.26",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/anti-xss/zipball/2b7b0510b5ac5194c467aa5e80a94964896f0672",
-                "reference": "2b7b0510b5ac5194c467aa5e80a94964896f0672",
+                "url": "https://api.github.com/repos/voku/anti-xss/zipball/e5c4728fa6b2966b4b5c636519cbd530e060e738",
+                "reference": "e5c4728fa6b2966b4b5c636519cbd530e060e738",
                 "shasum": ""
             },
             "require": {
@@ -5219,7 +5219,29 @@
                 "security",
                 "xss"
             ],
-            "time": "2020-06-12T00:59:34+00:00"
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/moelleken",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/voku",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/anti-xss",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://www.patreon.com/voku",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/voku/anti-xss",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-08-08T20:15:45+00:00"
         },
         {
             "name": "voku/arrayy",
@@ -6706,16 +6728,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.7.0",
+            "version": "v4.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "21dce06dfbf0365c6a7cc8fdbdc995926c6a9300"
+                "reference": "8c58eb4cd4f3883f82611abeac2efbc3dbed787e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/21dce06dfbf0365c6a7cc8fdbdc995926c6a9300",
-                "reference": "21dce06dfbf0365c6a7cc8fdbdc995926c6a9300",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8c58eb4cd4f3883f82611abeac2efbc3dbed787e",
+                "reference": "8c58eb4cd4f3883f82611abeac2efbc3dbed787e",
                 "shasum": ""
             },
             "require": {
@@ -6723,8 +6745,8 @@
                 "php": ">=7.0"
             },
             "require-dev": {
-                "ircmaxell/php-yacc": "0.0.5",
-                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
+                "ircmaxell/php-yacc": "^0.0.6",
+                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -6732,7 +6754,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.7-dev"
+                    "dev-master": "4.8-dev"
                 }
             },
             "autoload": {
@@ -6754,7 +6776,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-07-25T13:18:53+00:00"
+            "time": "2020-08-09T10:23:20+00:00"
         },
         {
             "name": "phar-io/manifest",

@@ -1,4 +1,4 @@
-dateModified: 1597023975
+dateModified: 1597041981
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: 'Bethany Christian Care'
@@ -77,7 +77,7 @@ plugins:
   navigation:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.17
+    schemaVersion: 1.0.18
   neo:
     edition: standard
     enabled: true
