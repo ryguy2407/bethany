@@ -1,14 +1,17 @@
 <section class="py-8 lg:py-32 bg-white shadow-inner">
     <div class="container mx-auto">
+        <a href="/" class="mb-8 inline-block">
+            <img src="/dist/img/bethany-logo-dark.svg" alt="Bethany Christian Care">
+        </a>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {% for location in footerLocations.locations.all() %}
             <div class="w-full">
-                <div class="{{ location.highlightColour }} h-sm"></div>
+                <div class="{{ location.highlightColour }} h-sm mb-4"></div>
                 <div class="p-4">
-                    <h4 class="font-serif text-navy-500 pb-4 mb-4 font-bold">
+                    <h4 class="font-serif text-navy-500 mb-4 font-bold leading-none">
                         {{ location.locationTitle }}
                     </h4>
-                    <div class="mb-8 text-lg">
+                    <div class="mb-4 text-lg">
                         {{ location.address | nl2br }}
                     </div>
                     <div class="flex flex-row items-center text-lg">
