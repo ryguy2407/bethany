@@ -1,0 +1,9 @@
+handle: footerRightNavigation
+instructions: ''
+maxNodes: ''
+name: 'Footer right navigation'
+propagateNodes: false
+sortOrder: 4
+structure:
+  maxLevels: '1'
+  uid: e179eff1-9db1-42a7-b48a-15375a354b00

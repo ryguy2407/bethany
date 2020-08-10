@@ -1,0 +1,68 @@
+field: b9347423-2474-434e-8820-ffdd695e300b
+fieldLayouts:
+  643d55b5-8535-4789-969e-69fc8c8a772b:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 9be2f03b-8709-4ce6-ad1f-4e44f4ea8aef
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ed2c8cb0-3886-4268-9f55-b83ca4d17f89
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  9be2f03b-8709-4ce6-ad1f-4e44f4ea8aef:
+    contentColumnType: text
+    fieldGroup: null
+    handle: testimonialText
+    instructions: ''
+    name: 'Testimonial text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ed2c8cb0-3886-4268-9f55-b83ca4d17f89:
+    contentColumnType: text
+    fieldGroup: null
+    handle: testimonialName
+    instructions: ''
+    name: 'Testimonial name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: testimonial
+name: Testimonial
+sortOrder: 1

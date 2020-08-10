@@ -1,12 +1,55 @@
 <section class="bg-navy-500 py-16 relative z-10">
     <img class="absolute top-0 w-full" src="/dist/img/testimonial-top-curve.jpg">
     <div class="container mx-auto text-center text-white pt-16 lg:pt-32 pb-0 px-16">
-        <h4 class="font-serif text-base lg:text-2xl">
-            Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-        </h4>
-        <h6>Dapibus Malesuada, Magna Condimentum</h6>
+        <div class="slideshow-container">
+            {% set testimonials = block.testimonials.all() %}
+            {% for testimonial in testimonials %}
+            <div class="mySlides fade" style="display: none;">
+                <h4 class="font-serif font-bold text-base lg:text-3xl">
+                    {{ testimonial.testimonialText }}
+                </h4>
+                <h5>{{ testimonial.testimonialName }}</h5>
+            </div>
+            {% endfor %}
+            <div class="swiper-pagination flex flex-row space-x-2 justify-center">
+                {% for testimonial in testimonials %}
+                <span class="dot" onclick="currentSlide({{ loop.index }})"></span>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </section>
-<section class="relative z-10" style="margin-bottom: -60px;">
+<section class="relative z-10" style="margin-bottom: -110px;padding-bottom: 110px;">
     <img class="absolute top-0 w-full" src="/dist/img/testimonial-bottom-curve.svg">
 </section>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>

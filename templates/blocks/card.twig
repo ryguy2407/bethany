@@ -27,7 +27,7 @@
                     {% endif %}
                     <div class="richText {% if card.image.one().optimisedImage is not defined and card.highlightColour | length < 1 %}rounded-t-md{% endif %} rounded-b-md p-6">
                         {% if card.cardTitle | length %}
-                            <h4 class="font-serif text-navy-500 pb-4 m-0">
+                            <h4 class="font-serif font-bold text-navy-500 pb-4 m-0">
                                 {% if relatedEntry | length %}
                                     <a href="{{ relatedEntry.url }}">{{ card.cardTitle }}</a>
                                 {% else %}

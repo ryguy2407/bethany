@@ -18,6 +18,15 @@ fieldLayouts:
             heading: 'Rich text settings'
             type: craft\fieldlayoutelements\Heading
           -
+            fieldUid: 95066d0a-5687-40b0-bac5-7da36d21adb1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
             fieldUid: 6c67473b-6a70-40fc-9aee-5595e6bac9cd
             instructions: null
             label: null

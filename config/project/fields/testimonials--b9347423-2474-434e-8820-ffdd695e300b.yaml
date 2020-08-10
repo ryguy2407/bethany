@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: ca9f6a35-3b48-4fa5-89b5-402d9a010af1
+handle: testimonials
+instructions: ''
+name: Testimonials
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_testimonials}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -6,6 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bethany Christian Care</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/dist/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/dist/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/dist/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/dist/favicon/site.webmanifest">
+
     <link rel="stylesheet" href="/dist/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
@@ -23,9 +29,9 @@
         <i class="fas fa-times absolute text-teal-500 text-lg w-8 h-lg hover:text-teal-400 cursor-pointer" style="top:20px;right:20px;"></i>
     </div>
     <div class="container mx-auto">
-        <form action="#" class="flex flex-row w-3/4 mx-auto">
-            <input type="text" class="px-8 py-4 bg-navy-500 border border-white rounded-l-full w-10/12 text-white placeholder-white focus:outline-none" value="" placeholder="Type your search">
-            <input type="image" src="/dist/img/search-navy.svg" class="rounded-r-full bg-white" style="padding:10px 30px 10px 25px;">
+        <form action="{{ url('search/results') }}" class="flex flex-row w-3/4 mx-auto">
+            <input type="search" name="q" class="px-8 py-4 bg-navy-500 border border-white rounded-l-full w-10/12 text-white placeholder-white focus:outline-none" value="" placeholder="Type your search">
+            <input type="submit" src="/dist/img/search-navy.svg" class="rounded-r-full bg-white" style="padding:10px 30px 10px 25px;">
         </form>
     </div>
 </section>
@@ -46,15 +52,15 @@
         </div>
         <div class="w-1/12"></div>
         <div class="w-7/12 pt-16">
-            <ul class="secondaryNav hasDropdowns flex flex-row justify-end text-base group">
+            <ul class="secondaryNav hasDropdowns flex flex-row justify-end group">
                 {% set nodes = craft.navigation.nodes().handle('secondaryNav').level(1).all() %}
 
                 {% nav node in nodes %}
-                    <li class="ml-8 relative group border-white border-b-4 {% if node.active or node.hasActiveChild %}is-active border-pink-500{% else %}border-white{% endif %} hover:border-pink-500"><a href="{{ node.url }}" class="pb-4 block">{{ node.title }}</a>
+                    <li class="ml-8 relative group border-white border-b-4 {% if node.active or node.hasActiveChild %}is-active border-pink-500{% else %}border-white{% endif %} hover:border-pink-500"><a href="{{ node.url }}" class="pb-4 block font-medium">{{ node.title }}</a>
                     {% if node.hasDescendants %}
                         <ul class="submenu hidden absolute w-48 shadow-lg bg-white text-navy-500 z-10 text-center rounded-b-md" style="margin-top: 5px;">
                             {% for subnode in node.children.all() %}
-                                <li><a href="{{ subnode.url }}" class="block pt-2 pb-2 hover:font-bold">{{ subnode.title }}</a></li>
+                                <li><a href="{{ subnode.url }}" class="block pt-2 pb-2 font-medium hover:font-bold">{{ subnode.title }}</a></li>
                             {% endfor %}
                         </ul>
                     {% endif %}
@@ -67,7 +73,7 @@
                 {% nav node in nodes %}
                 <li class="relative border-white border-b-4 hover:border-pink-500 {% if node.active or node.hasActiveChild %}is-active border-pink-500{% else %}border-white{% endif %}">
                     <a
-                        class="py-8 text-base xl:text-xl inline-block {% if node.classes | length %}{{ node.classes }}{% endif %}"
+                        class="py-6 text-base xl:text-xl inline-block font-medium {% if node.classes | length %}{{ node.classes }}{% endif %}"
                         href="{{ node.url }}">
                             {{ node.title }}
                     </a>

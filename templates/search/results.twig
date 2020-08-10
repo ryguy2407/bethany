@@ -1,0 +1,46 @@
+{% extends 'layouts/base.twig' %}
+    {% block main %}
+
+        <section class="shadow-innerSmall w-full">
+
+            <section class="relative z-0 pt-16">
+                <div class="container mx-auto">
+                    <h1 class="font-serif mb-0">Search results</h1>
+                    <p>See your search results below.</p>
+                </div>
+            </section>
+
+            <section class="relative py-8 lg:py-16">
+                <div class="container mx-auto grid grid-cols-3 gap-4">
+
+                    {% set searchQuery = craft.app.request.getParam('q') %}
+                    {% set entries = craft.entries()
+                        .search(searchQuery)
+                        .orderBy('score')
+                        .all() %}
+
+                    {# Fetch the entries #}
+                    {% for entry in entries %}
+                        <a href="{{ entry.url }}" class="w-full bg-grey-200 flex flex-col mb-8 lg:mb-0">
+                            {% if entry.seoImage.one().optimisedImage is defined %}
+                                {% set optimizedImages = entry.seoImage.one().optimisedImage %}
+                                <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
+                                    <img class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lazyload h-full w-full absolute object-cover inset-0"
+                                             src="{{ optimizedImages.placeholderBox() }}"
+                                             data-srcset="{{ optimizedImages.srcset() }}"
+                                             sizes="100vw" />
+                                </div>
+                            {% endif %}
+                            <div class="richText h-full p-6 flex flex-col">
+                                <h4 class="font-serif text-navy-500 pb-4 m-0">{{ entry.title }}</h4>
+                                {{ entry.seoDescription | chop(limit=20, unit='w') }}
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            </section>
+
+        </section>
+
+
+    {% endblock %}

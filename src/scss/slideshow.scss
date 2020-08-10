@@ -3,3 +3,31 @@ div.active {
     @apply border-pink-500;
   }
 }
+
+/* The dots/bullets/indicators */
+.dot {
+  @apply bg-navy-500 border border-white rounded-full w-2 h-2 cursor-pointer;
+}
+
+.active, .dot:hover {
+  @apply bg-white border border-white;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

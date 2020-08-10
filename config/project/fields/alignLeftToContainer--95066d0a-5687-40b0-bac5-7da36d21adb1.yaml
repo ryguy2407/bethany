@@ -1,0 +1,11 @@
+contentColumnType: boolean
+fieldGroup: 7a4ea50b-16d5-44d8-b5f4-7a602cae1000
+handle: alignLeftToContainer
+instructions: ''
+name: 'Align left to container'
+searchable: false
+settings:
+  default: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch
