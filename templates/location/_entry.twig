@@ -137,6 +137,19 @@
                     mainImages.querySelectorAll(`img[data-index="${this.getAttribute('data-index')}"]`)[0].classList.remove('hidden');
                 });
             }
+
+            document.getElementById('next').addEventListener('click', function(e){
+                let nextEl = thumbContainer.querySelector('.active').nextElementSibling;
+                if(nextEl) {
+                    nextEl.dispatchEvent(new Event("click"));
+                }
+            });
+            document.getElementById('prev').addEventListener('click', function(e){
+                let prevEl = thumbContainer.querySelector('.active').previousElementSibling;
+                if(prevEl) {
+                    prevEl.dispatchEvent(new Event("click"));
+                }
+            });
         </script>
 
     {% endblock %}
