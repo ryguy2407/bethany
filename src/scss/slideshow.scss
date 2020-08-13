@@ -4,18 +4,9 @@ div.active {
   }
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  @apply bg-navy-500 border border-white rounded-full w-2 h-2 cursor-pointer;
-}
-
-.active, .dot:hover {
-  @apply bg-white border border-white;
-}
-
 
 /* Fading animation */
-.fade {
+.active {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;

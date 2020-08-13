@@ -119,6 +119,11 @@
 
             for (item of thumbImages) {
                 item.addEventListener('click', function(e){
+
+                    //Scroll the thumbs to the active element
+                    var leftPos = e.target.offsetLeft - e.target.parentNode.offsetLeft;
+                    thumbContainer.scrollLeft = leftPos;
+
                     for(image of mainImages.children) {
                         image.classList.add('hidden');
                     }
@@ -128,7 +133,7 @@
                     }
                     this.classList.add('active');
 
-                    mainImages.querySelectorAll(`img[data-index="${this.getAttribute('data-index')}"]`)[0].classList.add('block');
+                    mainImages.querySelectorAll(`img[data-index="${this.getAttribute('data-index')}"]`)[0].classList.add('block', 'fade');
                     mainImages.querySelectorAll(`img[data-index="${this.getAttribute('data-index')}"]`)[0].classList.remove('hidden');
                 });
             }
