@@ -25,7 +25,14 @@
             <div class="w-full lg:w-3/4 mx-auto mt-2">
                 <div id="galleryThumbs" class="hideScrollbar w-full flex space-x-2 overflow-x-scroll" style="scroll-behavior: smooth;">
                     {% for image in images %}
-                        <img data-index="{{ loop.index }}" class="{% if loop.first %}active{% endif %} focus:border-pink-500 border-white w-1/5 rounded-md" src="{{ image.url }}" alt="{{ image.title }}">
+                        <img
+                                data-index="{{ loop.index }}"
+                                class="{% if loop.first %}active{% endif %} focus:border-pink-500 border-white w-1/5 rounded-md" src="{{ image.url }}" alt="{{ image.title }}"
+                                src="{{ image.optimisedImage.placeholderBox() }}"
+                                data-srcset="{{ image.optimisedImage.srcset() }}"
+                                sizes="100vw"
+                                alt="{{ image.title }}"
+                        />
                     {% endfor %}
                 </div>
             </div>
