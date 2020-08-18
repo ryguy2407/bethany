@@ -3,7 +3,7 @@
     <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-8">
         {% for location in block.locationPins.all() %}
             {% set relatedEntry = location.relatedLocation.one() %}
-            <div class="w-full flex flex-col mx-0 lg:mx-4 px-8 lg:px-0 lg:mb-0 rounded-b-md">
+            <div class="w-full flex flex-col px-8 lg:px-0 lg:mb-0 rounded-b-md">
                 {% if relatedEntry.heroShot.one().optimisedImage is defined %}
                     {% set optimizedImages = relatedEntry.heroShot.one().optimisedImage %}
                     <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
@@ -35,8 +35,8 @@
                             {{ relatedEntry.streetAddress }}<br>
                             {{ relatedEntry.suburb }} {{ relatedEntry.state }} {{ relatedEntry.postcode }}
                         </p>
-                        <p class="mb-0"><i class="far fa-phone mr-4"></i>{{ relatedEntry.phone }}</p>
-                        <p><i class="far fa-envelope mr-4"></i>{{ relatedEntry.email }}</p>
+                        <p class="mb-0"><i class="far fa-phone mr-4"></i> <a target="_blank" href="tel:{{ relatedEntry.phone }}">{{ relatedEntry.phone }}</a></p>
+                        <p><i class="far fa-envelope mr-4"></i> <a target="_blank" href="mailto:{{ relatedEntry.email }}">{{ relatedEntry.email }}</a></p>
                 </div>
             </div>
         {% endfor %}

@@ -15,10 +15,10 @@
                         {{ location.address | nl2br }}
                     </div>
                     <div class="flex flex-row items-center text-lg">
-                        <span class="mr-4">{{ location.phoneIcon | raw }}</span> {{ location.phone }}
+                        <span class="mr-4">{{ location.phoneIcon | raw }}</span> <a href="tel:{{ location.phone }}">{{ location.phone }}</a>
                     </div>
                     <div class="flex flex-row items-center text-lg">
-                        <span class="mr-4">{{ location.emailIcon | raw }}</span> {{ location.email }}
+                        <span class="mr-4">{{ location.emailIcon | raw }}</span> <a target="_blank" href="mailto:{{ location.email }}">{{ location.email }}</a>
                     </div>
                 </div>
             </div>
