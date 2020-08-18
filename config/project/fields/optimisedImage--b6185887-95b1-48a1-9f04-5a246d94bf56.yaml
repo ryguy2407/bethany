@@ -37,7 +37,7 @@ settings:
           - '82'
         -
           - format
-          - '82'
+          - ''
     -
       __assoc__:
         -
@@ -62,7 +62,7 @@ settings:
           - '82'
         -
           - format
-          - '82'
+          - ''
     -
       __assoc__:
         -
@@ -87,7 +87,7 @@ settings:
           - '60'
         -
           - format
-          - '60'
+          - ''
     -
       __assoc__:
         -
@@ -112,7 +112,7 @@ settings:
           - '60'
         -
           - format
-          - '60'
+          - ''
 translationKeyFormat: null
 translationMethod: none
 type: nystudio107\imageoptimize\fields\OptimizedImages

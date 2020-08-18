@@ -7,7 +7,7 @@
                     <img class="absolute w-full h-full object-cover lazyload rounded-md"
                          src="{{ optimizedImages.placeholderBox() }}"
                          data-srcset="{{ optimizedImages.srcset() }}"
-                         sizes="100vw" />
+                         sizes="100vw" alt="{{ block.image.one().title }}" />
                 {% endif %}
             </div>
             <div class="w-full lg:{% if block.mediaWidth == 'w-1/3' %}w-2/3{% elseif block.mediaWidth == 'w-1/2' %}w-1/2{% elseif block.mediaWidth == 'w-2/3' %}w-1/3{% endif %} mb-0">

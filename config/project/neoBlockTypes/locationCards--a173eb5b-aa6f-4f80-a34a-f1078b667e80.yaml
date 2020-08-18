@@ -6,7 +6,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 34c4af62-db58-41cd-af0f-1f79fd64f17e
+            fieldUid: f4540986-09ce-4a2e-b959-64d33257970b
             instructions: null
             label: null
             required: false
@@ -14,12 +14,12 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Location logos'
+        name: Content
         sortOrder: 1
-handle: locationLogos
+handle: locationCards
 maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
-name: 'Location logos'
+name: 'Location Cards'
 sortOrder: 14
 topLevel: false

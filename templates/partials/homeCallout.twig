@@ -14,7 +14,7 @@
                 <img class="lazyload h-full w-full rounded-t-md absolute object-cover inset-0"
                      src="{{ optimizedImages.placeholderBox() }}"
                      data-srcset="{{ optimizedImages.srcset() }}"
-                     sizes="100vw" />
+                     sizes="100vw" alt="{{ entry.featureImage.one().title }}" />
             </div>
         </div>
     </div>
@@ -25,9 +25,9 @@
             <img class="lazyload h-full w-full absolute object-cover inset-0"
                 src="{{ optimizedImages.placeholderBox() }}"
                 data-srcset="{{ optimizedImages.srcset() }}"
-                sizes="100vw" />
+                sizes="100vw" alt="{{ entry.featureImage.one().title }}" />
         </div>
     </div>
 
-    <img class="hidden md:block absolute w-full" src="/dist/img/top-curve.svg" style="bottom:-2px;">
+    <img class="hidden md:block absolute w-full" src="/dist/img/top-curve.svg" style="bottom:-2px;" alt="decorative image">
 </section>

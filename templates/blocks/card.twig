@@ -9,16 +9,17 @@
                         <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
                             {% if relatedEntry | length %}
                                 <a href="{{ relatedEntry.url }}">
+                                    <span class="hidden">{{ card.cardTitle }}</span>
                                     <img class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lazyload h-full w-full absolute object-cover inset-0"
                                          src="{{ optimizedImages.placeholderBox() }}"
                                          data-srcset="{{ optimizedImages.srcset() }}"
-                                         sizes="100vw" />
+                                         sizes="100vw" alt="click {{ card.image.one().title }}" />
                                 </a>
                             {% else %}
                                 <img class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lazyload h-full w-full absolute object-cover inset-0"
                                  src="{{ optimizedImages.placeholderBox() }}"
                                  data-srcset="{{ optimizedImages.srcset() }}"
-                                 sizes="100vw" />
+                                 sizes="100vw" alt="{{ card.image.one().title }}" />
                             {% endif %}
                         </div>
                     {% endif %}
@@ -35,7 +36,11 @@
                                 {% endif %}
                             </h4>
                         {% endif %}
-                        {{ card.richtext }}
+                        {% set parsedText = card.richtext|replace({
+                            "[phone]" : "<i class='far fa-phone mr-2'></i>",
+                            "[email]" : "<i class='far fa-envelope mr-2'></i>"
+                        }) %}
+                        {{ parsedText | raw }}
                     </div>
                     {% if card.buttons|length %}
                         <div class="mt-auto p-6">

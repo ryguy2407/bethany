@@ -64,7 +64,7 @@
         {% if children | length %}
             <section class="py-8 lg:pt-32 bg-white">
                 <div class="container mx-auto">
-                    <h3 class="font-serif text-center">{{ entry.heading }}</h3>
+                    <h3 class="font-sans font-bold text-center">{{ entry.heading }}</h3>
                     <h5 class="text-center">{{ entry.subheading }}</h5>
                 </div>
             </section>
@@ -73,9 +73,10 @@
         {% endif %}
 
 
-        <section class="bg-orange-200 relative overflow-hidden">
-            <div class="container mx-auto flex flex-col lg:flex-row px-8 lg:px-0">
-                <div class="w-full lg:w-1/2 py-8 lg:py-32 pr-0 lg:pr-32">
+        <section class="bg-orange-100 relative overflow-hidden">
+            <div class="container relative mx-auto flex flex-col lg:flex-row px-8 lg:px-0">
+                <img src="/dist/img/orange-photo-background.svg" class="hidden xl:block absolute h-full z-10" style="left: -100px;top:0px;">
+                <div class="w-full lg:w-1/2 py-8 lg:py-32 pr-0 lg:pr-32 relative z-50">
                     {{ footerCta.richText }}
                 </div>
                 <div class="w-full lg:w-1/2"></div>

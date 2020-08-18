@@ -4,10 +4,12 @@
 
 <script type="text/javascript">
     function initMap() {
-        var locations = [
-            ['The Plains', -27.5926255, 153.098318, 4, 'navy'],
-            ['Janoah Gardens', -27.4680596, 153.1686902, 5, 'teal'],
-            ['Beth Eden', -27.5203557, 152.9699022, 3, 'orange']
+        let locations = [
+            {% set locations = block.locationPins.all() %}
+            {% for location in locations %}
+            {% set rel = location.relatedLocation.one() %}
+                [`{{ rel.title }}`, `{{ rel.streetAddress }} {{ rel.suburb }} {{ rel.state }} {{ rel.postcode }}`, 4, `{{ location.highlightColour }}`],
+            {% endfor %}
         ];
 
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -70,23 +72,30 @@
             }]
         });
 
+        var geocoder = new google.maps.Geocoder;
+
         var infowindow = new google.maps.InfoWindow();
 
-        var marker, i;
+        let marker, i;
 
         for (i = 0; i < locations.length; i++) {
-            marker = new google.maps.Marker({
-                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                icon: `/dist/img/${locations[i][4]}-marker.svg`,
-                map: map
+            let markerColour = locations[i][3];
+            let markerTitle = locations[i][0];
+            geocoder.geocode({
+                'address': locations[i][1]
+            }, function(results, status, locations){
+                marker = new google.maps.Marker({
+                    position: results[0].geometry.location,
+                    icon: `/dist/img/${markerColour}-marker.svg`,
+                    map: map
+                });
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infowindow.setContent(markerTitle);
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
             });
-
-            google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                return function () {
-                    infowindow.setContent(locations[i][0]);
-                    infowindow.open(map, marker);
-                }
-            })(marker, i));
         }
     }
 </script>

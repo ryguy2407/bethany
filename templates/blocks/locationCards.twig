@@ -1,0 +1,44 @@
+
+<div class="container mx-auto">
+    <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {% for location in block.locationPins.all() %}
+            {% set relatedEntry = location.relatedLocation.one() %}
+            <div class="w-full flex flex-col mx-0 lg:mx-4 px-8 lg:px-0 lg:mb-0 rounded-b-md">
+                {% if relatedEntry.heroShot.one().optimisedImage is defined %}
+                    {% set optimizedImages = relatedEntry.heroShot.one().optimisedImage %}
+                    <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
+                        {% if relatedEntry | length %}
+                            <a href="{{ relatedEntry.url }}">
+                                <img class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lazyload h-full w-full absolute object-cover inset-0"
+                                     src="{{ optimizedImages.placeholderBox() }}"
+                                     data-srcset="{{ optimizedImages.srcset() }}"
+                                     sizes="100vw" />
+                            </a>
+                        {% else %}
+                            <img class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 lazyload h-full w-full absolute object-cover inset-0"
+                                 src="{{ optimizedImages.placeholderBox() }}"
+                                 data-srcset="{{ optimizedImages.srcset() }}"
+                                 sizes="100vw" />
+                        {% endif %}
+                    </div>
+                {% endif %}
+                {% if location.highlightColour | length %}
+                    <div class="bg-{{ location.highlightColour }}-500 h-sm"></div>
+                {% endif %}
+                <div class="richText rounded-b-md p-6 {% if location.backgroundColour | length %}bg-{{ location.backgroundColour }}-200{% endif %}">
+                    <h4 class="font-serif font-bold text-navy-500 pb-4 m-0">
+                        {% if relatedEntry | length %}
+                            <a href="{{ relatedEntry.url }}">{{ relatedEntry.title }}</a>
+                        {% endif %}
+                    </h4>
+                        <p class="font-sans">
+                            {{ relatedEntry.streetAddress }}<br>
+                            {{ relatedEntry.suburb }} {{ relatedEntry.state }} {{ relatedEntry.postcode }}
+                        </p>
+                        <p class="mb-0"><i class="far fa-phone mr-4"></i>{{ relatedEntry.phone }}</p>
+                        <p><i class="far fa-envelope mr-4"></i>{{ relatedEntry.email }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

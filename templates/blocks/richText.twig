@@ -1,6 +1,9 @@
 <div class="container mx-auto richText px-8 lg:px-0 {% if backgroundColour == 'bg-navy-500' %}text-white{% endif %}">
     <div class="w-full lg:w-3/4 {% if not block.alignLeftToContainer %}mx-auto{% endif %}">
-        {{ block.richText }}
+        {% set parsedText = block.richText|replace({
+            "[phone]" : "<i class='far fa-phone'></i>"
+        }) %}
+        {{ parsedText | raw }}
     </div>
 
     {% if block.buttons|length %}

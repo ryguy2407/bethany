@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 9e76732b-c3f6-480d-91e5-878f0016b5e4
+handle: locationPins
+instructions: ''
+name: 'Location Pins'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_locationpins}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
