@@ -39,9 +39,11 @@
 </section>
 
 <section class="bg-navy-500 text-center text-white py-4 z-20 relative">
-    <p class="mb-0 flex flex-row justify-center">
-        <img class="mr-2" src="/dist/img/shield-icon.svg" alt="Alert">
-        <span class="text-teal-500 mr-2">Alert:</span> <a href="{{ globalAlert.alertLink }}">{{ globalAlert.alertText }}</a>
+    <p class="mb-0">
+        <a href="{{ globalAlert.alertLink }}" class="transition duration-500 ease-in-out flex flex-row justify-center hover:opacity-75">
+            <img class="mr-2" src="/dist/img/shield-icon.svg" alt="Alert">
+            <span class="text-teal-500 mr-2">Alert:</span>{{ globalAlert.alertText }}
+        </a>
     </p>
 </section>
 

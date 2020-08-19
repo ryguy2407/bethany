@@ -1,0 +1,23 @@
+contentColumnType: string
+fieldGroup: d19dd177-9d0e-41b0-abd4-9caa342d8ae2
+handle: newsCategory
+instructions: ''
+name: 'News Category'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: ''
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: true
+  source: 'group:15f8b3e1-a193-4e11-bcee-786e0751fe6a'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

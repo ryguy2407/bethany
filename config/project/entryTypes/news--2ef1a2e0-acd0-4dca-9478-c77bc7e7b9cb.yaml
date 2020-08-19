@@ -4,41 +4,117 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            autofocus: false
+            class: null
+            disabled: false
+            id: null
             instructions: null
-            label: Title
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
           -
             fieldUid: d4841052-9964-4fca-b825-c721bb970063
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: b3f4f89d-62f0-4831-8283-da448442002e
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            fieldUid: 4ea8c36b-d296-425e-9b9c-a87788a3fb36
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 88de4c5d-f99b-4529-adaa-c865f8f182ef
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
         name: CONTENT
         sortOrder: 1
       -
         elements:
           -
             fieldUid: da067cc9-0bb0-4db8-8df5-17cff6d219cb
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: bd4f08a0-ed43-4338-878f-a716aa416641
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 61486ebe-fed0-4246-b6cd-a9c43a7de4cd
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 872cf0d1-7516-4d9d-9155-ecab38322424
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 0d7945bb-62b1-4911-bd28-455fe72d658d
-            required: false
+            instructions: null
+            label: null
+            required: '0'
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'SEO Fields'
         sortOrder: 2
 handle: news
@@ -46,4 +122,6 @@ hasTitleField: true
 name: News
 section: c46e4baf-fa6a-4116-a2e8-6c7703cca22b
 sortOrder: 1
-titleFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -5,14 +5,13 @@
 
             <section class="relative z-0 pt-16">
                 <div class="container mx-auto">
-                    <h1 class="font-serif mb-0">News</h1>
-                    <p>Keep up to date with the latest updates, stories and celebrations at Bethany Christian Care.</p>
+                    <h1 class="font-serif mb-0">{{ category.title }}</h1>
 
                     <div class="categories flex flex-row space-x-4">
                         {% set categoryQuery = craft.categories.group('newsCategories') %}
                         {% set categories = categoryQuery.all() %}
                         {% for category in categories %}
-                            <a href="{{ category.url }}" class="transition duration-500 ease-in-out p-4 rounded-full border font-bold hover:bg-navy-500 hover:text-white">{{ category.title }}</a>
+                            <a href="{{ category.url }}" class="{% if craft.app.request.absoluteUrl() == category.url %}bg-navy-500 hover:bg-white hover:text-navy-500 font-bold text-white {% else %}bg-white hover:bg-navy-500 hover:text-white{% endif %} transition duration-500 ease-in-out p-4 rounded-full border font-bold">{{ category.title }}</a>
                         {% endfor %}
                     </div>
                 </div>
@@ -23,6 +22,7 @@
 
                     {% set query = craft.entries()
                         .section('news')
+                        .relatedTo(category)
                         .limit(9) %}
 
                     {# Fetch the entries #}
