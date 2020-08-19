@@ -1,4 +1,4 @@
-dateModified: 1597730954
+dateModified: 1597798596
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: 'Bethany Christian Care'
@@ -30,7 +30,7 @@ plugins:
             - concurrency
             - '3'
       cacheWarmerType: putyourlightson\blitz\drivers\warmers\GuzzleWarmer
-      cachingEnabled: '1'
+      cachingEnabled: ''
       clearCacheAutomatically: '1'
       customSiteUris: ''
       debug: false
