@@ -1,12 +1,12 @@
 
     <div class="container mx-auto">
-        <div class="w-full {% if block.centreCards %}flex flex-col lg:flex-row justify-center{% else %}grid grid-cols-1 lg:grid-cols-{{ block.cardWidth }} gap-8{% endif %}">
+        <div class="w-full {% if block.centreCards %}flex flex-col lg:flex-row justify-center{% else %}grid grid-cols-1 lg:grid-cols-{{ block.cardWidth }} gap-0 lg:gap-8{% endif %}">
             {% for card in block.cards.all() %}
                 {% set relatedEntry = card.relatedEntry.one() %}
-                <div class="w-full flex flex-col {{ card.textBackground }} {% if block.centreCards %}mx-0 lg:mx-4 lg:w-1/{{ block.cardWidth }}{% endif %} px-8 lg:px-0 {% if loop.last %}mb-0{% else %}mb-4{% endif %} lg:mb-0 rounded-b-md">
+                <div class="w-full flex flex-col {{ card.textBackground }} {% if block.centreCards %}mx-0 lg:mx-4 lg:w-1/{{ block.cardWidth }}{% endif %} {% if loop.last %}mb-0{% else %}mb-0 lg:mb-4{% endif %} lg:mb-0 rounded-b-md">
                     {% if card.image.one().optimisedImage is defined %}
                         {% set optimizedImages = card.image.one().optimisedImage %}
-                        <div class="w-full relative pb-1/2 overflow-hidden rounded-t-md">
+                        <div class="w-full bg-white relative pb-1/2 overflow-hidden rounded-t-md">
                             {% if relatedEntry | length %}
                                 <a href="{{ relatedEntry.url }}">
                                     <span class="hidden">{{ card.cardTitle }}</span>
