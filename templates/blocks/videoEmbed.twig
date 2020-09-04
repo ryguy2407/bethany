@@ -1,0 +1,22 @@
+<div class="container mx-auto richText px-8 lg:px-0">
+    <div class="w-full lg:w-3/4 mx-auto">
+        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+        <div class='embed-container'>
+            {{ block.videoCode | raw }}
+        </div>
+    </div>
+
+    {% if block.buttons|length %}
+        <div class="mt-auto">
+            {% set buttons = block.buttons.all() %}
+            {% for button in buttons %}
+                {% if button.internalLink | length %}
+                    {% set link = button.internalLink.one().url %}
+                {% else %}
+                    {% set link = button.buttonUrl %}
+                {% endif %}
+                <a class="{{ button.buttonStyle }} px-8 lg:px-12 py-4 mr-4" href="{{ link }}">{{ button.buttonText }}</a>
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>

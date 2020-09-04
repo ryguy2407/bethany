@@ -1,0 +1,25 @@
+childBlocks: ''
+field: 75b1acfe-7a14-4645-a4c4-81daf611bb15
+fieldLayouts:
+  -
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: bbaf899c-cdfc-496c-bd16-557a766a39b4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: CONTENT
+        sortOrder: 1
+handle: videoEmbed
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+name: 'Video embed'
+sortOrder: 15
+topLevel: false
