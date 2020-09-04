@@ -4,15 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4681bd4a93a62f8945933948ca492629",
+    "content-hash": "b1b267666226d2cb1af8c283016d182f",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.151.3",
+            "version": "3.151.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aws/aws-sdk-php.git",
+                "reference": "b34231eb116dd7dada37f6d30d88343a992c9c3e"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6deca431ad8d061face518bdde2072445385f45a",
-                "reference": "6deca431ad8d061face518bdde2072445385f45a",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b34231eb116dd7dada37f6d30d88343a992c9c3e",
+                "reference": "b34231eb116dd7dada37f6d30d88343a992c9c3e",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +89,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-08-31T18:25:57+00:00"
+            "time": "2020-09-03T18:17:59+00:00"
         },
         {
             "name": "carlcs/craft-redactorcustomstyles",
@@ -536,11 +541,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.5.7",
+            "version": "3.5.8",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/b6280588722e1ee67bb810e8027f0c53b7cc9ea2",
-                "reference": "b6280588722e1ee67bb810e8027f0c53b7cc9ea2",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/4d3dc03a787248c05f2e0dd3698aea55a9fe7680",
+                "reference": "4d3dc03a787248c05f2e0dd3698aea55a9fe7680",
                 "shasum": ""
             },
             "require": {
@@ -621,7 +626,7 @@
                 "docs": "https://craftcms.com/docs/3.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2020-08-26T13:49:56+00:00"
+            "time": "2020-09-01T20:50:36+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -756,11 +761,11 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.7.3",
+            "version": "2.7.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/fe8b37c4c4978e397504a43d19aef40b4e495639",
-                "reference": "fe8b37c4c4978e397504a43d19aef40b4e495639",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/3af61a4d192f2272774095d1a6f31d06ed374c20",
+                "reference": "3af61a4d192f2272774095d1a6f31d06ed374c20",
                 "shasum": ""
             },
             "require": {
@@ -795,7 +800,7 @@
                 "html",
                 "yii2"
             ],
-            "time": "2020-08-28T16:11:20+00:00"
+            "time": "2020-09-02T16:03:10+00:00"
         },
         {
             "name": "craftcms/server-check",

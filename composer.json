@@ -1,7 +1,7 @@
 {
     "require": {
         "carlcs/craft-redactorcustomstyles": "^3.0",
-        "craftcms/cms": "3.5.7",
+        "craftcms/cms": "3.5.8",
         "craftcms/contact-form": "^2.2",
         "craftcms/redactor": "^2.6",
         "doublesecretagency/craft-cpcss": "^2.2",
