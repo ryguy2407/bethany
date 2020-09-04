@@ -1,0 +1,27 @@
+fieldLayouts:
+  773d065f-b358-488f-8c6b-be0cb37c236c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: dae59cd9-7b74-4832-a34d-9fa4fad41cf4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 0a087c60-1aa0-497a-bb26-a72e06faa53e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+        name: 'Alert Content'
+        sortOrder: 1
+handle: globalAlert
+name: 'Global Alert'

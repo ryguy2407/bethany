@@ -1,0 +1,9 @@
+handle: mobileNavigation
+instructions: ''
+maxNodes: ''
+name: 'Mobile Navigation'
+propagateNodes: false
+sortOrder: 5
+structure:
+  maxLevels: null
+  uid: 7c7e002a-f965-477f-b3d8-41a76eaa6c53

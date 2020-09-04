@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: f1037752-9aff-44e6-bc58-59edfc34bdfb
+handle: alertLink
+instructions: ''
+name: 'Alert link'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

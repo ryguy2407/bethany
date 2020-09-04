@@ -15,8 +15,8 @@
                     {{ block.richText }}
                     {% set buttons = block.buttons.all() %}
                     {% for button in buttons %}
-                        {% if button.internalLink | length %}
-                            {% set link = button.internalLink.one().url %}
+                        {% if button.buttonInternalLink | length %}
+                            {% set link = button.buttonInternalLink.one().url %}
                         {% else %}
                             {% set link = button.buttonUrl %}
                         {% endif %}
