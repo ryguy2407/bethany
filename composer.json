@@ -1,7 +1,7 @@
 {
     "require": {
         "carlcs/craft-redactorcustomstyles": "^3.0",
-        "craftcms/cms": "3.5.8",
+        "craftcms/cms": "3.5.9",
         "craftcms/contact-form": "^2.2",
         "craftcms/redactor": "^2.6",
         "doublesecretagency/craft-cpcss": "^2.2",
@@ -10,7 +10,7 @@
         "nystudio107/craft-seomatic": "^3.3",
         "putyourlightson/craft-blitz": "^3.6",
         "putyourlightson/craft-blitz-recommendations": "^1.1",
-        "spicyweb/craft-neo": "2.8.7",
+        "spicyweb/craft-neo": "2.8.8",
         "studioespresso/craft-seeder": "^3.2",
         "topshelfcraft/wordsmith": "^3.3",
         "vaersaagod/dospaces": "^1.1",

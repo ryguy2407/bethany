@@ -262,7 +262,7 @@ fields:
       targetSiteId: null
       useSingleFolder: false
       validateRelatedElements: false
-      viewMode: list
+      viewMode: large
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
@@ -278,14 +278,19 @@ fields:
       availableVolumes: '*'
       cleanupHtml: true
       columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: Standard.json
       removeEmptyTags: '1'
       removeInlineStyles: '1'
       removeNbsp: '1'
+      showHtmlButtonForNonAdmins: '1'
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field

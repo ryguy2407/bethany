@@ -1,4 +1,4 @@
-dateModified: 1599188078
+dateModified: 1599609647
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: 'Bethany Christian Care'
@@ -165,7 +165,7 @@ system:
   edition: pro
   live: true
   name: 'Bethany Christian Care'
-  schemaVersion: 3.5.12
+  schemaVersion: 3.5.13
   timeZone: Australia/Brisbane
 users:
   allowPublicRegistration: false
