@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: bdfdb434-c615-4286-84cc-de51e66ab283
+handle: history
+instructions: ''
+name: History
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_history}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

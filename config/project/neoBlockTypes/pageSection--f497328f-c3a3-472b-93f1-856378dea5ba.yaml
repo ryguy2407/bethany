@@ -1,4 +1,5 @@
 childBlocks:
+  - history
   - richText
   - textAndImage
   - splitScreen

@@ -42,5 +42,5 @@ maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
 name: 'Rich Text'
-sortOrder: 3
+sortOrder: 4
 topLevel: false

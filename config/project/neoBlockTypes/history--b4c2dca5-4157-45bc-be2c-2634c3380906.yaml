@@ -6,41 +6,38 @@ fieldLayouts:
       -
         elements:
           -
-            heading: 'Global card settings'
-            type: craft\fieldlayoutelements\Heading
-          -
-            fieldUid: 589e1009-2f9a-4d2c-aa26-593831c19473
-            instructions: null
-            label: null
-            required: '0'
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 25
-          -
-            fieldUid: 0634d2f6-12b5-4100-90c7-9ffb979dc795
+            fieldUid: 8661f864-b883-4634-aa47-72f324894458
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 25
+            width: 100
           -
-            fieldUid: cb9d0ed4-3091-4e22-a387-086e48397ba9
+            fieldUid: 1b2dd889-a15f-4751-9490-c05ccf29e3a0
             instructions: null
             label: null
-            required: '0'
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: 'Add cards'
+          -
+            fieldUid: 0c8dcf49-0928-408d-845f-c364148d493f
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: History
         sortOrder: 1
-handle: card
+handle: history
 maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
-name: Card
-sortOrder: 7
+name: History
+sortOrder: 3
 topLevel: false

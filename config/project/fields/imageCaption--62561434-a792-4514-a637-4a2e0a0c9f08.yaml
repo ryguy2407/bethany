@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 06e808e0-859f-4191-8f06-e4d46f3f0688
+handle: imageCaption
+instructions: ''
+name: 'Image caption'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
