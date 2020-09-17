@@ -5,14 +5,15 @@ instructions: ''
 name: 'Feature image'
 searchable: true
 settings:
-  allowSelfRelations: ''
+  allowSelfRelations: false
   allowedKinds: null
   defaultUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
   defaultUploadLocationSubpath: ''
-  limit: ''
+  limit: '1'
   localizeRelations: false
   restrictFiles: ''
   selectionLabel: 'Add a feature image'
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   singleUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
@@ -21,7 +22,7 @@ settings:
   sources: '*'
   targetSiteId: null
   useSingleFolder: false
-  validateRelatedElements: ''
+  validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null
 translationMethod: site

@@ -11,6 +11,11 @@
         <div class="block lg:hidden w-full right-0 top-0 h-full overflow-hidden">
             {% set optimizedImages = entry.featureImage.one().optimisedImage %}
             <div class="w-full relative pb-1/2">
+                {% if entry.featureVideo %}
+                    <div class="openModal absolute w-full h-full flex items-center justify-center">
+                        <i class="fab fa-youtube text-6xl"></i>
+                    </div>
+                {% endif %}
                 <img class="lazyload h-full w-full rounded-t-md absolute object-cover inset-0"
                      src="{{ optimizedImages.placeholderBox() }}"
                      data-srcset="{{ optimizedImages.srcset() }}"
@@ -22,6 +27,11 @@
 
         {% set optimizedImages = entry.featureImage.one().optimisedImage %}
         <div class="w-full relative pb-1/2 h-full">
+            {% if entry.featureVideo %}
+                <div class="openModal absolute w-full h-full flex items-center justify-center z-50">
+                    <i class="far fa-play-circle text-pink-500 hover:text-pink-400 text-6xl cursor-pointer"></i>
+                </div>
+            {% endif %}
             <img class="lazyload h-full w-full absolute object-cover inset-0"
                 src="{{ optimizedImages.placeholderBox() }}"
                 data-srcset="{{ optimizedImages.srcset() }}"
@@ -31,3 +41,23 @@
 
     <img class="hidden md:block absolute w-full" src="/dist/img/top-curve.svg" style="bottom:-2px;" alt="decorative image">
 </section>
+
+<div id="modal" class="modal fixed flex justify-center items-center w-full h-full inset-0 bg-navy-900 bg-opacity-75" style="z-index: 1000;display: none;">
+    <div class="relative" style="width: 80%;">
+        <div id="closeModal">
+            <i class="fas fa-times-circle absolute cursor-pointer text-3xl" style="top:30px;right:30px;z-index: 1;"></i>
+            {{ entry.featureVideo | raw }}
+        </div>
+    </div>
+</div>
+
+<script>
+    jQuery( document ).ready(function($) {
+        $('.openModal').on('click', function(){
+            $('#modal').fadeIn();
+        });
+        $('#closeModal').on('click', function(){
+            $('#modal').fadeOut();
+        });
+    });
+</script>
