@@ -53,11 +53,17 @@
 
 <script>
     jQuery( document ).ready(function($) {
+        var vidUrl = $("#closeModal iframe").attr('src');
+
+        $("#closeModal iframe").addClass('rounded-md')
+
         $('.openModal').on('click', function(){
             $('#modal').fadeIn();
+            $("#closeModal iframe").attr('src', vidUrl);
         });
         $('#closeModal').on('click', function(){
             $('#modal').fadeOut();
+            $("#closeModal iframe").attr('src', '')
         });
     });
 </script>
