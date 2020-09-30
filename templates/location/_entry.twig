@@ -82,21 +82,21 @@
                 <div class="w-full lg:w-1/2"></div>
             </div>
             <div class="hidden lg:block w-full lg:w-1/2 absolute right-0 top-0 h-full">
-                {% set image = footerCta.image.one() %}
+                {% set footerCTAImage = footerCta.image.one() %}
                 <img class="w-full absolute h-full object-cover lazyload"
-                     src="{{ image.optimisedImage.placeholderBox() }}"
-                     data-srcset="{{ image.optimisedImage.srcset() }}"
+                     src="{{ footerCTAImage.optimisedImage.placeholderBox() }}"
+                     data-srcset="{{ footerCTAImage.optimisedImage.srcset() }}"
                      sizes="100vw"
-                     alt="{{ image.title }}"
+                     alt="{{ footerCTAImage.title }}"
                 />
             </div>
             <div class="block lg:hidden w-full lg:w-1/2 relative">
-                {% set image = footerCta.image.one() %}
+                {% set footerCTAImage = footerCta.image.one() %}
                 <img class="w-full h-full object-cover lazyload"
-                     src="{{ image.optimisedImage.placeholderBox() }}"
-                     data-srcset="{{ image.optimisedImage.srcset() }}"
+                     src="{{ footerCTAImage.optimisedImage.placeholderBox() }}"
+                     data-srcset="{{ footerCTAImage.optimisedImage.srcset() }}"
                      sizes="100vw"
-                     alt="{{ image.title }}"
+                     alt="{{ footerCTAImage.title }}"
                 />
             </div>
         </section>
