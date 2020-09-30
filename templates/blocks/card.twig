@@ -1,9 +1,9 @@
 
-    <div class="container mx-auto">
+    <div class="container mx-auto px-8 lg:px-0">
         <div class="w-full {% if block.centreCards %}flex flex-col lg:flex-row justify-center{% else %}grid grid-cols-1 lg:grid-cols-{{ block.cardWidth }} gap-0 lg:gap-8{% endif %}">
             {% for card in block.cards.all() %}
                 {% set relatedEntry = card.relatedEntry.one() %}
-                <div class="w-full flex flex-col {{ card.textBackground }} {% if block.centreCards %}mx-0 lg:mx-4 lg:w-1/{{ block.cardWidth }}{% endif %} lg:mb-0 rounded-b-md">
+                <div class="w-full flex flex-col {{ card.textBackground }} {% if block.centreCards %}mx-0 lg:mx-4 lg:w-1/{{ block.cardWidth }}{% endif %} mb-4 lg:mb-0 rounded-b-md">
                     {% if card.image.one().optimisedImage is defined %}
                         {% set optimizedImages = card.image.one().optimisedImage %}
                         <div class="w-full bg-white relative pb-2/3 overflow-hidden rounded-t-md">
