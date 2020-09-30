@@ -6,7 +6,7 @@
                 <div class="w-full flex flex-col {{ card.textBackground }} {% if block.centreCards %}mx-0 lg:mx-4 lg:w-1/{{ block.cardWidth }}{% endif %} lg:mb-0 rounded-b-md">
                     {% if card.image.one().optimisedImage is defined %}
                         {% set optimizedImages = card.image.one().optimisedImage %}
-                        <div class="w-full bg-white relative pb-1/2 overflow-hidden rounded-t-md">
+                        <div class="w-full bg-white relative pb-2/3 overflow-hidden rounded-t-md">
                             {% if relatedEntry | length %}
                                 <a href="{{ relatedEntry.url }}">
                                     <span class="hidden">{{ card.cardTitle }}</span>
