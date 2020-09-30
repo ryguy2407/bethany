@@ -8,7 +8,7 @@ childBlocks:
   - testimonials
   - apartments
   - galleryAndText
-  - contactForm
+  - forms
   - spacer
   - map
   - locationCards
