@@ -131,6 +131,9 @@
             mainImages.firstElementChild.classList.remove('hidden');
             mainImages.firstElementChild.classList.add('block');
 
+            document.querySelector(`figcaption[data-index="1"]`).classList.remove('hidden');
+            document.querySelector(`figcaption[data-index="1"]`).classList.add('block');
+
             for (item of thumbImages) {
                 item.addEventListener('click', function(e){
 
@@ -149,6 +152,9 @@
 
                     mainImages.querySelectorAll(`img[data-index="${this.getAttribute('data-index')}"]`)[0].classList.add('block', 'fade');
                     mainImages.querySelectorAll(`img[data-index="${this.getAttribute('data-index')}"]`)[0].classList.remove('hidden');
+
+                    mainImages.querySelectorAll(`figcaption[data-index="${this.getAttribute('data-index')}"]`)[0].classList.add('block', 'fade');
+                    mainImages.querySelectorAll(`figcaption[data-index="${this.getAttribute('data-index')}"]`)[0].classList.remove('hidden');
                 });
             }
 
