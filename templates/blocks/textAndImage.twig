@@ -18,14 +18,16 @@
                     }) %}
                     {{ parsedText | raw }}
                     {% set buttons = block.buttons.all() %}
-                    {% for button in buttons %}
-                        {% if button.buttonInternalLink | length %}
-                            {% set link = button.buttonInternalLink.one().url %}
-                        {% else %}
-                            {% set link = button.buttonUrl %}
-                        {% endif %}
-                        <a class="{{ button.buttonStyle }} mr-4 px-8 lg:px-12 py-4 mr-4" href="{{ link }}">{{ button.buttonText }}</a>
-                    {% endfor %}
+                    {% if buttons | length %}
+                        {% for button in buttons %}
+                            {% if button.buttonInternalLink | length %}
+                                {% set link = button.buttonInternalLink.one().url %}
+                            {% else %}
+                                {% set link = button.buttonUrl %}
+                            {% endif %}
+                            <a class="{{ button.buttonStyle }} mr-4 px-8 lg:px-12 py-4 mr-4" href="{{ link }}">{{ button.buttonText }}</a>
+                        {% endfor %}
+                    {% endif %}
                 </div>
             </div>
         </div>
