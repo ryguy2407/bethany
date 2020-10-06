@@ -1,11 +1,16 @@
 <div class="container mx-auto px-8 lg:px-0">
-    <div class="w-full lg:w-3/4 mx-auto">
+    <div class="w-full lg:w-3/4 mx-auto relative">
         {% if block.image.one() | length %}
             {% set optimizedImages = block.image.one().optimisedImage %}
             <img class="lazyload rounded-md"
                  src="{{ optimizedImages.placeholderBox() }}"
                  data-srcset="{{ optimizedImages.srcset() }}"
                  sizes="100vw" alt="{{ block.image.one().title }}" />
+            <figcaption data-index="{{ loop.index }}" style="bottom:10px;" class="absolute flex items-center justify-center w-full">
+                <p class="bg-pink-500 py-2 px-4 rounded-full text-white font-bold mb-0">
+                    {{ block.imageCaption }}
+                </p>
+            </figcaption>
         {% endif %}
     </div>
 </div>
