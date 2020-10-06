@@ -1,0 +1,11 @@
+<div class="container mx-auto px-8 lg:px-0">
+    <div class="w-full lg:w-3/4 mx-auto">
+        {% if block.image.one() | length %}
+            {% set optimizedImages = block.image.one().optimisedImage %}
+            <img class="lazyload rounded-md"
+                 src="{{ optimizedImages.placeholderBox() }}"
+                 data-srcset="{{ optimizedImages.srcset() }}"
+                 sizes="100vw" alt="{{ block.image.one().title }}" />
+        {% endif %}
+    </div>
+</div>
