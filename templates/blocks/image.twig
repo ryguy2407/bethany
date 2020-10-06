@@ -6,11 +6,13 @@
                  src="{{ optimizedImages.placeholderBox() }}"
                  data-srcset="{{ optimizedImages.srcset() }}"
                  sizes="100vw" alt="{{ block.image.one().title }}" />
-            <figcaption data-index="{{ loop.index }}" style="bottom:10px;" class="absolute flex items-center justify-center w-full">
-                <p class="bg-pink-500 py-2 px-4 rounded-full text-white font-bold mb-0">
-                    {{ block.imageCaption }}
-                </p>
-            </figcaption>
+            {% if block.imageCaption | length %}
+                <figcaption data-index="{{ loop.index }}" style="bottom:10px;" class="absolute flex items-center justify-center w-full">
+                    <p class="bg-pink-500 py-2 px-4 rounded-full text-white font-bold mb-0">
+                        {{ block.imageCaption }}
+                    </p>
+                </figcaption>
+            {% endif %}
         {% endif %}
     </div>
 </div>
