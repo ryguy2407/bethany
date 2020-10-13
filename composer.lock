@@ -4,20 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "585b27cc4b44787aafe09bbdcea4bb6c",
+    "content-hash": "250faf4bbfb7e16242244000b5310e3c",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.158.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "b80957465d94c127254e36061dd3d0c3ccc94cc1"
-            },
+            "version": "3.158.6",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b80957465d94c127254e36061dd3d0c3ccc94cc1",
-                "reference": "b80957465d94c127254e36061dd3d0c3ccc94cc1",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4e912c1ae4d4b3538ada36ac1478f980f9bdf329",
+                "reference": "4e912c1ae4d4b3538ada36ac1478f980f9bdf329",
                 "shasum": ""
             },
             "require": {
@@ -89,7 +84,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-10-05T18:13:27+00:00"
+            "time": "2020-10-09T18:11:48+00:00"
         },
         {
             "name": "carlcs/craft-redactorcustomstyles",
@@ -1493,11 +1488,11 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.12.10",
+            "version": "8.12.11",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/befffd590d1e2333bbb6d712541ccccf5fc08f1f",
-                "reference": "befffd590d1e2333bbb6d712541ccccf5fc08f1f",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/a3e8c9c832b3c40d69b477b2a96b252d03fbf274",
+                "reference": "a3e8c9c832b3c40d69b477b2a96b252d03fbf274",
                 "shasum": ""
             },
             "require": {
@@ -1552,7 +1547,7 @@
                 "phonenumber",
                 "validation"
             ],
-            "time": "2020-09-22T07:23:22+00:00"
+            "time": "2020-10-09T15:01:50+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -2375,11 +2370,11 @@
         },
         {
             "name": "league/flysystem-aws-s3-v3",
-            "version": "1.0.28",
+            "version": "1.0.29",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/af7384a12f7cd7d08183390d930c9d0ec629c990",
-                "reference": "af7384a12f7cd7d08183390d930c9d0ec629c990",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/4e25cc0582a36a786c31115e419c6e40498f6972",
+                "reference": "4e25cc0582a36a786c31115e419c6e40498f6972",
                 "shasum": ""
             },
             "require": {
@@ -2413,7 +2408,7 @@
                 }
             ],
             "description": "Flysystem adapter for the AWS S3 SDK v3.x",
-            "time": "2020-08-22T08:43:01+00:00"
+            "time": "2020-10-08T18:58:37+00:00"
         },
         {
             "name": "league/html-to-markdown",
@@ -2854,11 +2849,11 @@
         },
         {
             "name": "mmikkel/reasons",
-            "version": "2.2.1",
+            "version": "2.2.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mmikkel/Reasons-Craft3/zipball/2076401eb38bafe6ffcb4fb5409cf2294f69e063",
-                "reference": "2076401eb38bafe6ffcb4fb5409cf2294f69e063",
+                "url": "https://api.github.com/repos/mmikkel/Reasons-Craft3/zipball/c55bfc7cf67b41af826aa8649b65b1be4455713b",
+                "reference": "c55bfc7cf67b41af826aa8649b65b1be4455713b",
                 "shasum": ""
             },
             "require": {
@@ -2897,7 +2892,7 @@
                 "craftcms",
                 "reasons"
             ],
-            "time": "2020-08-13T06:51:12+00:00"
+            "time": "2020-10-08T11:21:41+00:00"
         },
         {
             "name": "mofodojodino/profanity-filter",
@@ -3267,18 +3262,18 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.18",
+            "version": "1.6.19",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/06f464f16543b83114bf952c09049fd29943c1f5",
-                "reference": "06f464f16543b83114bf952c09049fd29943c1f5",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/00a0f39847cb61962ee656a0af1698b8a42774b5",
+                "reference": "00a0f39847cb61962ee656a0af1698b8a42774b5",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
                 "ksubileau/color-thief-php": "^1.3",
                 "mikehaertl/php-shellcommand": "~1.2",
-                "nystudio107/craft-imageoptimize-imgix": "^1.1.1",
+                "nystudio107/craft-imageoptimize-imgix": "^1.1.3",
                 "nystudio107/craft-imageoptimize-sharp": "^1.0.0",
                 "nystudio107/craft-imageoptimize-thumbor": "^1.3.0"
             },
@@ -3324,15 +3319,15 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2020-09-29T02:12:18+00:00"
+            "time": "2020-10-08T02:41:42+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/749306ae350c75c1573eb40a036257469c22df39",
-                "reference": "749306ae350c75c1573eb40a036257469c22df39",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/cc8b3d33fe64b533e1572e8f5b8670c8207a73c8",
+                "reference": "cc8b3d33fe64b533e1572e8f5b8670c8207a73c8",
                 "shasum": ""
             },
             "require": {
@@ -3363,7 +3358,7 @@
                 "image-transform",
                 "imgix"
             ],
-            "time": "2020-02-11T21:21:51+00:00"
+            "time": "2020-10-08T02:39:57+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-sharp",
@@ -3517,24 +3512,24 @@
         },
         {
             "name": "opis/closure",
-            "version": "3.5.7",
+            "version": "3.6.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/4531e53afe2fc660403e76fb7644e95998bff7bf",
-                "reference": "4531e53afe2fc660403e76fb7644e95998bff7bf",
+                "url": "https://api.github.com/repos/opis/closure/zipball/c547f8262a5fa9ff507bd06cc394067b83a75085",
+                "reference": "c547f8262a5fa9ff507bd06cc394067b83a75085",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.4 || ^7.0"
+                "php": "^5.4 || ^7.0 || ^8.0"
             },
             "require-dev": {
                 "jeremeamia/superclosure": "^2.0",
-                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.5.x-dev"
+                    "dev-master": "3.6.x-dev"
                 }
             },
             "autoload": {
@@ -3569,7 +3564,7 @@
                 "serialization",
                 "serialize"
             ],
-            "time": "2020-09-06T17:02:15+00:00"
+            "time": "2020-10-11T21:42:15+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -4076,11 +4071,11 @@
         },
         {
             "name": "putyourlightson/craft-blitz",
-            "version": "3.6.10",
+            "version": "3.6.11",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-blitz/zipball/13d999bc6c486346c2ad9f5ab3e7beeb5bd717a6",
-                "reference": "13d999bc6c486346c2ad9f5ab3e7beeb5bd717a6",
+                "url": "https://api.github.com/repos/putyourlightson/craft-blitz/zipball/b6e1917ca6fc933b572805c073889d4a1ed774b9",
+                "reference": "b6e1917ca6fc933b572805c073889d4a1ed774b9",
                 "shasum": ""
             },
             "require": {
@@ -4129,7 +4124,7 @@
                 "plugin",
                 "speed"
             ],
-            "time": "2020-09-23T15:25:29+00:00"
+            "time": "2020-10-08T08:02:28+00:00"
         },
         {
             "name": "putyourlightson/craft-blitz-recommendations",
@@ -4427,11 +4422,11 @@
         },
         {
             "name": "spicyweb/craft-neo",
-            "version": "2.8.11",
+            "version": "2.8.12",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/bfd766a5830177d785d0959ac55869038f73ae87",
-                "reference": "bfd766a5830177d785d0959ac55869038f73ae87",
+                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/66d1e5fab52619ed89f5c130a67105938cdcdd9b",
+                "reference": "66d1e5fab52619ed89f5c130a67105938cdcdd9b",
                 "shasum": ""
             },
             "require": {
@@ -4475,15 +4470,15 @@
                 "docs": "https://github.com/spicywebau/craft-neo/wiki",
                 "rss": "https://github.com/spicywebau/craft-neo/commits/master.atom"
             },
-            "time": "2020-10-01T03:39:47+00:00"
+            "time": "2020-10-12T02:16:12+00:00"
         },
         {
             "name": "studioespresso/craft-seeder",
-            "version": "3.2.0",
+            "version": "3.3.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/studioespresso/craft3-seeder/zipball/be6b22faf299ee5de1189d115775fe95c32e49e5",
-                "reference": "be6b22faf299ee5de1189d115775fe95c32e49e5",
+                "url": "https://api.github.com/repos/studioespresso/craft3-seeder/zipball/2633a44760d749eab975504f5ecc1c4d7a3d8695",
+                "reference": "2633a44760d749eab975504f5ecc1c4d7a3d8695",
                 "shasum": ""
             },
             "require": {
@@ -4525,7 +4520,7 @@
                 "craftcms",
                 "seeder"
             ],
-            "time": "2019-12-23T20:33:17+00:00"
+            "time": "2020-10-12T19:05:54+00:00"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
@@ -5785,11 +5780,11 @@
         },
         {
             "name": "verbb/formie",
-            "version": "1.2.19",
+            "version": "1.2.21",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/ca5c4e36471af1bf25f304f488c02c121641c2ba",
-                "reference": "ca5c4e36471af1bf25f304f488c02c121641c2ba",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/46e47c26b5200f60f2a826843556931596178f89",
+                "reference": "46e47c26b5200f60f2a826843556931596178f89",
                 "shasum": ""
             },
             "require": {
@@ -5819,7 +5814,6 @@
                     "verbb\\formie\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -5831,13 +5825,20 @@
             ],
             "description": "The most user-friendly forms plugin for Craft.",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "formie"
             ],
-            "time": "2020-09-26T07:53:56+00:00"
+            "support": {
+                "email": "support@verbb.io",
+                "issues": "https://github.com/verbb/formie/issues?state=open",
+                "source": "https://github.com/verbb/formie",
+                "docs": "https://github.com/verbb/formie",
+                "rss": "https://github.com/verbb/formie/commits/v2.atom"
+            },
+            "time": "2020-10-13T00:58:25+00:00"
         },
         {
             "name": "verbb/image-resizer",
@@ -7090,16 +7091,16 @@
         },
         {
             "name": "codeception/codeception",
-            "version": "4.1.7",
+            "version": "4.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "220ad18d3c192137d9dc2d0dd8d69a0d82083a26"
+                "reference": "41036e8af66e727c4587012f0366b7f0576a99da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/220ad18d3c192137d9dc2d0dd8d69a0d82083a26",
-                "reference": "220ad18d3c192137d9dc2d0dd8d69a0d82083a26",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/41036e8af66e727c4587012f0366b7f0576a99da",
+                "reference": "41036e8af66e727c4587012f0366b7f0576a99da",
                 "shasum": ""
             },
             "require": {
@@ -7177,7 +7178,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2020-08-28T06:37:06+00:00"
+            "time": "2020-10-11T17:54:58+00:00"
         },
         {
             "name": "codeception/lib-asserts",
@@ -7231,16 +7232,16 @@
         },
         {
             "name": "codeception/lib-innerbrowser",
-            "version": "1.3.2",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/lib-innerbrowser.git",
-                "reference": "7bdcee4cf654cfeeedd00405edd4f06f85255659"
+                "reference": "5ab24364b7b6408127028ad73d802bc5a49b797b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/lib-innerbrowser/zipball/7bdcee4cf654cfeeedd00405edd4f06f85255659",
-                "reference": "7bdcee4cf654cfeeedd00405edd4f06f85255659",
+                "url": "https://api.github.com/repos/Codeception/lib-innerbrowser/zipball/5ab24364b7b6408127028ad73d802bc5a49b797b",
+                "reference": "5ab24364b7b6408127028ad73d802bc5a49b797b",
                 "shasum": ""
             },
             "require": {
@@ -7279,11 +7280,11 @@
                 }
             ],
             "description": "Parent library for all Codeception framework modules and PhpBrowser",
-            "homepage": "http://codeception.com/",
+            "homepage": "https://codeception.com/",
             "keywords": [
                 "codeception"
             ],
-            "time": "2020-07-05T14:21:45+00:00"
+            "time": "2020-10-11T19:01:02+00:00"
         },
         {
             "name": "codeception/module-asserts",
@@ -7451,16 +7452,16 @@
         },
         {
             "name": "codeception/phpunit-wrapper",
-            "version": "6.8.1",
+            "version": "6.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/phpunit-wrapper.git",
-                "reference": "ca6e94c6dadc19db05698d4e0d84214e570ce045"
+                "reference": "372f1b5c1b0842dfc1fb491175ea22861a42ba13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/phpunit-wrapper/zipball/ca6e94c6dadc19db05698d4e0d84214e570ce045",
-                "reference": "ca6e94c6dadc19db05698d4e0d84214e570ce045",
+                "url": "https://api.github.com/repos/Codeception/phpunit-wrapper/zipball/372f1b5c1b0842dfc1fb491175ea22861a42ba13",
+                "reference": "372f1b5c1b0842dfc1fb491175ea22861a42ba13",
                 "shasum": ""
             },
             "require": {
@@ -7493,7 +7494,7 @@
                 }
             ],
             "description": "PHPUnit classes used by Codeception",
-            "time": "2020-03-20T08:05:05+00:00"
+            "time": "2020-10-11T18:17:59+00:00"
         },
         {
             "name": "codeception/stub",
