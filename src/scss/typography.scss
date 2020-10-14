@@ -28,8 +28,17 @@ p.small-grey {
 
 .richText {
   ul {
+    @apply mb-4;
     li {
       @apply list-disc ml-6 text-lg;
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+  p {
+    a {
+      text-decoration: underline;
     }
   }
   p:last-child {

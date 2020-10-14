@@ -9,18 +9,19 @@
             </div>
         </div>
         <div class="block lg:hidden w-full right-0 top-0 h-full overflow-hidden">
-            {% set optimizedImages = entry.featureImage.one().optimisedImage %}
-            <div class="w-full relative pb-1/2">
-                {% if entry.featureVideo %}
-                    <div class="openModal absolute w-full h-full flex items-center justify-center">
-                        <i class="fab fa-youtube text-6xl"></i>
-                    </div>
-                {% endif %}
-                <img class="lazyload h-full w-full rounded-t-md absolute object-cover inset-0"
-                     src="{{ optimizedImages.placeholderBox() }}"
-                     data-srcset="{{ optimizedImages.srcset() }}"
-                     sizes="100vw" alt="{{ entry.featureImage.one().title }}" />
-            </div>
+            {% if entry.featureVideo | length %}
+                <div class="w-full relative">
+                    {{ entry.featureVideo | raw }}
+                </div>
+            {% else %}
+                {% set optimizedImages = entry.featureImage.one().optimisedImage %}
+                <div class="w-full relative pb-1/2">
+                    <img class="lazyload h-full w-full rounded-t-md absolute object-cover inset-0"
+                         src="{{ optimizedImages.placeholderBox() }}"
+                         data-srcset="{{ optimizedImages.srcset() }}"
+                         sizes="100vw" alt="{{ entry.featureImage.one().title }}" />
+                </div>
+            {% endif %}
         </div>
     </div>
     <div class="hidden lg:block absolute w-1/2 right-0 top-0 h-full overflow-hidden">
