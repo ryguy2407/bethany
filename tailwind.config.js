@@ -28,6 +28,7 @@ module.exports = {
       '64': '16rem',
       '72': '18rem',
       '80': '20rem',
+      '86': '24rem',
       'auto': 'auto'
     },
 
@@ -64,7 +65,8 @@ module.exports = {
       '56': '14rem',
       '64': '16rem',
       '72': '18rem',
-      '80': '20rem'
+      '80': '20rem',
+      '86': '24rem'
     },
     colors: {
       white: '#FFFFFF',
