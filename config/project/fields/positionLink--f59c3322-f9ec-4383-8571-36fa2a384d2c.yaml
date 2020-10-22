@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 854c4e69-53a0-48a2-9639-0593b3676701
+handle: positionLink
+instructions: 'Add a link here to where people can apply for this position. This could be a seek ad for example.'
+name: 'Position link'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: 'https://example.com'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

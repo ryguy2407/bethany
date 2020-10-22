@@ -1,0 +1,23 @@
+enableVersioning: true
+handle: positions
+name: Positions
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  9845e3ca-13c3-4c36-bb94-ee21c4889dbd:
+    enabledByDefault: true
+    hasUrls: true
+    template: positions/_entry.twig
+    uriFormat: 'positions/{slug}'
+type: channel

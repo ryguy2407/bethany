@@ -1,68 +1,9 @@
-dateModified: 1602550812
+dateModified: 1603328077
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: 'Bethany Christian Care'
   transportType: craft\mail\transportadapters\Sendmail
 plugins:
-  blitz:
-    edition: standard
-    enabled: true
-    schemaVersion: 3.6.6
-    settings:
-      apiKey: ''
-      cacheControlHeader: 'public, s-maxage=31536000, max-age=0'
-      cacheDuration: null
-      cacheElementQueries: true
-      cacheElements: true
-      cachePurgerType: putyourlightson\blitz\drivers\purgers\DummyPurger
-      cacheStorageSettings:
-        __assoc__:
-          -
-            - folderPath
-            - '@webroot/cache/blitz'
-          -
-            - createGzipFiles
-            - ''
-      cacheStorageType: putyourlightson\blitz\drivers\storage\FileStorage
-      cacheWarmerSettings:
-        __assoc__:
-          -
-            - concurrency
-            - '3'
-      cacheWarmerType: putyourlightson\blitz\drivers\warmers\GuzzleWarmer
-      cachingEnabled: ''
-      clearCacheAutomatically: '1'
-      customSiteUris: ''
-      debug: false
-      deployerType: putyourlightson\blitz\drivers\deployers\DummyDeployer
-      driverJobPriority: 100
-      excludedQueryStringParams:
-        - gclid
-        - fbclid
-      excludedUriPatterns: ''
-      includedUriPatterns:
-        -
-          __assoc__:
-            -
-              - uriPattern
-              - '.*'
-      injectScriptEvent: DOMContentLoaded
-      integrations:
-        - putyourlightson\blitz\drivers\integrations\FeedMeIntegration
-        - putyourlightson\blitz\drivers\integrations\SeomaticIntegration
-      mutexTimeout: 1
-      outputComments: true
-      queryStringCaching: '0'
-      refreshCacheAutomaticallyForGlobals: true
-      refreshCacheJobPriority: 10
-      refreshCacheWhenElementSavedNotLive: false
-      refreshCacheWhenElementSavedUnchanged: false
-      sendPoweredByHeader: true
-      warmCacheAutomatically: '1'
-  blitz-recommendations:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   contact-form:
     edition: standard
     enabled: true
@@ -91,10 +32,12 @@ plugins:
   formie:
     edition: standard
     enabled: true
+    licenseKey: TAZTG4GWRQUKTMDUR7V2FFDE
     schemaVersion: 1.0.12
   image-optimize:
     edition: standard
     enabled: true
+    licenseKey: DS468OB9EIYSW9KESOIOWFV6
     schemaVersion: 1.0.0
     settings:
       allowUpScaledImageVariants: true
@@ -136,10 +79,12 @@ plugins:
   navigation:
     edition: standard
     enabled: true
+    licenseKey: RMP62XFZYSUHBGXR3N8SFTG8
     schemaVersion: 1.0.19
   neo:
     edition: standard
     enabled: true
+    licenseKey: UEQQVZVRFS1ALJ5ZP7XJMFLO
     schemaVersion: 2.8.0
   redactor:
     edition: standard
@@ -156,7 +101,47 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
+    licenseKey: TW4N37KVZBKCPIM8PV78O6MC
     schemaVersion: 3.0.9
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: '&#x1f6a7;⚙ '
+      devModeTitlePrefix: '&#x1f6a7; '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableJsonLdEndpoint: false
+      enableMetaContainerEndpoint: false
+      enableSeoFileLinkEndpoint: false
+      environment: live
+      generatorEnabled: true
+      headersEnabled: true
+      lowercaseCanonicalUrl: '1'
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 'null'
+      pluginName: SEOmatic
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - twitter
+        - facebook
+      siteGroupsSeparate: '1'
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: true
+      submitSitemaps: true
   super-table:
     edition: standard
     enabled: true

@@ -25,7 +25,7 @@
                             {% else %}
                                 {% set link = button.buttonUrl %}
                             {% endif %}
-                            <a class="{{ button.buttonStyle }} mr-4 px-8 lg:px-12 py-4 mr-4" href="{{ link }}">{{ button.buttonText }}</a>
+                            <a class="{{ button.buttonStyle }} mr-4 px-8 lg:px-12 py-4 mr-4" {% if button.openInANewTab %}target="_blank"{% endif %} href="{{ link }}">{{ button.buttonText }}</a>
                         {% endfor %}
                     {% endif %}
                 </div>

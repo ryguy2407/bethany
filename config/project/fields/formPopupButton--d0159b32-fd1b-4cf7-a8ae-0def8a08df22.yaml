@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 49a83f2f-08f9-4254-aafe-ba496e1a2835
+handle: formPopupButton
+instructions: 'If form popup button text is added then the form will be wrapper in a modal popup that is triggered by a button.'
+name: 'Form popup button'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
