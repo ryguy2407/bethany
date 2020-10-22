@@ -4,15 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "250faf4bbfb7e16242244000b5310e3c",
+    "content-hash": "a73ee44eaf17df73aedeec70abad31ff",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.158.6",
+            "version": "3.158.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aws/aws-sdk-php.git",
+                "reference": "cdf3c097a606087654ac90ea1ffb8f3e86c423be"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4e912c1ae4d4b3538ada36ac1478f980f9bdf329",
-                "reference": "4e912c1ae4d4b3538ada36ac1478f980f9bdf329",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cdf3c097a606087654ac90ea1ffb8f3e86c423be",
+                "reference": "cdf3c097a606087654ac90ea1ffb8f3e86c423be",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +89,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-10-09T18:11:48+00:00"
+            "time": "2020-10-21T18:12:19+00:00"
         },
         {
             "name": "carlcs/craft-redactorcustomstyles",
@@ -604,11 +609,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.5.12.1",
+            "version": "3.5.14",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/142e988624dcb0405a6e4baf126e1207e6b084fd",
-                "reference": "142e988624dcb0405a6e4baf126e1207e6b084fd",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/81a574b56f0f08e3847ad01f80242e78cdb18195",
+                "reference": "81a574b56f0f08e3847ad01f80242e78cdb18195",
                 "shasum": ""
             },
             "require": {
@@ -689,7 +694,7 @@
                 "docs": "https://craftcms.com/docs/3.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2020-10-02T21:21:05+00:00"
+            "time": "2020-10-20T22:27:53+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -824,11 +829,11 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.8.1",
+            "version": "2.8.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/2fff5171f89538e84921119e8af533e6379ad24b",
-                "reference": "2fff5171f89538e84921119e8af533e6379ad24b",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/92e2aa88ae1aa60fee0fc83b2dede4806395979c",
+                "reference": "92e2aa88ae1aa60fee0fc83b2dede4806395979c",
                 "shasum": ""
             },
             "require": {
@@ -863,7 +868,7 @@
                 "html",
                 "yii2"
             ],
-            "time": "2020-09-30T16:50:06+00:00"
+            "time": "2020-10-19T13:52:37+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -3439,11 +3444,11 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.21",
+            "version": "3.3.22",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/618d96de589275bfcb97f3395304f1fd6196485c",
-                "reference": "618d96de589275bfcb97f3395304f1fd6196485c",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/3d9113e9a407d797da9a794883c494e199a12f33",
+                "reference": "3d9113e9a407d797da9a794883c494e199a12f33",
                 "shasum": ""
             },
             "require": {
@@ -3508,7 +3513,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-09-30T13:32:55+00:00"
+            "time": "2020-10-20T16:34:40+00:00"
         },
         {
             "name": "opis/closure",
@@ -3568,15 +3573,15 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v9.99.99",
+            "version": "v9.99.100",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
-                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
                 "shasum": ""
             },
             "require": {
-                "php": "^7"
+                "php": ">= 7"
             },
             "require-dev": {
                 "phpunit/phpunit": "4.*|5.*",
@@ -3604,7 +3609,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2018-07-02T15:55:56+00:00"
+            "time": "2020-10-15T08:29:30+00:00"
         },
         {
             "name": "php-science/textrank",
@@ -4474,11 +4479,11 @@
         },
         {
             "name": "studioespresso/craft-seeder",
-            "version": "3.3.0",
+            "version": "3.3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/studioespresso/craft3-seeder/zipball/2633a44760d749eab975504f5ecc1c4d7a3d8695",
-                "reference": "2633a44760d749eab975504f5ecc1c4d7a3d8695",
+                "url": "https://api.github.com/repos/studioespresso/craft3-seeder/zipball/d521fb00b552dc382b5d1c6fb684c7a6e56a6990",
+                "reference": "d521fb00b552dc382b5d1c6fb684c7a6e56a6990",
                 "shasum": ""
             },
             "require": {
@@ -4520,7 +4525,7 @@
                 "craftcms",
                 "seeder"
             ],
-            "time": "2020-10-12T19:05:54+00:00"
+            "time": "2020-10-14T16:50:49+00:00"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
@@ -5780,11 +5785,11 @@
         },
         {
             "name": "verbb/formie",
-            "version": "1.2.21",
+            "version": "1.2.24",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/46e47c26b5200f60f2a826843556931596178f89",
-                "reference": "46e47c26b5200f60f2a826843556931596178f89",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/6c21c6d13bbf03bac8d7ad0a3bcae8e0b382408c",
+                "reference": "6c21c6d13bbf03bac8d7ad0a3bcae8e0b382408c",
                 "shasum": ""
             },
             "require": {
@@ -5838,7 +5843,7 @@
                 "docs": "https://github.com/verbb/formie",
                 "rss": "https://github.com/verbb/formie/commits/v2.atom"
             },
-            "time": "2020-10-13T00:58:25+00:00"
+            "time": "2020-10-20T04:35:58+00:00"
         },
         {
             "name": "verbb/image-resizer",
@@ -5890,11 +5895,11 @@
         },
         {
             "name": "verbb/navigation",
-            "version": "1.3.31",
+            "version": "1.4.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/navigation/zipball/5d3f25841998e1b015edd3f54a48d650751857e9",
-                "reference": "5d3f25841998e1b015edd3f54a48d650751857e9",
+                "url": "https://api.github.com/repos/verbb/navigation/zipball/3bd7ac7be1ffb5b5bbed016de41ed16fda5f0d58",
+                "reference": "3bd7ac7be1ffb5b5bbed016de41ed16fda5f0d58",
                 "shasum": ""
             },
             "require": {
@@ -5932,7 +5937,7 @@
                 "menu",
                 "navigation"
             ],
-            "time": "2020-09-29T00:15:19+00:00"
+            "time": "2020-10-20T02:18:51+00:00"
         },
         {
             "name": "verbb/super-table",
@@ -7182,22 +7187,22 @@
         },
         {
             "name": "codeception/lib-asserts",
-            "version": "1.13.1",
+            "version": "1.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/lib-asserts.git",
-                "reference": "263ef0b7eff80643e82f4cf55351eca553a09a10"
+                "reference": "184231d5eab66bc69afd6b9429344d80c67a33b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/lib-asserts/zipball/263ef0b7eff80643e82f4cf55351eca553a09a10",
-                "reference": "263ef0b7eff80643e82f4cf55351eca553a09a10",
+                "url": "https://api.github.com/repos/Codeception/lib-asserts/zipball/184231d5eab66bc69afd6b9429344d80c67a33b6",
+                "reference": "184231d5eab66bc69afd6b9429344d80c67a33b6",
                 "shasum": ""
             },
             "require": {
                 "codeception/phpunit-wrapper": ">6.0.15 <6.1.0 | ^6.6.1 | ^7.7.1 | ^8.0.3 | ^9.0",
                 "ext-dom": "*",
-                "php": ">=5.6.0 <8.0"
+                "php": ">=5.6.0 <9.0"
             },
             "type": "library",
             "autoload": {
@@ -7228,7 +7233,7 @@
             "keywords": [
                 "codeception"
             ],
-            "time": "2020-08-28T07:49:36+00:00"
+            "time": "2020-10-21T16:26:20+00:00"
         },
         {
             "name": "codeception/lib-innerbrowser",
@@ -7288,28 +7293,25 @@
         },
         {
             "name": "codeception/module-asserts",
-            "version": "1.3.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/module-asserts.git",
-                "reference": "32e5be519faaeb60ed3692383dcd1b3390ec2667"
+                "reference": "59374f2fef0cabb9e8ddb53277e85cdca74328de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/module-asserts/zipball/32e5be519faaeb60ed3692383dcd1b3390ec2667",
-                "reference": "32e5be519faaeb60ed3692383dcd1b3390ec2667",
+                "url": "https://api.github.com/repos/Codeception/module-asserts/zipball/59374f2fef0cabb9e8ddb53277e85cdca74328de",
+                "reference": "59374f2fef0cabb9e8ddb53277e85cdca74328de",
                 "shasum": ""
             },
             "require": {
                 "codeception/codeception": "*@dev",
                 "codeception/lib-asserts": "^1.13.1",
-                "php": ">=5.6.0 <8.0"
+                "php": ">=5.6.0 <9.0"
             },
             "conflict": {
                 "codeception/codeception": "<4.0"
-            },
-            "require-dev": {
-                "codeception/util-robohelpers": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -7340,7 +7342,7 @@
                 "asserts",
                 "codeception"
             ],
-            "time": "2020-08-28T08:06:29+00:00"
+            "time": "2020-10-21T16:48:15+00:00"
         },
         {
             "name": "codeception/module-phpbrowser",
