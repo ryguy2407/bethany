@@ -1,4 +1,4 @@
-dateModified: 1603329073
+dateModified: 1603329449
 email:
   fromEmail: ryan@newwordorder.com.au
   fromName: 'Bethany Christian Care'
@@ -34,6 +34,36 @@ plugins:
     enabled: true
     licenseKey: TAZTG4GWRQUKTMDUR7V2FFDE
     schemaVersion: 1.0.13
+    settings:
+      captchas:
+        duplicate:
+          enabled: false
+          settings:
+            handle: duplicate
+          type: verbb\formie\integrations\captchas\Duplicate
+        honeypot:
+          enabled: false
+          settings:
+            handle: honeypot
+          type: verbb\formie\integrations\captchas\Honeypot
+        javascript:
+          enabled: false
+          settings:
+            handle: javascript
+          type: verbb\formie\integrations\captchas\Javascript
+        recaptcha:
+          enabled: true
+          settings:
+            badge: bottomright
+            handle: recaptcha
+            language: en-GB
+            minScore: '0.5'
+            secretKey: $RECAPTCHA_SECRET_KEY
+            siteKey: $RECAPTCHA_SITE_KEY
+            size: normal
+            theme: light
+            type: v3
+          type: verbb\formie\integrations\captchas\Recaptcha
   image-optimize:
     edition: standard
     enabled: true
