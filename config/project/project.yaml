@@ -1,8 +1,18 @@
-dateModified: 1603329449
+dateModified: 1605742250
 email:
-  fromEmail: ryan@newwordorder.com.au
+  fromEmail: contact.bethany@bethanycc.org.au
   fromName: 'Bethany Christian Care'
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: kimberly.mcdonald@bethanycc.org.au
+  template: ''
+  transportSettings:
+    encryptionMethod: tls
+    host: smtp.office365.com
+    password: Bay63922
+    port: '587'
+    timeout: '10'
+    useAuthentication: '1'
+    username: contact.bethany@bethanycc.org.au
+  transportType: craft\mail\transportadapters\Smtp
 plugins:
   contact-form:
     edition: standard
@@ -35,6 +45,13 @@ plugins:
     licenseKey: TAZTG4GWRQUKTMDUR7V2FFDE
     schemaVersion: 1.0.13
     settings:
+      alertEmails:
+        -
+          - 'Ryan Murray'
+          - ryan@newwordorder.com.au
+        -
+          - 'Kimberly McDonald'
+          - kimberly.mcdonald@bethanycc.org.au
       captchas:
         duplicate:
           enabled: false
@@ -64,6 +81,26 @@ plugins:
             theme: light
             type: v3
           type: verbb\formie\integrations\captchas\Recaptcha
+      defaultDateDisplayType: ''
+      defaultDateTime: null
+      defaultDateValueOption: ''
+      defaultEmailTemplate: ''
+      defaultFileUploadVolume: ''
+      defaultFormTemplate: ''
+      defaultInstructionsPosition: verbb\formie\positions\BelowInput
+      defaultLabelPosition: verbb\formie\positions\AboveInput
+      defaultPage: forms
+      enableUnloadWarning: true
+      maxIncompleteSubmissionAge: 30
+      pluginName: Formie
+      saveSpam: false
+      sendEmailAlerts: '1'
+      spamBehaviour: showSuccess
+      spamBehaviourMessage: ''
+      spamKeywords: ''
+      spamLimit: 500
+      useQueueForIntegrations: true
+      useQueueForNotifications: true
   image-optimize:
     edition: standard
     enabled: true
@@ -115,7 +152,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: UEQQVZVRFS1ALJ5ZP7XJMFLO
-    schemaVersion: 2.8.0
+    schemaVersion: 2.8.14
   redactor:
     edition: standard
     enabled: true
