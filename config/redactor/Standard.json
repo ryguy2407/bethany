@@ -12,6 +12,17 @@
           "type": "toggle"
         }
       },
+      "remove-underline": {
+        "title": "Remove underline",
+        "api": "module.block.format",
+        "args": {
+          "tag": "a",
+          "style": {
+            "text-decoration": "none"
+          },
+          "type": "toggle"
+        }
+      },
       "small-pink": {
         "title": "Small pink",
         "api": "module.block.format",
