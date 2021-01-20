@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44fde2c3daa91b364f9451d3b4914b33",
+    "content-hash": "7753502e1ff8a1b386bd1ff1a6e5f0d5",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.171.14",
+            "version": "3.171.20",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2bc8681a623caa13d5c1da90ca4d6c76436b545d",
-                "reference": "2bc8681a623caa13d5c1da90ca4d6c76436b545d",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/02aaf7007c5678a6358ea924cd85531300aa1747",
+                "reference": "02aaf7007c5678a6358ea924cd85531300aa1747",
                 "shasum": ""
             },
             "require": {
@@ -87,9 +87,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.171.14"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.171.20"
             },
-            "time": "2021-01-07T19:16:26+00:00"
+            "time": "2021-01-19T19:13:08+00:00"
         },
         {
             "name": "carlcs/craft-redactorcustomstyles",
@@ -202,11 +202,11 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/2450ca97631042faf786855db206a2e48fb7dbb7",
-                "reference": "2450ca97631042faf786855db206a2e48fb7dbb7",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/6df5c0eea9d1f370095585eef1b08f4dff73d51f",
+                "reference": "6df5c0eea9d1f370095585eef1b08f4dff73d51f",
                 "shasum": ""
             },
             "require": {
@@ -254,17 +254,17 @@
             ],
             "support": {
                 "issues": "https://github.com/commerceguys/addressing/issues",
-                "source": "https://github.com/commerceguys/addressing/tree/v1.1.0"
+                "source": "https://github.com/commerceguys/addressing/tree/v1.1.1"
             },
-            "time": "2020-11-29T18:48:07+00:00"
+            "time": "2020-12-05T18:16:35+00:00"
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.8",
+            "version": "1.2.9",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/8a7ecad675253e4654ea05505233285377405215",
-                "reference": "8a7ecad675253e4654ea05505233285377405215",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/78a0e288fdcebf92aa2318a8d3656168da6ac1a5",
+                "reference": "78a0e288fdcebf92aa2318a8d3656168da6ac1a5",
                 "shasum": ""
             },
             "require": {
@@ -273,14 +273,15 @@
                 "php": "^5.3.2 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8",
+                "phpstan/phpstan": "^0.12.55",
                 "psr/log": "^1.0",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
                 "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.x-dev"
+                    "dev-main": "1.x-dev"
                 }
             },
             "autoload": {
@@ -310,7 +311,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/ca-bundle/issues",
-                "source": "https://github.com/composer/ca-bundle/tree/1.2.8"
+                "source": "https://github.com/composer/ca-bundle/tree/1.2.9"
             },
             "funding": [
                 {
@@ -326,7 +327,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-23T12:54:47+00:00"
+            "time": "2021-01-12T12:10:35+00:00"
         },
         {
             "name": "composer/composer",
@@ -695,11 +696,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.5.17.1",
+            "version": "3.5.18",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/c4b999b325736968a05d3bcc1a5a2444dfbe9323",
-                "reference": "c4b999b325736968a05d3bcc1a5a2444dfbe9323",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/b307136753bac5b6adcc2e92bf56173417259f2e",
+                "reference": "b307136753bac5b6adcc2e92bf56173417259f2e",
                 "shasum": ""
             },
             "require": {
@@ -750,17 +751,6 @@
                 "bower-asset/punycode": "1.3.*",
                 "bower-asset/yii2-pjax": "~2.0.1"
             },
-            "require-dev": {
-                "codeception/codeception": "^4.0.0",
-                "codeception/module-asserts": "^1.0.0",
-                "codeception/module-datafactory": "^1.0.0",
-                "codeception/module-phpbrowser": "^1.0.0",
-                "codeception/module-rest": "^1.0.0",
-                "codeception/module-yii2": "^1.0.0",
-                "fzaninotto/faker": "^1.8",
-                "league/factory-muffin": "^3.0",
-                "vlucas/phpdotenv": "^3.0"
-            },
             "suggest": {
                 "ext-iconv": "Adds support for more character encodings than PHP’s built-in mb_convert_encoding() function, which Craft will take advantage of when converting strings to UTF-8.",
                 "ext-imagick": "Adds support for more image processing formats and options.",
@@ -773,7 +763,6 @@
                     "crafttests\\fixtures\\": "tests/fixtures/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -785,14 +774,14 @@
                 "yii2"
             ],
             "support": {
-                "docs": "https://craftcms.com/docs/3.x/",
                 "email": "support@craftcms.com",
-                "forum": "https://craftcms.stackexchange.com/",
                 "issues": "https://github.com/craftcms/cms/issues?state=open",
-                "rss": "https://github.com/craftcms/cms/releases.atom",
-                "source": "https://github.com/craftcms/cms"
+                "forum": "https://craftcms.stackexchange.com/",
+                "source": "https://github.com/craftcms/cms",
+                "docs": "https://craftcms.com/docs/3.x/",
+                "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2020-12-17T12:04:00+00:00"
+            "time": "2021-01-19T18:30:41+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -1707,11 +1696,11 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.12.15",
+            "version": "8.12.16",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/c1f328bface2745ff1a292639dd68cafc673a456",
-                "reference": "c1f328bface2745ff1a292639dd68cafc673a456",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/d3d4ed9466249747249f3032717c4aebaaa8363e",
+                "reference": "d3d4ed9466249747249f3032717c4aebaaa8363e",
                 "shasum": ""
             },
             "require": {
@@ -1771,7 +1760,7 @@
                 "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
                 "source": "https://github.com/giggsey/libphonenumber-for-php"
             },
-            "time": "2020-12-15T10:15:17+00:00"
+            "time": "2021-01-12T14:54:36+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -3695,11 +3684,11 @@
         },
         {
             "name": "league/mime-type-detection",
-            "version": "1.5.1",
+            "version": "1.7.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/353f66d7555d8a90781f6f5e7091932f9a4250aa",
-                "reference": "353f66d7555d8a90781f6f5e7091932f9a4250aa",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3",
+                "reference": "3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3",
                 "shasum": ""
             },
             "require": {
@@ -3707,8 +3696,9 @@
                 "php": "^7.2 || ^8.0"
             },
             "require-dev": {
-                "phpstan/phpstan": "^0.12.36",
-                "phpunit/phpunit": "^8.5.8"
+                "friendsofphp/php-cs-fixer": "^2.18",
+                "phpstan/phpstan": "^0.12.68",
+                "phpunit/phpunit": "^8.5.8 || ^9.3"
             },
             "type": "library",
             "autoload": {
@@ -3729,7 +3719,7 @@
             "description": "Mime-type detection for Flysystem",
             "support": {
                 "issues": "https://github.com/thephpleague/mime-type-detection/issues",
-                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.5.1"
+                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.7.0"
             },
             "funding": [
                 {
@@ -3741,29 +3731,34 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-18T11:50:25+00:00"
+            "time": "2021-01-18T20:58:21+00:00"
         },
         {
             "name": "league/oauth1-client",
-            "version": "v1.8.2",
+            "version": "v1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/oauth1-client.git",
+                "reference": "1e7e6be2dc543bf466236fb171e5b20e1b06aee6"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/159c3d2bf27568f9af87d6c3f4bb616a251eb12b",
-                "reference": "159c3d2bf27568f9af87d6c3f4bb616a251eb12b",
+                "url": "https://api.github.com/repos/thephpleague/oauth1-client/zipball/1e7e6be2dc543bf466236fb171e5b20e1b06aee6",
+                "reference": "1e7e6be2dc543bf466236fb171e5b20e1b06aee6",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-openssl": "*",
                 "guzzlehttp/guzzle": "^6.0|^7.0",
-                "php": ">=7.1"
+                "php": ">=7.1||>=8.0"
             },
             "require-dev": {
                 "ext-simplexml": "*",
-                "friendsofphp/php-cs-fixer": "^2.16.1",
-                "mockery/mockery": "^1.3",
+                "friendsofphp/php-cs-fixer": "^2.17",
+                "mockery/mockery": "^1.3.3",
                 "phpstan/phpstan": "^0.12.42",
-                "phpunit/phpunit": "^7.5"
+                "phpunit/phpunit": "^7.5||9.5"
             },
             "suggest": {
                 "ext-simplexml": "For decoding XML-based responses."
@@ -3809,9 +3804,9 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/oauth1-client/issues",
-                "source": "https://github.com/thephpleague/oauth1-client/tree/v1.8.2"
+                "source": "https://github.com/thephpleague/oauth1-client/tree/v1.9.0"
             },
-            "time": "2020-09-28T09:39:08+00:00"
+            "time": "2021-01-20T01:40:53+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -3930,21 +3925,22 @@
         },
         {
             "name": "lsolesen/pel",
-            "version": "0.9.9",
+            "version": "0.9.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pel/pel/zipball/95dd3c16161c588f0ac66662c1870a073159e5ec",
-                "reference": "95dd3c16161c588f0ac66662c1870a073159e5ec",
+                "url": "https://api.github.com/repos/pel/pel/zipball/04ecb8a29e4b1628414193b0df9294232a44f8a9",
+                "reference": "04ecb8a29e4b1628414193b0df9294232a44f8a9",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.0"
+                "php": ">=7.1.0"
             },
             "require-dev": {
+                "ext-exif": "*",
                 "ext-gd": "*",
-                "phpunit/phpunit": ">=4.8.36 <8",
-                "satooshi/php-coveralls": "1.0.*",
-                "squizlabs/php_codesniffer": "^3.0.0"
+                "php-coveralls/php-coveralls": ">2.4",
+                "squizlabs/php_codesniffer": ">3.5",
+                "symfony/phpunit-bridge": "^4 || ^5"
             },
             "type": "library",
             "autoload": {
@@ -3978,9 +3974,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pel/pel/issues",
-                "source": "https://github.com/pel/pel/tree/0.9.9"
+                "source": "https://github.com/pel/pel/tree/0.9.10"
             },
-            "time": "2020-11-07T06:04:18+00:00"
+            "time": "2021-01-01T22:15:50+00:00"
         },
         {
             "name": "marcusschwarz/lesserphp",
@@ -4140,11 +4136,11 @@
         },
         {
             "name": "mmikkel/reasons",
-            "version": "2.2.3",
+            "version": "2.2.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mmikkel/Reasons-Craft3/zipball/a9bd816999ffb667d3c609b061aeb50fb1516702",
-                "reference": "a9bd816999ffb667d3c609b061aeb50fb1516702",
+                "url": "https://api.github.com/repos/mmikkel/Reasons-Craft3/zipball/3d66552545e1dff5982bdbef331d5ce4e08faec6",
+                "reference": "3d66552545e1dff5982bdbef331d5ce4e08faec6",
                 "shasum": ""
             },
             "require": {
@@ -4186,9 +4182,9 @@
             "support": {
                 "docs": "https://github.com/mmikkel/Reasons-Craft3/blob/master/README.md",
                 "issues": "https://github.com/mmikkel/Reasons-Craft3/issues",
-                "source": "https://github.com/mmikkel/Reasons-Craft3/tree/2.2.3"
+                "source": "https://github.com/mmikkel/Reasons-Craft3/tree/2.2.4"
             },
-            "time": "2020-12-27T22:21:56+00:00"
+            "time": "2021-01-20T21:49:25+00:00"
         },
         {
             "name": "mofodojodino/profanity-filter",
@@ -4604,11 +4600,11 @@
         },
         {
             "name": "nette/utils",
-            "version": "v3.2.0",
+            "version": "v3.2.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/d0427c1811462dbb6c503143eabe5478b26685f7",
-                "reference": "d0427c1811462dbb6c503143eabe5478b26685f7",
+                "url": "https://api.github.com/repos/nette/utils/zipball/2bc2f58079c920c2ecbb6935645abf6f2f5f94ba",
+                "reference": "2bc2f58079c920c2ecbb6935645abf6f2f5f94ba",
                 "shasum": ""
             },
             "require": {
@@ -4678,9 +4674,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v3.2.0"
+                "source": "https://github.com/nette/utils/tree/v3.2.1"
             },
-            "time": "2020-11-25T23:47:50+00:00"
+            "time": "2021-01-11T03:05:59+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize",
@@ -6012,11 +6008,11 @@
         },
         {
             "name": "spicyweb/craft-neo",
-            "version": "2.8.16",
+            "version": "2.8.17",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/57917805813bbff1d0fe4ed31424ee06b4e3f2a9",
-                "reference": "57917805813bbff1d0fe4ed31424ee06b4e3f2a9",
+                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/724c3eedc2aed5f00491940d46a87318c8aefe9f",
+                "reference": "724c3eedc2aed5f00491940d46a87318c8aefe9f",
                 "shasum": ""
             },
             "require": {
@@ -6060,7 +6056,7 @@
                 "docs": "https://github.com/spicywebau/craft-neo/wiki",
                 "rss": "https://github.com/spicywebau/craft-neo/commits/master.atom"
             },
-            "time": "2020-12-30T10:55:11+00:00"
+            "time": "2021-01-12T11:16:46+00:00"
         },
         {
             "name": "studioespresso/craft-seeder",
@@ -6166,11 +6162,11 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v6.2.4",
+            "version": "v6.2.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/56f0ab23f54c4ccbb0d5dcc67ff8552e0c98d59e",
-                "reference": "56f0ab23f54c4ccbb0d5dcc67ff8552e0c98d59e",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/698a6a9f54d7eb321274de3ad19863802c879fb7",
+                "reference": "698a6a9f54d7eb321274de3ad19863802c879fb7",
                 "shasum": ""
             },
             "require": {
@@ -6220,7 +6216,7 @@
             ],
             "support": {
                 "issues": "https://github.com/swiftmailer/swiftmailer/issues",
-                "source": "https://github.com/swiftmailer/swiftmailer/tree/v6.2.4"
+                "source": "https://github.com/swiftmailer/swiftmailer/tree/v6.2.5"
             },
             "funding": [
                 {
@@ -6232,7 +6228,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-08T18:02:06+00:00"
+            "time": "2021-01-12T09:35:59+00:00"
         },
         {
             "name": "symfony/console",
@@ -7992,11 +7988,11 @@
         },
         {
             "name": "verbb/formie",
-            "version": "1.3.8",
+            "version": "1.3.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/ca52f1c8a7b723f40324d46b906a0fff6511e3b8",
-                "reference": "ca52f1c8a7b723f40324d46b906a0fff6511e3b8",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/9a5d3d0438af7f488be1ea6ea96a661e4a5366eb",
+                "reference": "9a5d3d0438af7f488be1ea6ea96a661e4a5366eb",
                 "shasum": ""
             },
             "require": {
@@ -8051,7 +8047,7 @@
                 "docs": "https://github.com/verbb/formie",
                 "rss": "https://github.com/verbb/formie/commits/v2.atom"
             },
-            "time": "2021-01-10T06:08:22+00:00"
+            "time": "2021-01-16T03:25:11+00:00"
         },
         {
             "name": "verbb/image-resizer",
@@ -8110,11 +8106,11 @@
         },
         {
             "name": "verbb/navigation",
-            "version": "1.4.10",
+            "version": "1.4.12",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/navigation/zipball/02cf54eca7e618389f0b79c1b266d6277ac62bbb",
-                "reference": "02cf54eca7e618389f0b79c1b266d6277ac62bbb",
+                "url": "https://api.github.com/repos/verbb/navigation/zipball/bfb0438250830e21f2c1ba75e22652337efccfbe",
+                "reference": "bfb0438250830e21f2c1ba75e22652337efccfbe",
                 "shasum": ""
             },
             "require": {
@@ -8158,7 +8154,7 @@
                 "docs": "https://github.com/verbb/navigation",
                 "rss": "https://github.com/verbb/navigation/commits/v2.atom"
             },
-            "time": "2020-12-22T01:44:15+00:00"
+            "time": "2021-01-15T00:59:17+00:00"
         },
         {
             "name": "verbb/super-table",
@@ -8222,11 +8218,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v3.6.7",
+            "version": "v3.6.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "5e679f7616db829358341e2d5cccbd18773bdab8"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2065beda6cbe75e2603686907b2e45f6f3a5ad82",
-                "reference": "2065beda6cbe75e2603686907b2e45f6f3a5ad82",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/5e679f7616db829358341e2d5cccbd18773bdab8",
+                "reference": "5e679f7616db829358341e2d5cccbd18773bdab8",
                 "shasum": ""
             },
             "require": {
@@ -8237,7 +8238,7 @@
             "require-dev": {
                 "ext-filter": "*",
                 "ext-pcre": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7.27 || ^6.5.6 || ^7.0"
+                "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20"
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator.",
@@ -8278,7 +8279,7 @@
             ],
             "support": {
                 "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v3.6.7"
+                "source": "https://github.com/vlucas/phpdotenv/tree/v3.6.8"
             },
             "funding": [
                 {
@@ -8290,7 +8291,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-14T19:04:52+00:00"
+            "time": "2021-01-20T14:39:46+00:00"
         },
         {
             "name": "voku/anti-xss",
@@ -9541,16 +9542,16 @@
         },
         {
             "name": "codeception/codeception",
-            "version": "4.1.14",
+            "version": "4.1.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "bf2d7861cc6cf4e118a21c6945f482a5c822636c"
+                "reference": "9b174d18ba58bb2e8cc4cecce619d6124df1d83a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/bf2d7861cc6cf4e118a21c6945f482a5c822636c",
-                "reference": "bf2d7861cc6cf4e118a21c6945f482a5c822636c",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/9b174d18ba58bb2e8cc4cecce619d6124df1d83a",
+                "reference": "9b174d18ba58bb2e8cc4cecce619d6124df1d83a",
                 "shasum": ""
             },
             "require": {
@@ -9624,7 +9625,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Codeception/Codeception/issues",
-                "source": "https://github.com/Codeception/Codeception/tree/4.1.14"
+                "source": "https://github.com/Codeception/Codeception/tree/4.1.15"
             },
             "funding": [
                 {
@@ -9632,7 +9633,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2020-12-28T19:16:28+00:00"
+            "time": "2021-01-17T19:19:40+00:00"
         },
         {
             "name": "codeception/lib-asserts",
@@ -9690,16 +9691,16 @@
         },
         {
             "name": "codeception/lib-innerbrowser",
-            "version": "1.3.5",
+            "version": "1.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/lib-innerbrowser.git",
-                "reference": "956101b060a0d898a1ed8c106fd4d81adf25fd87"
+                "reference": "41b79ba6761001bdb1f373a347400180693ad4e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/lib-innerbrowser/zipball/956101b060a0d898a1ed8c106fd4d81adf25fd87",
-                "reference": "956101b060a0d898a1ed8c106fd4d81adf25fd87",
+                "url": "https://api.github.com/repos/Codeception/lib-innerbrowser/zipball/41b79ba6761001bdb1f373a347400180693ad4e7",
+                "reference": "41b79ba6761001bdb1f373a347400180693ad4e7",
                 "shasum": ""
             },
             "require": {
@@ -9744,9 +9745,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Codeception/lib-innerbrowser/issues",
-                "source": "https://github.com/Codeception/lib-innerbrowser/tree/1.3.5"
+                "source": "https://github.com/Codeception/lib-innerbrowser/tree/1.3.6"
             },
-            "time": "2021-01-02T18:59:34+00:00"
+            "time": "2021-01-17T11:21:09+00:00"
         },
         {
             "name": "codeception/module-asserts",
@@ -10718,16 +10719,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.0",
+            "version": "9.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "8e16c225d57c3d6808014df6b1dd7598d0a5bbbe"
+                "reference": "e7bdf4085de85a825f4424eae52c99a1cec2f360"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8e16c225d57c3d6808014df6b1dd7598d0a5bbbe",
-                "reference": "8e16c225d57c3d6808014df6b1dd7598d0a5bbbe",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e7bdf4085de85a825f4424eae52c99a1cec2f360",
+                "reference": "e7bdf4085de85a825f4424eae52c99a1cec2f360",
                 "shasum": ""
             },
             "require": {
@@ -10805,7 +10806,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.0"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.1"
             },
             "funding": [
                 {
@@ -10817,20 +10818,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-04T05:05:53+00:00"
+            "time": "2021-01-17T07:42:25+00:00"
         },
         {
             "name": "psy/psysh",
-            "version": "v0.10.5",
+            "version": "v0.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "7c710551d4a2653afa259c544508dc18a9098956"
+                "reference": "6f990c19f91729de8b31e639d6e204ea59f19cf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/7c710551d4a2653afa259c544508dc18a9098956",
-                "reference": "7c710551d4a2653afa259c544508dc18a9098956",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/6f990c19f91729de8b31e639d6e204ea59f19cf3",
+                "reference": "6f990c19f91729de8b31e639d6e204ea59f19cf3",
                 "shasum": ""
             },
             "require": {
@@ -10859,7 +10860,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.10.x-dev"
+                    "dev-main": "0.10.x-dev"
                 }
             },
             "autoload": {
@@ -10891,9 +10892,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.10.5"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.10.6"
             },
-            "time": "2020-12-04T02:51:30+00:00"
+            "time": "2021-01-18T15:53:43+00:00"
         },
         {
             "name": "sebastian/cli-parser",
