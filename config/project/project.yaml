@@ -1,4 +1,4 @@
-dateModified: 1615421300
+dateModified: 1622416930
 email:
   fromEmail: contact.bethany@bethanycc.org.au
   fromName: 'Bethany Christian Care'
@@ -43,7 +43,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: TAZTG4GWRQUKTMDUR7V2FFDE
-    schemaVersion: 1.1.7
+    schemaVersion: 1.1.9
     settings:
       alertEmails:
         -
@@ -221,7 +221,7 @@ system:
   edition: pro
   live: true
   name: 'Bethany Christian Care'
-  schemaVersion: 3.6.6
+  schemaVersion: 3.6.8
   timeZone: Australia/Brisbane
 users:
   allowPublicRegistration: false

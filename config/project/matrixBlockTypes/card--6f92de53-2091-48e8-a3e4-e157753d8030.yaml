@@ -127,6 +127,56 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
+  7d4e47f4-c0b2-43de-8ad0-dbaf6798bbb6:
+    contentColumnType: text
+    fieldGroup: null
+    handle: cardTitle
+    instructions: ''
+    name: Title
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8b1530ff-90d8-4037-9712-98631672f4b1:
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: '1'
+      selectionLabel: 'Add an image'
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   30b0a874-04e6-4ebe-a8e7-2a89f51a115e:
     contentColumnType: string
     fieldGroup: null
@@ -216,56 +266,6 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
-  7d4e47f4-c0b2-43de-8ad0-dbaf6798bbb6:
-    contentColumnType: text
-    fieldGroup: null
-    handle: cardTitle
-    instructions: ''
-    name: Title
-    searchable: true
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  8b1530ff-90d8-4037-9712-98631672f4b1:
-    contentColumnType: string
-    fieldGroup: null
-    handle: image
-    instructions: ''
-    name: Image
-    searchable: true
-    settings:
-      allowSelfRelations: false
-      allowedKinds:
-        - image
-      defaultUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
-      defaultUploadLocationSubpath: ''
-      limit: '1'
-      localizeRelations: false
-      restrictFiles: '1'
-      selectionLabel: 'Add an image'
-      showSiteMenu: true
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:b2e06900-60b6-4e7a-9d8e-ab52b6fed571'
-      singleUploadLocationSubpath: ''
-      source: null
-      sources: '*'
-      targetSiteId: null
-      useSingleFolder: false
-      validateRelatedElements: false
-      viewMode: large
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Assets
   bf46795c-5c59-4087-979e-490b11b33fcd:
     contentColumnType: text
     fieldGroup: null

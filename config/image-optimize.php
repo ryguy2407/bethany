@@ -169,7 +169,7 @@ return [
     // Preset image processors
     'imageProcessors'            => [
         // jpeg optimizers
-        
+
     ],
 
     'imageVariantCreators' => [

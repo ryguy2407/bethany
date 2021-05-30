@@ -6,12 +6,12 @@ fieldLayouts:
           0d7945bb-62b1-4911-bd28-455fe72d658d:
             required: false
             sortOrder: 1
-          61486ebe-fed0-4246-b6cd-a9c43a7de4cd:
-            required: false
-            sortOrder: 5
           872cf0d1-7516-4d9d-9155-ecab38322424:
             required: false
             sortOrder: 3
+          61486ebe-fed0-4246-b6cd-a9c43a7de4cd:
+            required: false
+            sortOrder: 5
           bd4f08a0-ed43-4338-878f-a716aa416641:
             required: false
             sortOrder: 4

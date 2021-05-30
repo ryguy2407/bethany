@@ -52,25 +52,6 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  18dfe370-48dc-4b93-bc76-9066d246228b:
-    contentColumnType: text
-    fieldGroup: null
-    handle: buttonText
-    instructions: ''
-    name: 'Button text'
-    searchable: true
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
   1e6fc132-7c62-43ee-9a98-b6c508d92f84:
     contentColumnType: string
     fieldGroup: null
@@ -117,6 +98,25 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
+  18dfe370-48dc-4b93-bc76-9066d246228b:
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: ''
+    name: 'Button text'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   763d1093-d1dd-40c7-8af7-2f0ea46227aa:
     contentColumnType: boolean
     fieldGroup: null

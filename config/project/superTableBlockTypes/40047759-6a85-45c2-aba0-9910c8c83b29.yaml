@@ -4,33 +4,18 @@ fieldLayouts:
     tabs:
       -
         fields:
-          39d2fc44-e08e-4fb1-9fc4-27e15d6765c0:
-            required: false
-            sortOrder: 1
           3ec2723e-0656-4f9d-9645-9c8937567742:
             required: false
             sortOrder: 3
+          39d2fc44-e08e-4fb1-9fc4-27e15d6765c0:
+            required: false
+            sortOrder: 1
           757aa51b-fe76-46f7-914b-648129791cec:
             required: false
             sortOrder: 2
         name: Content
         sortOrder: 1
 fields:
-  39d2fc44-e08e-4fb1-9fc4-27e15d6765c0:
-    contentColumnType: string
-    fieldGroup: null
-    handle: pageSection
-    instructions: ''
-    name: Section
-    searchable: true
-    settings:
-      contentTable: '{{%matrixcontent_pagesection}}'
-      maxBlocks: ''
-      minBlocks: ''
-      propagationMethod: all
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Matrix
   3ec2723e-0656-4f9d-9645-9c8937567742:
     contentColumnType: string
     fieldGroup: null
@@ -88,6 +73,21 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
+  39d2fc44-e08e-4fb1-9fc4-27e15d6765c0:
+    contentColumnType: string
+    fieldGroup: null
+    handle: pageSection
+    instructions: ''
+    name: Section
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_pagesection}}'
+      maxBlocks: ''
+      minBlocks: ''
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   757aa51b-fe76-46f7-914b-648129791cec:
     contentColumnType: string
     fieldGroup: null

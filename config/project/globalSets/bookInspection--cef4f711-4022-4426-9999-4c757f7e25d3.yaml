@@ -3,15 +3,15 @@ fieldLayouts:
     tabs:
       -
         fields:
-          100ef487-a318-4a81-94cd-3d60422efcb4:
-            required: false
-            sortOrder: 2
-          60aa3b12-645e-49f0-99e2-ce4090678629:
-            required: false
-            sortOrder: 1
           6c67473b-6a70-40fc-9aee-5595e6bac9cd:
             required: false
             sortOrder: 4
+          60aa3b12-645e-49f0-99e2-ce4090678629:
+            required: false
+            sortOrder: 1
+          100ef487-a318-4a81-94cd-3d60422efcb4:
+            required: false
+            sortOrder: 2
           a175f1f9-23f7-42a8-b864-9ad5425371e0:
             required: false
             sortOrder: 5

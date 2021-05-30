@@ -4,21 +4,56 @@ fieldLayouts:
     tabs:
       -
         fields:
+          7e2ea644-8a64-4f49-9526-1548bb7932ab:
+            required: false
+            sortOrder: 3
           12ab3b0f-19f5-48f0-86fb-a136afe09ca0:
             required: false
             sortOrder: 1
           720f9816-337b-4519-b723-ee915d21a70b:
             required: false
             sortOrder: 2
-          7e2ea644-8a64-4f49-9526-1548bb7932ab:
-            required: false
-            sortOrder: 3
           c8a239cc-d080-4588-b63b-c2e909135560:
             required: false
             sortOrder: 4
         name: Content
         sortOrder: 1
 fields:
+  7e2ea644-8a64-4f49-9526-1548bb7932ab:
+    contentColumnType: string
+    fieldGroup: null
+    handle: imageAlignment
+    instructions: ''
+    name: 'Image alignment'
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Image left'
+            -
+              - value
+              - imageLeft
+            -
+              - default
+              - imageLeft
+        -
+          __assoc__:
+            -
+              - label
+              - 'Image right'
+            -
+              - value
+              - imageRight
+            -
+              - default
+              - imageRight
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
   12ab3b0f-19f5-48f0-86fb-a136afe09ca0:
     contentColumnType: text
     fieldGroup: null
@@ -72,41 +107,6 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  7e2ea644-8a64-4f49-9526-1548bb7932ab:
-    contentColumnType: string
-    fieldGroup: null
-    handle: imageAlignment
-    instructions: ''
-    name: 'Image alignment'
-    searchable: true
-    settings:
-      optgroups: true
-      options:
-        -
-          __assoc__:
-            -
-              - label
-              - 'Image left'
-            -
-              - value
-              - imageLeft
-            -
-              - default
-              - imageLeft
-        -
-          __assoc__:
-            -
-              - label
-              - 'Image right'
-            -
-              - value
-              - imageRight
-            -
-              - default
-              - imageRight
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Dropdown
   c8a239cc-d080-4588-b63b-c2e909135560:
     contentColumnType: string
     fieldGroup: null
