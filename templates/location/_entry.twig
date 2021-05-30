@@ -2,7 +2,7 @@
     {% block main %}
 
         {% if entry.hasDescendants() %}
-            {% redirect entry.getChildren().first().url %}
+            {% redirect entry.getChildren().one().url %}
         {% endif %}
 
 {#        Override the entry if we are in a child element #}
