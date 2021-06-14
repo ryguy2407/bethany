@@ -1,4 +1,4 @@
-dateModified: 1622416930
+dateModified: 1623639775
 email:
   fromEmail: contact.bethany@bethanycc.org.au
   fromName: 'Bethany Christian Care'
@@ -43,7 +43,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: TAZTG4GWRQUKTMDUR7V2FFDE
-    schemaVersion: 1.1.9
+    schemaVersion: 1.1.11
     settings:
       alertEmails:
         -
@@ -152,7 +152,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: UEQQVZVRFS1ALJ5ZP7XJMFLO
-    schemaVersion: 2.8.16
+    schemaVersion: 2.9.11
   redactor:
     edition: standard
     enabled: true
@@ -169,7 +169,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: TW4N37KVZBKCPIM8PV78O6MC
-    schemaVersion: 3.0.9
+    schemaVersion: 3.0.10
     settings:
       addHrefLang: true
       addPaginatedHreflang: true
