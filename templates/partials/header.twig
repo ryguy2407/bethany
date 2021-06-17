@@ -40,7 +40,7 @@
     {% endif %}
 {% endif %}
 
-<section class="bg-navy-500 py-16 searchForm hidden relative z-20">
+<section class="bg-navy-500 py-16 searchForm hidden relative" style="z-index: 100;">
     <div class="closeSearch">
         <i class="fas fa-times absolute text-teal-500 text-lg w-8 h-lg hover:text-teal-400 cursor-pointer" style="top:20px;right:20px;"></i>
     </div>
@@ -60,8 +60,7 @@
     </p>
 </section>
 
-<img class="hidden xxl:block absolute right-0 z-10" src="/dist/img/search-bg.svg" alt="decirative image">
-<img class="hidden xxl:block absolute z-10 triggerSearch cursor-pointer" alt="decorative image" style="top: 125px;right:45px;" src="/dist/img/search.svg">
+<img class="hidden xxl:block absolute right-0 z-10 " src="/dist/img/search-bg.svg" role="presentation">
 
 <header class="relative bg-white" style="z-index: 100;">
     <div class="hidden container mx-auto lg:flex flex-row justify-between items-center">
@@ -86,6 +85,9 @@
                     {% endif %}
                     </li>
                 {% endnav %}
+                <li class="ml-4 triggerSearch">
+                    <i class="fal fa-search cursor-pointer text-textPrimary"></i>
+                </li>
             </ul>
             <ul class="primaryNav hasDropdowns flex flex-row justify-between border-t border-navy-200 text-xl">
                 {% set activeNode = craft.navigation.getActiveNode({ handle: 'mainNav' }) %}
@@ -128,6 +130,10 @@
     </div>
     <div class="container mx-auto">
         <ul id="mobileNavigation" class="px-8 hidden">
+            <form action="{{ url('search/results') }}" class="flex flex-row w-3/4 mx-auto my-8">
+                <input type="search" name="q" class="px-8 py-4 bg-white border border-navy-500 rounded-l-full w-10/12 text-textPrimary placeholder-grey-500 focus:outline-none" value="" placeholder="Type your search">
+                <input type="submit" src="/dist/img/search-navy.svg" class="rounded-r-full cursor-pointer bg-navy-500 text-white hover:bg-navy-700 transition duration-500 ease-in-out" style="padding:10px 30px 10px 25px;">
+            </form>
             {% set activeNode = craft.navigation.getActiveNode({ handle: 'mobileNavigation' }) %}
             {% set nodes = craft.navigation.nodes().handle('mobileNavigation').level(1).all() %}
             {% nav node in nodes %}
