@@ -16,3 +16,4 @@ fieldLayouts:
         sortOrder: 1
 handle: footerLocations
 name: 'Footer locations'
+sortOrder: 4

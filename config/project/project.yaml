@@ -1,4 +1,4 @@
-dateModified: 1623639775
+dateModified: 1626654916
 email:
   fromEmail: contact.bethany@bethanycc.org.au
   fromName: 'Bethany Christian Care'
@@ -13,6 +13,13 @@ email:
     useAuthentication: '1'
     username: contact.bethany@bethanycc.org.au
   transportType: craft\mail\transportadapters\Smtp
+meta:
+  __names__:
+    35a5b316-b4f1-4682-a049-4137e0d6ee2a: 'Global Alert' # Global Alert
+    1846d461-01b4-4bb5-a216-707e42070f52: 'Footer CTA' # Footer CTA
+    a0b40018-ba61-428e-89fc-66fbcee9595b: 'Footer locations' # Footer locations
+    a62e7eb3-868a-450a-97ee-b99d83537a4a: 'Global SEO' # Global SEO
+    cef4f711-4022-4426-9999-4c757f7e25d3: 'Book inspection' # Book inspection
 plugins:
   contact-form:
     edition: standard
@@ -221,7 +228,7 @@ system:
   edition: pro
   live: true
   name: 'Bethany Christian Care'
-  schemaVersion: 3.6.8
+  schemaVersion: 3.7.7
   timeZone: Australia/Brisbane
 users:
   allowPublicRegistration: false

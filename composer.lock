@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60088ab5ca65e79b95aa725a92fba11f",
+    "content-hash": "c68ab4c6a168490e8c00337ff077695a",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -595,11 +595,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.6.17",
+            "version": "3.7.3.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/4497db8b89474a68fc43ee1d7f8b78beff9dc6f2",
-                "reference": "4497db8b89474a68fc43ee1d7f8b78beff9dc6f2",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/0eff1aadb1110f0f35c92b6d8c86a0740c34a5fc",
+                "reference": "0eff1aadb1110f0f35c92b6d8c86a0740c34a5fc",
                 "shasum": ""
             },
             "require": {
@@ -620,7 +620,7 @@
                 "ext-zip": "*",
                 "guzzlehttp/guzzle": "^6.5.5|^7.2.0",
                 "laminas/laminas-feed": "~2.12.3|^2.13.1",
-                "league/flysystem": "^1.1.3",
+                "league/flysystem": "^1.1.4",
                 "league/oauth2-client": "^2.6.0",
                 "mikehaertl/php-shellcommand": "^1.6.3",
                 "php": ">=7.2.5",
@@ -683,7 +683,7 @@
                 "docs": "https://craftcms.com/docs/3.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2021-06-15T15:59:20+00:00"
+            "time": "2021-07-18T13:21:11+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -3629,11 +3629,11 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.34",
+            "version": "1.6.35",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/975146c915f01ddead26034f65ddcfa87d1a093a",
-                "reference": "975146c915f01ddead26034f65ddcfa87d1a093a",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/477f0d2009512b6a75343b7e7f20fce8618078ea",
+                "reference": "477f0d2009512b6a75343b7e7f20fce8618078ea",
                 "shasum": ""
             },
             "require": {
@@ -3682,7 +3682,7 @@
                 "docs": "https://nystudio107.com/plugins/imageoptimize/documentation",
                 "issues": "https://nystudio107.com/plugins/imageoptimize/support"
             },
-            "time": "2021-06-10T15:21:35+00:00"
+            "time": "2021-07-14T16:43:27+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -3807,11 +3807,11 @@
         },
         {
             "name": "nystudio107/craft-plugin-manifest",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/65a5ddb78a6fcaefb85841f82d6196aa93c8f455",
-                "reference": "65a5ddb78a6fcaefb85841f82d6196aa93c8f455",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/0c275f7f9633ed27d7acf445ca6ab9dba99d55dc",
+                "reference": "0c275f7f9633ed27d7acf445ca6ab9dba99d55dc",
                 "shasum": ""
             },
             "require": {
@@ -3842,7 +3842,7 @@
                 "docs": "https://github.com/nystudio107/craft-plugin-manifest/blob/v1/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-manifest/issues"
             },
-            "time": "2021-05-07T02:18:23+00:00"
+            "time": "2021-07-13T16:06:23+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
@@ -4809,15 +4809,15 @@
         },
         {
             "name": "spicyweb/craft-neo",
-            "version": "2.10.7",
+            "version": "2.11.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/2d6c37f8cfe741829404d0f3e502d0f0fd03ccdc",
-                "reference": "2d6c37f8cfe741829404d0f3e502d0f0fd03ccdc",
+                "url": "https://api.github.com/repos/spicywebau/craft-neo/zipball/78559e9387bb4b9effea9d25a277b3fe30481d0f",
+                "reference": "78559e9387bb4b9effea9d25a277b3fe30481d0f",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.6.6"
+                "craftcms/cms": "^3.7.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -4854,10 +4854,10 @@
             "support": {
                 "issues": "https://github.com/spicywebau/craft-neo/issues",
                 "source": "https://github.com/spicywebau/craft-neo",
-                "docs": "https://github.com/spicywebau/craft-neo/blob/2.10.7/README.md",
+                "docs": "https://github.com/spicywebau/craft-neo/blob/2.11.1/README.md",
                 "rss": "https://github.com/spicywebau/craft-neo/commits/master.atom"
             },
-            "time": "2021-07-08T07:21:09+00:00"
+            "time": "2021-07-15T07:14:33+00:00"
         },
         {
             "name": "studioespresso/craft-seeder",
@@ -6333,11 +6333,11 @@
         },
         {
             "name": "verbb/formie",
-            "version": "1.4.9",
+            "version": "1.4.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/345f239f61d9853ef83e400ed48b5fa3aadf7c4b",
-                "reference": "345f239f61d9853ef83e400ed48b5fa3aadf7c4b",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/00024678b11d92f1793bff5f541a4f6ccde9cecd",
+                "reference": "00024678b11d92f1793bff5f541a4f6ccde9cecd",
                 "shasum": ""
             },
             "require": {
@@ -6392,7 +6392,7 @@
                 "docs": "https://github.com/verbb/formie",
                 "rss": "https://github.com/verbb/formie/commits/v2.atom"
             },
-            "time": "2021-07-11T03:08:48+00:00"
+            "time": "2021-07-15T01:24:33+00:00"
         },
         {
             "name": "verbb/image-resizer",

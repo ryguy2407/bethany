@@ -13,3 +13,4 @@ fieldLayouts:
         sortOrder: 1
 handle: footerCta
 name: 'Footer CTA'
+sortOrder: 3
